@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2638212 */
+  src: url('iconfont.woff2?t=1632643034021') format('woff2'),
+       url('iconfont.woff?t=1632643034021') format('woff'),
+       url('iconfont.ttf?t=1632643034021') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gongsi:before {
+  content: "\e722";
+}
+
+.icon-irita_da:before {
+  content: "\e6ea";
+}
+
+.icon-menu:before {
+  content: "\e6e9";
+}
+
+.icon-irita_hub:before {
+  content: "\e6e8";
+}
+
+.icon-irita_opb:before {
+  content: "\e6e7";
+}
+
+.icon-irita_bean:before {
+  content: "\e6e4";
+}
+
+.icon-ce:before {
+  content: "\e6e3";
+}
+
+.icon-turnto:before {
+  content: "\e6dc";
+}
+
+.icon-github:before {
+  content: "\e6db";
+}
+
+.icon-doct:before {
+  content: "\e6da";
+}
+
