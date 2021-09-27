@@ -4,7 +4,6 @@
             <div class="navigation_content_left">
                 <div class="navigation_img_content" @click="toHome()">
                     <img class="logo" src="../assets/wenchang_logo.png" alt="" />
-                    <span class="logo_text">文昌链</span>
                 </div>
             </div>
             <ul class="navigation_content_right">
@@ -42,7 +41,6 @@
             <div class="mobile_navigation_content">
                 <div class="mobile_navigation_logo" @click="toHome">
                     <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
-                    <span class="bsn_text">文昌链</span>
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
@@ -173,12 +171,6 @@ export default {
                     height: 4rem;
                     vertical-align: middle;
                 }
-                .logo_text {
-                    margin-left: 0.8rem;
-                    font-size: $fontSize24;
-                    font-weight: $fontWeight600;
-                    color: #4F3D8E;
-                }
             }
         }
 
@@ -279,12 +271,6 @@ export default {
                 .bsn_logo {
                     height: 4rem;
                     vertical-align: middle;
-                }
-                .bsn_text {
-                    margin-left: 0.8rem;
-                    font-size: $fontSize24;
-                    font-weight: $fontWeight600;
-                    color: #4F3D8E;
                 }
             }
 

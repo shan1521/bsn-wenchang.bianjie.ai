@@ -10,7 +10,6 @@
                                 alt=""
                                 class="img"
                             />
-                            <span class="left_desc">文昌链</span>
                         </div>
                         <p class="img_desc">
                             基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链
@@ -134,11 +133,6 @@ export default {
 
                     .img {
                         height: 6rem;
-                    }
-                    .left_desc {
-                        margin-left: 0.8rem;
-                        font-size: $fontSize36;
-                        color: #fff;
                     }
                 }
 
