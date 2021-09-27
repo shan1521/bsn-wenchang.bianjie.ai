@@ -1,0 +1,79 @@
+{
+  "id": "2638212",
+  "name": "IRITA homepage",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "IRITA 官网项目",
+  "glyphs": [
+    {
+      "icon_id": "24612147",
+      "name": "公司",
+      "font_class": "gongsi",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "22718825",
+      "name": "irita_da",
+      "font_class": "irita_da",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "22600600",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "22584096",
+      "name": "irita_hub",
+      "font_class": "irita_hub",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "22584076",
+      "name": "irita_opb",
+      "font_class": "irita_opb",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "22584034",
+      "name": "irita_bean",
+      "font_class": "irita_bean",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "22579560",
+      "name": "irita_ce",
+      "font_class": "ce",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "22539710",
+      "name": "turnto",
+      "font_class": "turnto",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "22528646",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "22528612",
+      "name": "doct",
+      "font_class": "doct",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    }
+  ]
+}
