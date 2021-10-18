@@ -2,6 +2,9 @@
     <div class="navigation_content_wrapper">
         <div class="navigation_content">
             <div class="navigation_content_left">
+                <div class="navigation_img_bsn_content" @click="toBSN()">
+                    <img class="logo" src="../assets/bsn_logo.png" alt="" />
+                </div>
                 <div class="navigation_img_content" @click="toHome()">
                     <img class="logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
@@ -39,9 +42,17 @@
         </div>
         <div class="mobile_navigation_container">
             <div class="mobile_navigation_content">
-                <div class="mobile_navigation_logo" @click="toHome">
-                    <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
+                <div class="mobile_navigation_logo">
+                    <div class="mobile_img_bsn_content" @click="toBSN()">
+                        <img class="logo" src="../assets/bsn_logo.png" alt="" />
+                    </div>
+                    <div class="mobile_img_content" @click="toHome()">
+                        <img class="logo" src="../assets/wenchang_logo.png" alt="" />
+                    </div>
                 </div>
+                <!-- <div class="mobile_navigation_logo" @click="toHome">
+                    <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
+                </div> -->
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
                 </div>
@@ -104,6 +115,9 @@ export default {
         },
     },
     methods: {
+        toBSN() {
+            window.open('https://www.bsnbase.com/');
+        },
         toHome() {
             this.$router.push("/");
             this.$store.commit("currentIndex", 0);
@@ -155,20 +169,37 @@ export default {
             @media (max-width: 1200px) {
                 padding-left: 4.8rem;
             }
-            @media (max-width: 375px) {
+            @media (max-width: 432px) {
                 padding-left: 1.6rem;
             }
-
+            .navigation_img_bsn_content {
+                display: flex;
+                align-items: center;
+                height: 4rem;
+                cursor: pointer;
+                &::after {
+                    content: '';
+                    display: block;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    width: 0.2rem;
+                    height: 80%;
+                    background: #000000;
+                    opacity: 0.25;
+                }
+                .logo {
+                    height: 100%;
+                    vertical-align: middle;
+                }
+            }
             .navigation_img_content {
                 display: flex;
                 align-items: center;
-
-                &:hover {
-                    cursor: pointer;
-                }
+                height: 4rem;
+                cursor: pointer;
 
                 .logo {
-                    height: 4rem;
+                    height: 100%;
                     vertical-align: middle;
                 }
             }
@@ -264,13 +295,40 @@ export default {
             @media (max-width: 432px) {
                 padding-left: 1.6rem;
             }
-
+            
             .mobile_navigation_logo {
                 display: flex;
                 align-items: center;
-                .bsn_logo {
+                height: $navbarHeight;
+                .mobile_img_bsn_content {
+                    display: flex;
+                    align-items: center;
                     height: 4rem;
-                    vertical-align: middle;
+                    &::after {
+                        content: '';
+                        display: block;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        width: 0.2rem;
+                        height: 80%;
+                        background: #000000;
+                        opacity: 0.25;
+                    }
+                    .logo {
+                        height: 100%;
+                        vertical-align: middle;
+                    }
+                }
+                .mobile_img_content {
+                    display: flex;
+                    align-items: center;
+                    height: 4rem;
+                    cursor: pointer;
+
+                    .logo {
+                        height: 100%;
+                        vertical-align: middle;
+                    }
                 }
             }
 
