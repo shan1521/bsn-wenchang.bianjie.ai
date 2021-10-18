@@ -5,14 +5,23 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <img
-                                src="../assets/wenchang_logo_white.png"
-                                alt=""
-                                class="img"
-                            />
+                            <div class="bsn_logo_wrap" @click="toBSN">
+                                <img
+                                    src="../assets/bsn_logo.png"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <div class="logo_wrap" @click="toHome">
+                                <img
+                                    src="../assets/wenchang_logo_white.png"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
                         </div>
                         <p class="img_desc">
-                            基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链
+                            文昌链基于 IRITA 打造，是首批在 BSN 环境上线的开放联盟链
                         </p>
                     </div>
                     <div class="content_right">
@@ -70,6 +79,15 @@
 <script>
 export default {
     name: "Footer",
+    methods: {
+        toBSN() {
+            window.open('https://www.bsnbase.com/');
+        },
+        toHome() {
+            this.$router.push("/");
+            this.$store.commit("currentIndex", 0);
+        },
+    }
 };
 </script>
 
@@ -130,9 +148,31 @@ export default {
                         display: flex;
                         justify-content: center;
                     }
-
-                    .img {
-                        height: 6rem;
+                    .bsn_logo_wrap {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        cursor: pointer;
+                        &::after {
+                            content: '';
+                            display: block;
+                            margin-left: 2rem;
+                            margin-right: 2rem;
+                            width: 0.2rem;
+                            height: 80%;
+                            background: #fff;
+                            opacity: 0.25;
+                        }
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .logo_wrap {
+                        height: 100%;
+                        cursor: pointer;
+                        img {
+                            height: 100%;
+                        }
                     }
                 }
 
