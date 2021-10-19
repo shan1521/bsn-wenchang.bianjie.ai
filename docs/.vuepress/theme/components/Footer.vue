@@ -83,6 +83,15 @@
 <script>
 export default {
     name: "Footer",
+    methods: {
+        toBSN() {
+            window.open('https://www.bsnbase.com/');
+        },
+        toHome() {
+            this.$router.push("/");
+            this.$store.commit("currentIndex", 0);
+        },
+    }
 };
 </script>
 
