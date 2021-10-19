@@ -5,23 +5,27 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <div class="bsn_logo_wrap" @click="toBSN">
+                            <a class="bsn_logo" href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="../assets/bsn_logo.png"
                                     alt=""
-                                    class="img"
                                 />
-                            </div>
-                            <div class="logo_wrap" @click="toHome">
+                            </a>
+                            <a class="irita_logo" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="../assets/wenchang_logo_white.png"
+                                    src="../assets/irita_logo.png"
                                     alt=""
-                                    class="img"
                                 />
-                            </div>
+                            </a>
+                            <a class="bianjie_logo" href="https://www.bianjie.ai/" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="../assets/bianjie_logo.png"
+                                    alt=""
+                                />
+                            </a>
                         </div>
                         <p class="img_desc">
-                            文昌链基于 IRITA 打造，是首批在 BSN 环境上线的开放联盟链
+                            BSN 文昌链是 BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链
                         </p>
                     </div>
                     <div class="content_right">
@@ -55,7 +59,7 @@
         <div class="footer_content_bottom">
             <div class="bottom_content">
                 <span class="copyright_content">{{
-                    `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
+                    `©${new Date().getFullYear()} All Rights Reserved`
                 }}</span>
                 <a
                     href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
@@ -95,19 +99,17 @@ export default {
 .footer_content_wrapper {
     margin-top: 2rem;
     width: 100%;
-    height: 37.4rem;
-    flex: 0 0 37.4rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         margin-top: 0;
     }
 
     .footer_content_top {
         width: 100%;
         height: 31.4rem;
-        background: $footerTopColor;
+        background: #F9FAFD;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             height: auto;
         }
     }
@@ -118,9 +120,12 @@ export default {
         max-width: $footerTopContentWidth;
         height: 19.4rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             padding: 3.6rem 0;
             height: auto;
+        }
+        @media (max-width: 580px) {
+            padding: 3.6rem 1.6rem;
         }
 
         .content {
@@ -133,7 +138,7 @@ export default {
             width: 100%;
             height: 100%;
 
-            @media (max-width: 768px) {
+            @media (max-width: 1030px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -142,34 +147,49 @@ export default {
                 .left_img {
                     display: flex;
                     align-items: center;
-                    height: 6rem;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 1030px) {
                         display: flex;
                         justify-content: center;
                     }
-                    .bsn_logo_wrap {
+                    @media (max-width: 580px) {
+                        flex-direction: column;
+                    }
+                    .bsn_logo {
+                        height: 4.8rem;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .irita_logo {
                         display: flex;
                         align-items: center;
-                        height: 100%;
-                        cursor: pointer;
-                        &::after {
+                        height: 4.8rem;
+                        &::before, &::after {
                             content: '';
                             display: block;
-                            margin-left: 2rem;
-                            margin-right: 2rem;
+                            margin-left: 2.4rem;
+                            margin-right: 2.4rem;
                             width: 0.2rem;
                             height: 80%;
-                            background: #fff;
+                            background: #000000;
                             opacity: 0.25;
+                            @media (max-width: 580px) {
+                                display: none;
+                            }
+                        }
+                        @media (max-width: 580px) {
+                            margin-top: 1.6rem;
                         }
                         img {
                             height: 100%;
                         }
                     }
-                    .logo_wrap {
-                        height: 100%;
-                        cursor: pointer;
+                    .bianjie_logo {
+                        height: 4.8rem;
+                        @media (max-width: 580px) {
+                            margin-top: 1.6rem;
+                        }
                         img {
                             height: 100%;
                         }
@@ -181,13 +201,13 @@ export default {
                     line-height: 2.4rem;
                     font-size: $fontSize16;
                     font-weight: $fontWeight400;
-                    color: $whiteColorOpacity1;
+                    color: rgba(0, 0, 0, .75);
                     box-sizing: border-box;
                     padding-right: 1.6rem;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 1030px) {
+                        margin: 1.6rem auto;
                         padding-right: 0;
-                        max-width: 22rem;
                         text-align: center;
                     }
                 }
@@ -200,7 +220,7 @@ export default {
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
 
-                @media (max-width: 768px) {
+                @media (max-width: 1030px) {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
@@ -213,7 +233,7 @@ export default {
                     height: 19.5rem;
                     background: #515071;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 1030px) {
                         display: none;
                     }
                 }
@@ -225,13 +245,16 @@ export default {
                     -ms-flex-direction: column;
                     -webkit-flex-direction: column;
                     margin: 0 8rem;
+                    @media (max-width: 1030px) {
+                        margin: 0 0;
+                    }
 
                     .contact_title {
                         height: 2.4rem;
                         line-height: 2.4rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight600;
-                        color: $whiteColor;
+                        color: #000;
                     }
 
                     .email {
@@ -240,10 +263,10 @@ export default {
                         line-height: 2.4rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight400;
-                        color: $whiteColorOpacity;
+                        color: rgba(0, 0, 0, .75);
 
                         &:hover {
-                            color: $whiteColor;
+                            color: #000;
                             cursor: pointer;
                         }
                     }
@@ -253,10 +276,10 @@ export default {
                         line-height: 2.4rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight400;
-                        color: $whiteColorOpacity;
+                        color: rgba(0, 0, 0, .75);
 
                         &:hover {
-                            color: $whiteColor;
+                            color: #000;
                         }
                     }
                 }
@@ -265,7 +288,7 @@ export default {
                     display: flex;
                     flex-direction: column;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 1030px) {
                         margin-top: 4.4rem;
                     }
 
@@ -274,7 +297,7 @@ export default {
                         line-height: 2.4rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight600;
-                        color: $whiteColor;
+                        color: #000;
                     }
 
                     .qr_code {
@@ -297,7 +320,7 @@ export default {
                         line-height: 2.4rem;
                         font-size: $fontSize12;
                         font-weight: $fontWeight400;
-                        color: $whiteColorOpacity;
+                        color: rgba(0, 0, 0, .75);
                     }
                 }
             }
@@ -307,16 +330,16 @@ export default {
     .footer_content_bottom {
         width: 100%;
         height: 6rem;
+        font-size: $fontSize14;
+        font-weight: $fontWeight400;
         background: $footerBottomColor;
-        @media (max-width 1200px) {
+        @media (max-width: 1200px) {
             box-sizing: border-box;
             padding-left: 4.8rem;
             padding-right: 4.8rem;
         }
     }
 
-    font-size: $fontSize14;
-    font-weight: $fontWeight400;
 
     .bottom_content {
         display: flex;
@@ -326,7 +349,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        max-width: $contentWidth;
+        max-width: 90rem;
         height: 100%;
         @media (max-width: 420px) {
             text-align: center;
