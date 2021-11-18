@@ -21,7 +21,6 @@
 
 <script>
 import NoticeMask from './NoticeMask';
-import vueSeamlessScroll from 'vue-seamless-scroll';
 export default {
     name: "Notice",
     props:['noticeContent'],
@@ -45,7 +44,6 @@ export default {
     },
     components: {
         NoticeMask,
-        vueSeamlessScroll
     }
 }
 </script>
