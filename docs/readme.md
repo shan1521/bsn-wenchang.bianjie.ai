@@ -8,6 +8,24 @@
         linkText: 技术文档,
         route: /wenchangchain
     },
+    noticeContent: {
+        title: 【文昌链升级公告】,
+        honorific: 尊敬的用户，您好！,
+        noticeList: [
+            {
+                paragraph: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，本次升级实现了对 TIBC 精简跨链通信协议功能模块的适配集成，增强了跨链能力的可扩展性和交互能力，进一步支持 BSN 生态应用实现价值互联，为实体经济提供价值赋能。,
+            },
+            {
+                paragraph: 感谢您对 BSN「文昌链 IRITA OPB」的支持！,
+            },
+            {
+                paragraph: 如您有任何问题，可通过邮箱与我们联系：contact@bianjie.ai。,
+            },
+        ],
+        welcome: 欢迎开发者们扫码加入技术交流社区：,
+        qrCode: notice_qrcode.jpg,
+        date: 2021 年 11 月 18 日
+    },
     chainIntro: {
         chainIntroList: [
             {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。},

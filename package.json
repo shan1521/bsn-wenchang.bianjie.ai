@@ -21,7 +21,9 @@
   "homepage": "https://github.com/shan1521/bsn-wenchang.bianjie.ai#readme",
   "dependencies": {
     "async-validator": "^1.11.5",
+    "cross-env": "^7.0.3",
     "element-ui": "^2.15.6",
+    "vue-seamless-scroll": "^1.1.23",
     "vuepress": "^1.8.2",
     "vuex": "^3.6.2"
   },

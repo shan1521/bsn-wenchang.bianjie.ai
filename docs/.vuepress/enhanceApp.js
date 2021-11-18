@@ -43,5 +43,10 @@ export default async ({
 		}).catch(e => {
 			console.log(e,'element-ui error ')
 		})
+        await import('vue-seamless-scroll').then(module => {
+			Vue.use(module.default)
+		}).catch(e => {
+			console.log(e,'vue-seamless-scroll error ')
+		})
 	}
 }
