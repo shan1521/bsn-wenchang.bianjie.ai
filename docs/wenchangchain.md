@@ -6,12 +6,18 @@
 - 注册账号：[https://www.bsnbase.com/static/tmpFile/bzsc/helper/4-1.html](https://www.bsnbase.com/static/tmpFile/bzsc/helper/4-1.html)
 - 链账户的创建：[https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html)（注意托管账户和非托管账户的区别及使用）
 
+<br>
+
 ## 二、获取项目 ID 和项目 key
 - 创建项目：[https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html)
+
+<br>
 
 ## 三、选择您连接文昌链的应用端语言对应的 SDK：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
 - SDK-GO 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)
+
+<br>
 
 ## 四、配置测试及开发环境
 1、接入IRITA测试网
@@ -38,8 +44,10 @@ gRPC：47.100.192.234:9090
 Chain-ID：wenchangchain
 RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_key]/rpc
 wsAddr:wss://opbningxia.bsngate.com:18602/api/[project_key]/ws
-gRPCAddr: opbningxia.bsngate.com:18603                                                                     
+gRPCAddr: opbningxia.bsngate.com:18603 
 ```
+
+<br>
 
 ## 五、NFT 技术文档
 - NFT 技术模块简介：
@@ -54,10 +62,14 @@ gRPCAddr: opbningxia.bsngate.com:18603
 
 [https://irita.bianjie.ai/docs/console/modules/nft.html](https://irita.bianjie.ai/docs/console/modules/nft.html)
 
+<br>
+
 ## 六、链信息和区块、交易查询
 文昌链区块链浏览器已正式开放，链信息、区块信息和交易信息查询可访问以下链接：
 
 [https://explorer.wenchang.bianjie.ai](https://explorer.wenchang.bianjie.ai)
+
+<br>
 
 ## 七、链上随机数
 
