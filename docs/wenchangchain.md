@@ -2,53 +2,61 @@
 
 <br>
 
-## 一、SDK：
+## 一、注册账号
+- 注册账号： https://www.bsnbase.com/static/tmpFile/bzsc/helper/4-1.html
+- 链账户的创建： https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html （注意托管账户和非托管账户的区别及使用）
+## 二、获取项目 ID 和项目 key
+- 创建项目： https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html
+## 三、选择您连接文昌链的应用端语言对应的 SDK：
+- SDK-GO 地址：https://github.com/bianjieai/opb-sdk-go
+- SDK-Java 地址：https://github.com/bianjieai/opb-sdk-java
+## 四、配置测试及开发环境
+1、接入IRITA测试网
 
-- SDK-GO 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)
-- SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
-
-## 二、开发环境
-
-1、BSN
-
-BSN 文昌链注册及账户创建的文档：
-
-- 注册： [https://www.bsnbase.com/static/tmpFile/bzsc/helper/4-1.html](https://www.bsnbase.com/static/tmpFile/bzsc/helper/4-1.html)
-- 链账户的创建： [https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html) （注意托管账户和非托管账户的区别及使用）
-- 项目的创建及接入参数的下载： [https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html)
-- 网关接入说明： [https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-3-1.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-3-1.html)
-
-2、IRITA测试网
-
-初始化SKD配置：
-
+初始化SDK配置：
 ```javascript
 Chain-ID：testing
 RPC：47.100.192.234:26657
 gRPC：47.100.192.234:9090
 ```
+注：测试网没有网关接入要求，开发者可以根据业务需要现先在测试网中进行相关应用接口的调试
 
-## 三、链信息和区块、交易查询
+2、接入文昌链（线上生产环境）
 
-文昌链区块链浏览器暂未开放，链信息、区块和交易查询可参照如下方式：
+（1）下载文昌链的接入参数：https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html  
 
-初始化 client 成功后，再调用 BaseClient 可以查询到。
+（2）配置接入网关（初始化SDK配置）：
 
-## 四、NFT 技术文档
+将下载下来的接入参数按照不同语言 SDK 的接入方式，根据接入网关地址的规则进行输入配置  
 
-NFT 模块简介：
+文昌链网关接入说明： https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-3-1.html
 
-[https://irita.bianjie.ai/docs/core_modules/nft.html](https://irita.bianjie.ai/docs/core_modules/nft.html)
+```javascript
+Chain-ID：wenchangchain
+RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_key]/rpc
+wsAddr:wss://opbningxia.bsngate.com:18602/api/[project_key]/ws
+gRPCAddr: opbningxia.bsngate.com:18603                                                                     
+```
 
-NFT 开发步骤：
+## 五、NFT 技术文档
+- NFT 技术模块简介：
 
-[https://irita.bianjie.ai/docs/quick_start/nft.html](https://irita.bianjie.ai/docs/quick_start/nft.html)
+https://irita.bianjie.ai/docs/core_modules/nft.html
 
-链上NFT管理示例：
+- NFT 技术开发步骤：
 
-[https://irita.bianjie.ai/docs/console/modules/nft.html](https://irita.bianjie.ai/docs/console/modules/nft.html)
+https://irita.bianjie.ai/docs/quick_start/nft.html
 
-## 五、链上随机数
+- 链上NFT管理示例：
+
+https://irita.bianjie.ai/docs/console/modules/nft.html
+
+## 六、链信息和区块、交易查询
+文昌链区块链浏览器已正式开放，链信息、区块信息和交易信息查询可访问以下链接：
+
+https://explorer.wenchang.bianjie.ai
+
+## 七、链上随机数
 
 ### PRNG
 
@@ -79,3 +87,6 @@ rand = seed mod 10^20 / 10^20
 [https://irita.bianjie.ai/docs/core_modules/random.html](https://irita.bianjie.ai/docs/core_modules/random.html)
 
 [https://irita.bianjie.ai/docs/console/modules/random.html](https://irita.bianjie.ai/docs/console/modules/random.html)
+
+
+
