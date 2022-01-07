@@ -27,6 +27,9 @@ export default async ({
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
 			if(to.path.includes('/wenchangchain')){
+				store.commit('currentIndex',2)
+				localStorage.setItem('currentIndex',2)
+			}else if(to.path.includes('/ecological-application')){
 				store.commit('currentIndex',1)
 				localStorage.setItem('currentIndex',1)
 			}else {

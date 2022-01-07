@@ -29,6 +29,7 @@ import Navigation from "@theme/components/Navigation.vue";
 import Home from "@theme/components/home/Home.vue";
 import Footer from "@theme/components/Footer.vue";
 import { resolveSidebarItems } from "../util";
+import cfg from "../../config.json";
 
 export default {
     name: "Layout",
@@ -93,13 +94,6 @@ export default {
             ];
         },
     },
-
-    mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
-    },
-
     methods: {
         toggleSidebar(to) {
             this.isSidebarOpen =
@@ -126,6 +120,23 @@ export default {
                 }
             }
         },
+    },
+    mounted() {
+        // 友盟统计添加
+        const script = document.createElement("script");
+        script.src = `https://v1.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
+        script.language = "JavaScript";
+        document.body.appendChild(script);
+    },
+    watch: {
+        $route() {
+            if (window._czc) {
+                let location = window.location;
+                let contentUrl = location.pathname + location.hash;
+                let refererUrl = "/";
+                window._czc.push(["_trackPageview", contentUrl, refererUrl]);
+            }
+        }
     },
 };
 </script>
