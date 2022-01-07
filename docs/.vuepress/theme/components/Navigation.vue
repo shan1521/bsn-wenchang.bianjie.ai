@@ -2,12 +2,13 @@
     <div class="navigation_content_wrapper">
         <div class="navigation_content">
             <div class="navigation_content_left">
-                <div class="navigation_img_content" @click="toHome()">
+                <div class="navigation_img_content" @click="toHome">
                     <img class="logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
             </div>
             <ul class="navigation_content_right">
                 <li
+                    v-if="index !== 5"
                     class="navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
@@ -17,7 +18,7 @@
                     <a
                         v-show="item.target === '_blank'"
                         class="navigation_item"
-                        :class="index === 3 ? 'router_link_item' : ''"
+                        :class="index === 4 ? 'router_link_item' : ''"
                         :href="item.link"
                         :target="item.target"
                         rel="noopener noreferrer"
@@ -51,6 +52,7 @@
                 v-show="flShowMobileMenu"
             >
                 <li
+                    v-if="index !== 5"
                     class="mobile_navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
@@ -62,7 +64,7 @@
                     <a
                         v-show="item.target === '_blank'"
                         class="mobile_navigation_item"
-                        :class="index === 3 ? 'mobile_router_link_item' : ''"
+                        :class="index === 4 ? 'mobile_router_link_item' : ''"
                         :href="item.link"
                         :target="item.target"
                         rel="noopener noreferrer"
@@ -189,7 +191,7 @@ export default {
             @media (max-width: 1200px) {
                 padding-right: 1.8rem;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 880px) {
                 display: none;
             }
 
@@ -246,7 +248,7 @@ export default {
         background: $whiteColor;
         border-bottom: 0.1rem solid $borderLineColor;
         z-index: 10;
-        @media (max-width: 768px) {
+        @media (max-width: 880px) {
             display: block;
         }
 
@@ -258,7 +260,7 @@ export default {
             // margin: 0 auto;
             height: $navbarHeight;
 
-            @media (max-width: 768px) {
+            @media (max-width: 880px) {
                 padding-left: 4.8rem;
             }
             @media (max-width: 432px) {
@@ -278,7 +280,7 @@ export default {
                 // padding-right: 0.8rem;
                 width: 2.8rem;
                 height: 2.4rem;
-                @media (max-width: 768px) {
+                @media (max-width: 880px) {
                     padding-right: 4.8rem;
                 }
                 @media (max-width: 432px) {
