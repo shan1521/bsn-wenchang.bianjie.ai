@@ -16,7 +16,6 @@
 ## 三、SDK 文档：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
 - SDK-Go 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go) 
-（说明文档：[https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html)
 
 <br>
 
