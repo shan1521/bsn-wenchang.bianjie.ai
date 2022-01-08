@@ -42,8 +42,8 @@ gRPC：47.100.192.234:9090
 
 ```javascript
 Chain-ID：wenchangchain
-RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_key]/rpc
-wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_key]/ws
+RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_id]/rpc
+wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_id]/ws
 gRPCAddr: opbningxia.bsngate.com:18603 
 ```
 
