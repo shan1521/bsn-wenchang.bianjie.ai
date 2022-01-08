@@ -16,6 +16,7 @@
 ## 三、选择您连接文昌链的应用端语言对应的 SDK：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
 - SDK-GO 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)
+- SDK-GO 说明文档：[https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html)
 
 <br>
 
@@ -42,8 +43,8 @@ gRPC：47.100.192.234:9090
 
 ```javascript
 Chain-ID：wenchangchain
-RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_key]/rpc
-wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_key]/ws
+RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_id]/rpc
+wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_id]/ws
 gRPCAddr: opbningxia.bsngate.com:18603 
 ```
 
