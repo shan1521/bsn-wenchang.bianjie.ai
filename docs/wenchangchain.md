@@ -62,6 +62,14 @@ gRPCAddr: opbningxia.bsngate.com:18603
 
 [https://irita.bianjie.ai/docs/console/modules/nft.html](https://irita.bianjie.ai/docs/console/modules/nft.html)
 
+- NFT 技术 demo（Java）：
+
+[https://github.com/bianjieai/opb-sdk-java/blob/v0.1.5/src/test/java/irita/sdk/NftDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/v0.1.5/src/test/java/irita/sdk/NftDemo.java)
+
+- 离线签名及多 msg 实现：
+
+[https://github.com/bianjieai/opb-sdk-java/blob/v0.1.5/src/test/java/irita/sdk/MsgsDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/v0.1.5/src/test/java/irita/sdk/MsgsDemo.java)
+
 <br>
 
 ## 六、链信息和区块、交易查询
