@@ -1,7 +1,7 @@
 <template>
     <div class="bsn_container">
-        <BSNTitle :bsnTitleContent="bsnTitleContent"></BSNTitle>
-        <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice>
+        <SwiperBanner :bsnTitleContent="bsnTitleContent"></SwiperBanner>
+        <!-- <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice> -->
         <BSNIntro :chainIntro="chainIntro"></BSNIntro>
         <CoreFunc :coreFuncContent="coreFuncContent"></CoreFunc>
         <BSNProcess></BSNProcess>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import BSNTitle from './BSNTitle';
+import SwiperBanner from './SwiperBanner';
 import BSNIntro from './BSNIntro';
 import CoreFunc from './CoreFunc';
 import BSNProcess from './BSNProcess';
@@ -41,7 +41,7 @@ export default {
         },
     },
     components: {
-        BSNTitle,
+        SwiperBanner,
         Notice,
         BSNIntro,
         CoreFunc,

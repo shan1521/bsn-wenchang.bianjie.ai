@@ -2,12 +2,24 @@
 {
     layout: Layout,
     isHome: true,
-    bsnTitleContent: {
-        title: 文昌链,
-        subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
-        linkText: 技术文档,
-        route: /wenchangchain
-    },
+    bsnTitleContent: [
+        {
+            img: bsn_banner_first,
+            title: 文昌链,
+            subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
+            icon: icon-doct,
+            linkText: 技术文档,
+            route: /wenchangchain
+        },
+        {
+            img: bsn_banner_second,
+            title: 文昌链浏览器,
+            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯，更加完整、公开的披露链上存储数据。,
+            icon: icon-lianshangxinxi,
+            linkText: 链上信息,
+            link: https://explorer.wenchang.bianjie.ai
+        },
+    ],
     noticeContent: {
         title: 【文昌链升级公告】,
         honorific: 尊敬的用户，您好！,

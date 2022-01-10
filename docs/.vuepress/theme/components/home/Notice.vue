@@ -33,7 +33,6 @@ export default {
         classOption() {
             return {
                 direction: 2,
-                limitMoveNum: 2
             }
         }
     },
@@ -77,11 +76,15 @@ export default {
                 }
             }
             .notice_description {
+                height: 100%;
                 font-size: $fontSize14;
                 font-weight: $fontWeight400;
+                line-height: 1.6rem;
                 overflow: hidden;
                 .notice_list {
                     display: flex;
+                    align-items: center;
+                    height: 100%;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;

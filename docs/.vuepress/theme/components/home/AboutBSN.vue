@@ -47,7 +47,7 @@ export default {
                 max-width: 100%;
                 .aboutbsn_item {
                     margin-top: 3.6rem;
-                    font-size: $fontSize14;
+                    font-size: $fontSize16;
                     font-weight: 400;
                     line-height: 2.8rem;
                     color: #000000;
