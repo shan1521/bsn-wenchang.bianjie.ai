@@ -35,7 +35,7 @@
                             <img src="../../assets/BSN/bsn_step_third.png" alt="" />
                         </div>
                         <div class="step_process">使用链上服务，接入应用</div>
-                        <div class="step_desc">使用集成 <a style="color: #7065FF;" href="https://github.com/bianjieai/opb-sdk-go" target="_blank" rel="noopener noreferrer">SDK</a>，连接业务端系统和文昌链平台，创建服务、发布NFT及其他应用</div>
+                        <div class="step_desc">使用集成 <router-link style="color: #7065FF;" to="/wenchangchain">SDK</router-link>，连接业务端系统和文昌链平台，创建服务、发布 NFT 及其他应用</div>
                     </div>
                 </div>
                 <div class="control" @click="tipFn">
@@ -64,7 +64,6 @@ export default {
 <style lang="stylus">
 .bsnprocess_container {
     width: 100%;
-    background: #F9FAFD;
     .bsnprocess_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
@@ -75,7 +74,7 @@ export default {
             max-width: 96rem;
             .title {
                 font-size: $fontSize24;
-                font-weight: $fontWeight500;
+                font-weight: $fontWeight600;
                 color: #000000;
                 line-height: 2.4rem;
                 text-align: center;
@@ -118,7 +117,7 @@ export default {
                     .step_process {
                         margin-top: 2.4rem;
                         font-size: $fontSize16;
-                        font-weight: $fontWeight500;
+                        font-weight: $fontWeight600;
                         color: #000000;
                         line-height: 2.4rem;
                         text-align: center;
