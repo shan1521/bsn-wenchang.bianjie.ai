@@ -1,10 +1,5 @@
 <template>
     <div class="swiper_container" ref="mySwiper">
-        <!-- <swiper :options="swiperOption" v-if="bsnTitleContent">
-            <swiper-slide v-for="(item,index) in bsnTitleContent" :key="index">
-                <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
-            </swiper-slide>
-        </swiper> -->
         <a-carousel dots-class="slick-dots" autoplay>
             <div v-for="(item,index) in bsnTitleContent" :key="index">
                 <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
@@ -21,18 +16,6 @@ import BSNTitle from "./BSNTitle.vue";
 export default {
     name: "SwiperBanner",
     props: ["bsnTitleContent"],
-    data() {
-        return {
-            swiperOption: {
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                speed: 1500
-            },
-        };
-    },
     components: {
         'swiper': Swiper,
         'swiper-slide': SwiperSlide,
@@ -42,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .swiper_container{
     position: relative;
     width: 100%;

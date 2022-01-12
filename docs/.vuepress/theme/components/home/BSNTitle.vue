@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .bsntitle_container {
     width: 100%;
     height: 36rem;

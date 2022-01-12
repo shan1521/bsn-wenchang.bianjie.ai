@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import NoticeMask from './NoticeMask';
+import NoticeMask from '../common/NoticeMask';
 export default {
     name: "Notice",
     props:['noticeContent'],

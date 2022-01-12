@@ -7,8 +7,8 @@
                 </div>
             </div>
             <ul class="navigation_content_right">
+                    <!-- v-if="index !== 5" -->
                 <li
-                    v-if="index !== 5"
                     class="navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
