@@ -20,6 +20,9 @@ export default {
 .ecolobanner_container {
     width: 100%;
     background: url(../../assets/ecoloapp/ecoloapp_banner.png) no-repeat center / cover;
+    @media (max-width: 768px) {
+        background: url(../../assets/BSN/bsn_banner_768.png) no-repeat center / cover !important;
+    }
     .ecolobanner_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
@@ -34,12 +37,15 @@ export default {
                 font-weight: 400;
                 color: #000000;
                 line-height: 4.8rem;
-                // letter-spacing: 0.4rem;
                 @media (max-width: 600px) {
                     font-size: $fontSize40;
                 }
+                @media (max-width: 520px) {
+                    font-size: $fontSize24;
+                    font-weight: 600;
+                }
                 @media (max-width: 400px) {
-                    font-size: $fontSize32;
+                    text-align: center;
                 }
             }
             .sub_title {
@@ -49,6 +55,12 @@ export default {
                 font-weight: 400;
                 color: #000000;
                 line-height: 3.2rem;
+                @media (max-width: 520px) {
+                    font-size: $fontSize16;
+                }
+                @media (max-width: 400px) {
+                    text-align: center;
+                }
             }
         }
     }

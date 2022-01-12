@@ -70,6 +70,10 @@ export default {
                     font-size: $fontSize40;
                     text-align: center;
                 }
+                @media (max-width: 520px) {
+                    font-size: $fontSize24;
+                    font-weight: 600;
+                }
             }
             .sub_title {
                 margin-top: 3.2rem;
