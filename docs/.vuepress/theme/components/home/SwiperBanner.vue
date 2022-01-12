@@ -1,6 +1,6 @@
 <template>
     <div class="swiper_container" ref="mySwiper">
-        <a-carousel dots-class="slick-dots" autoplay :autoplaySpeed="6000" :speed="3000">
+        <a-carousel dots-class="slick-dots" autoplay :autoplaySpeed="4000" :speed="2000">
             <div v-for="(item,index) in bsnTitleContent" :key="index">
                 <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
             </div>
