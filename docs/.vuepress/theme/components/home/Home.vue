@@ -1,12 +1,11 @@
 <template>
     <div class="bsn_container">
         <SwiperBanner :bsnTitleContent="bsnTitleContent"></SwiperBanner>
-        <!-- <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice> -->
+        <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice>
         <BSNIntro :chainIntro="chainIntro"></BSNIntro>
         <CoreFunc :coreFuncContent="coreFuncContent"></CoreFunc>
         <BSNProcess></BSNProcess>
         <AboutBSN :aboutBSN="aboutBSN"></AboutBSN>
-        <!-- <BSNExample :exampleContent="exampleContent"></BSNExample> -->
     </div>
 </template>
 
@@ -16,7 +15,6 @@ import BSNIntro from './BSNIntro';
 import CoreFunc from './CoreFunc';
 import BSNProcess from './BSNProcess';
 import AboutBSN from "./AboutBSN";
-import BSNExample from './BSNExample';
 import Notice from './Notice';
 export default {
     name: 'BSN',
@@ -36,9 +34,6 @@ export default {
         aboutBSN() {
             return this.$frontmatter.aboutBSN;
         },
-        exampleContent() {
-            return this.$frontmatter.exampleContent;
-        },
     },
     components: {
         SwiperBanner,
@@ -47,7 +42,6 @@ export default {
         CoreFunc,
         BSNProcess,
         AboutBSN,
-        BSNExample
     }
 }
 </script>

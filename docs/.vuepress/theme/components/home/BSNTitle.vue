@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .bsntitle_container {
     width: 100%;
     height: 36rem;
@@ -69,6 +69,10 @@ export default {
                 @media (max-width: 594px) {
                     font-size: $fontSize40;
                     text-align: center;
+                }
+                @media (max-width: 520px) {
+                    font-size: $fontSize24;
+                    font-weight: 600;
                 }
             }
             .sub_title {

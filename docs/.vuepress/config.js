@@ -20,7 +20,7 @@ module.exports = {
             {text:'技术文档', link: '/wenchangchain', target: '_self'},
             {text:'关于 IRITA', link: 'https://irita.bianjie.ai/', target:'_blank'},
             {text:'关于边界',link:'https://www.bianjie.ai', target: '_blank'},
-            {text:'更多公告',link:'/more-notice', target: '_self'}
+            {text:'更多公告',link:'/notices', target: '_self'}
         ]
     },
     plugins: ['@vuepress/pwa', {

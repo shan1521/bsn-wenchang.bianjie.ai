@@ -1,11 +1,6 @@
 <template>
     <div class="swiper_container" ref="mySwiper">
-        <!-- <swiper :options="swiperOption" v-if="bsnTitleContent">
-            <swiper-slide v-for="(item,index) in bsnTitleContent" :key="index">
-                <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
-            </swiper-slide>
-        </swiper> -->
-        <a-carousel dots-class="slick-dots" autoplay>
+        <a-carousel dots-class="slick-dots" autoplay :autoplaySpeed="4000" :speed="2000">
             <div v-for="(item,index) in bsnTitleContent" :key="index">
                 <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
             </div>
@@ -14,35 +9,19 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
 import {Carousel} from "ant-design-vue";
 import BSNTitle from "./BSNTitle.vue";
 export default {
     name: "SwiperBanner",
     props: ["bsnTitleContent"],
-    data() {
-        return {
-            swiperOption: {
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                speed: 1500
-            },
-        };
-    },
     components: {
-        'swiper': Swiper,
-        'swiper-slide': SwiperSlide,
         Carousel,
         BSNTitle
     }
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .swiper_container{
     position: relative;
     width: 100%;
@@ -53,7 +32,7 @@ export default {
     // @media (max-width: 400px) {
     //     height: 28rem;
     // }
-    .ant-carousel {
+    ::v-deep.ant-carousel {
         .slick-slider {
             .slick-dots-bottom {
                 bottom: 2.4rem;
@@ -71,6 +50,9 @@ export default {
                     }
                 }
             }
+        }
+        .slick-dots-bottom {
+            bottom: 2.4rem;
         }
     }
 }
