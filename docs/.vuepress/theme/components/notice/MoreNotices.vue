@@ -4,7 +4,7 @@
             <div class="morenotices_content">
                 <div class="title">{{noticeContent.title}}</div>
                 <ul class="notice_list">
-                    <li class="notice_item" v-for="(item,index) in noticesList" :key="index" @click="changeShowMask">
+                    <li class="notice_item" v-for="(item,index) in noticesList" :key="index" @click="changeShowMask(index)">
                         <div class="notice_top">
                             <div class="notice_title">{{item.title}}</div>
                             <div class="notice_date">
@@ -14,13 +14,12 @@
                         <div class="notice_bottom">
                             {{item.info}}
                         </div>
-                        <NoticeMask v-if="showMask" :showMask.sync="showMask" :notice="item.maskContent"></NoticeMask>
                     </li>
                 </ul>
                 <div class="notices_pagination">
                     <el-pagination
                         layout="prev, pager, next"
-                        :page-size="6"
+                        :page-size="10"
                         @current-change="changeCurrentPage"
                         :current-page="currentPage"
                         :total="total"
@@ -31,6 +30,7 @@
                 </div>
             </div>
         </div>
+        <NoticeMask v-if="showMask" :showMask.sync="showMask" :notice="notice"></NoticeMask>
     </div>
 </template>
 
@@ -42,7 +42,8 @@ export default {
         return {
             total: 0,
             currentPage: 1,
-            showMask: false
+            showMask: false,
+            notice: ""
         }
     },
     computed: {
@@ -52,7 +53,7 @@ export default {
         noticesList() {
             if(this.$frontmatter && this.$frontmatter.noticeContent) {
                 let notices = JSON.parse(JSON.stringify(this.noticeContent.noticeList));
-                return notices.splice((this.currentPage - 1) * 5, 5);
+                return notices.splice((this.currentPage - 1) * 10, 10);
             }
         },
     },
@@ -62,8 +63,9 @@ export default {
                 this.total = this.$frontmatter.noticeContent.noticeList.length;
             }
         },
-        changeShowMask() {
+        changeShowMask(index) {
             this.showMask = true;
+            this.notice = this.noticesList[index].maskContent;
         },
         changeCurrentPage(page) {
             this.currentPage = page;
@@ -121,16 +123,21 @@ export default {
                         justify-content: space-between;
                         align-items: center;
                         .notice_title {
+                            max-width: 64rem;
                             font-size: $fontSize16;
                             font-weight: 600;
                             color: #000000;
                             line-height: 2.4rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
                         }
                         .notice_date {
                             font-size: $fontSize14;
                             font-weight: 400;
                             color: rgba(0, 0, 0, 0.64);
                             line-height: 2.4rem;
+                            white-space: nowrap;
                             .iconfont {
                                 margin-right: 0.4rem;
                                 font-size: $fontSize14;

@@ -7,8 +7,8 @@
                 </div>
             </div>
             <ul class="navigation_content_right">
-                    <!-- v-if="index !== 5" -->
                 <li
+                    v-if="index !== 5"
                     class="navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
@@ -152,7 +152,6 @@ export default {
         .navigation_content_left {
             display: flex;
             align-items: center;
-            padding-left: 0.8rem;
             height: $navbarHeight;
             @media (max-width: 1200px) {
                 padding-left: 4.8rem;
@@ -184,12 +183,11 @@ export default {
             justify-content: space-between;
             margin: 0;
             padding: 0;
-            padding-right: 0.8rem;
             height: $navbarHeight;
             list-style: none;
             font-size: $fontSize16;
             @media (max-width: 1200px) {
-                padding-right: 1.8rem;
+                padding-right: 4.8rem;
             }
             @media (max-width: 880px) {
                 display: none;
@@ -200,7 +198,9 @@ export default {
                 line-height: 100%;
 
                 &:last-child {
-                    padding-right: 0;
+                    .navigation_item {
+                        padding-right: 0;
+                    }
 
                     .line {
                         transform: translateX(-50%);

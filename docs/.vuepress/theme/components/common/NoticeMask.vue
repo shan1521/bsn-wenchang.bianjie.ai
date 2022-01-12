@@ -15,7 +15,6 @@ export default {
     props: ['showMask','notice'],
     methods: {
         updateShowMask(){
-            console.log(">>>>>>>>")
             this.$emit('update:showMask', false);
         }
     }

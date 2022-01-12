@@ -15,29 +15,58 @@
         {
             img: bsn_banner_second,
             title: 文昌链浏览器,
-            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯，更加完整、公开的披露链上存储数据。,
+            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯。,
             icon: icon-lianshangxinxi,
             linkText: 链上信息,
             link: https://explorer.wenchang.bianjie.ai
         },
     ],
     noticeContent: {
-        title: 【文昌链升级公告】,
-        honorific: 尊敬的用户，您好！,
         noticeList: [
             {
-                paragraph: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，本次升级实现了对 TIBC 精简跨链通信协议功能模块的适配集成，增强了跨链能力的可扩展性和交互能力，进一步支持 BSN 生态应用实现价值互联，为实体经济提供价值赋能。,
+                title: 【文昌链升级公告1】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
             },
             {
-                paragraph: 感谢您对 BSN「文昌链 IRITA OPB」的支持！,
+                title: 【文昌链升级公告2】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
             },
             {
-                paragraph: 如您有任何问题，可通过邮箱与我们联系：contact@bianjie.ai。,
+                title: 【文昌链升级公告3】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
+            },
+            {
+                title: 【文昌链升级公告4】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
+            },
+            {
+                title: 【文昌链升级公告5】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
+            },
+            {
+                title: 【文昌链升级公告6】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
+            },
+            {
+                title: 【文昌链升级公告7】,
+                date: "2021-10-11",
+                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。集成适配了 TIBC 精简跨链通信协议功能模块。,
+                maskContent: <span>阿西巴巴样式<span>,
             },
         ],
-        welcome: 欢迎开发者们扫码加入技术交流社区：,
-        qrCode: notice_qrcode.jpg,
-        date: 2021 年 11 月 18 日
+        moreText: 查看更多
     },
     chainIntro: {
         chainIntroList: [
