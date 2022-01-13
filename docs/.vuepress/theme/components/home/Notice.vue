@@ -1,15 +1,15 @@
 <template>
     <div class="notice_container">
         <div class="notice_content_container">
-            <div class="notice_content">
+            <div class="notice_content" @click="updateShowMask($event)">
                 <div class="notice_img">
                     <img src="../../assets/notice.png" alt="">
                 </div>
                 <vue-seamless-scroll class="notice_description" :data="noticeContent.noticeList" :class-option="classOption">
                     <ul class="notice_list">
-                        <li class="notice_item" v-for="(item,index) in noticeContent.noticeList" :key="index" @click="updateShowMask(index)">
-                            <span>{{item.title}}</span>
-                            <span>{{item.info}}</span>
+                        <li class="notice_item" v-for="(item,index) in noticeContent.noticeList" :key="index" :id="index+1" :data-notice="JSON.stringify(item)">
+                            {{item.title}}
+                            {{item.info}}
                         </li>
                     </ul>
                 </vue-seamless-scroll>
@@ -34,18 +34,19 @@ export default {
             classOption: {
                 direction: 1,
                 singleHeight: 48,
-                limitMoveNum: 5,
+                limitMoveNum: 3,
                 waitTime: 3000,
                 switchDelay: 3000,
-                hoverStop: true
+                hoverStop: false,
+                isSingleRemUnit: false
             },
             notice: ""
         };
     },
     methods: {
-        updateShowMask(index) {
+        updateShowMask(e) {
             this.showMask = true;
-            this.notice = this.noticeContent.noticeList[index].maskContent;
+            this.notice = JSON.parse(e.target.getAttribute('data-notice')) && JSON.parse(e.target.getAttribute('data-notice')).maskContent;
         },
     },
     components: {

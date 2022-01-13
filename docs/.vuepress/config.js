@@ -1,14 +1,15 @@
 module.exports = {
     title: 'BSN - 文昌链',
-    description: '',
     base:'/',
     head: [
         [ 'link', {rel:'icon',href:'/favicon.ico'}],
-        ['meta', { name: 'keywords', content: '文昌链、文昌链BSN、BSN文昌链、文昌链官网、BSN开放联盟链、BSN开放联盟链框架、开放联盟链 、IRITAOPB、iritaopb' }],
-        ['meta', { name: 'description', content: '「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。' }],
+        [ 'meta', { name: 'keywords', content: '文昌链、文昌链BSN、BSN文昌链、文昌链官网、BSN开放联盟链、BSN开放联盟链框架、开放联盟链 、IRITAOPB、iritaopb' }],
+        [ 'meta', { name: 'description', content: '「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。' }],
         [ 'meta', {property:'og:image',content:'https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Vertical-Black.png'}],
         [ 'meta', {property:'og:title',content:'BSN - 文昌链'}],
-        [ 'meta', {property:'og:description',content:''}],
+        [ 'meta', {property:'og:description',content:'「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。'}],
+        [ 'meta', { name: 'baidu-site-verification', content: '15TAd5g0es' }],
+        [ 'meta', { name: '360-site-verification', content: 'e9f0dc5e1af544a5ed7d9a03ea263ab6' }],
         [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
     ],
     themeConfig: {
