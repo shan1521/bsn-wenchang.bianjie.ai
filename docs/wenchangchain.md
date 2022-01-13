@@ -110,6 +110,3 @@ rand = seed mod 10^20 / 10^20
 [https://irita.bianjie.ai/docs/core_modules/random.html](https://irita.bianjie.ai/docs/core_modules/random.html)
 
 [https://irita.bianjie.ai/docs/console/modules/random.html](https://irita.bianjie.ai/docs/console/modules/random.html)
-
-
-

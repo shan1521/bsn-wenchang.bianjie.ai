@@ -11,6 +11,8 @@
         <ClientOnly>
             <div class="main_content_wrapper">
                 <Home v-if="$page.frontmatter.isHome" />
+                <EcoloApp v-if="$page.frontmatter.isEcoloApp" />
+                <MoreNotices v-if="$page.frontmatter.isMoreNotices" />
                 <div class="md_container" v-if="showMd">
                     <div class="md_wrap">
                         <Content></Content>
@@ -27,14 +29,19 @@
 <script>
 import Navigation from "@theme/components/Navigation.vue";
 import Home from "@theme/components/home/Home.vue";
+import EcoloApp from "@theme/components/application/EcoloApp.vue";
+import MoreNotices from "@theme/components/notice/MoreNotices.vue";
 import Footer from "@theme/components/Footer.vue";
 import { resolveSidebarItems } from "../util";
+import cfg from "../../config.json";
 
 export default {
     name: "Layout",
     components: {
         Navigation,
         Home,
+        EcoloApp,
+        MoreNotices,
         Footer
     },
 
@@ -93,13 +100,6 @@ export default {
             ];
         },
     },
-
-    mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
-    },
-
     methods: {
         toggleSidebar(to) {
             this.isSidebarOpen =
@@ -126,6 +126,23 @@ export default {
                 }
             }
         },
+    },
+    mounted() {
+        // 友盟统计添加
+        const script = document.createElement("script");
+        script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
+        script.language = "JavaScript";
+        document.body.appendChild(script);
+    },
+    watch: {
+        $route() {
+            if (window._czc) {
+                let location = window.location;
+                let contentUrl = location.pathname + location.hash;
+                let refererUrl = "/";
+                window._czc.push(["_trackPageview", contentUrl, refererUrl]);
+            }
+        }
     },
 };
 </script>
@@ -165,6 +182,7 @@ export default {
                     color: #000000;
                 }
                 h1,h2,h3,h4,h5,h6 {
+                    font-weight: 600;
                     a {
                         display: none;
                     }
@@ -234,7 +252,7 @@ export default {
                 }
                 .content__default {
                     a {
-                        color: #7065FF;
+                        color: $highlightDetailColor;
                         span {
                             display: none;
                         }

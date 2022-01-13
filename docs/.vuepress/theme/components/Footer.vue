@@ -25,7 +25,7 @@
                             </a>
                         </div>
                         <p class="img_desc">
-                            BSN 文昌链是 BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链
+                            BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链
                         </p>
                     </div>
                     <div class="content_right">
@@ -97,7 +97,6 @@ export default {
 
 <style lang="stylus">
 .footer_content_wrapper {
-    margin-top: 2rem;
     width: 100%;
 
     @media (max-width: 1030px) {
@@ -172,8 +171,7 @@ export default {
                             margin-right: 2.4rem;
                             width: 0.2rem;
                             height: 80%;
-                            background: #000000;
-                            opacity: 0.25;
+                            background: rgba(81, 80, 113, 0.15);
                             @media (max-width: 580px) {
                                 display: none;
                             }
@@ -231,7 +229,7 @@ export default {
                 .line {
                     width: 0.1rem;
                     height: 19.5rem;
-                    background: #515071;
+                    background: rgba(81, 80, 113, 0.15);
 
                     @media (max-width: 1030px) {
                         display: none;

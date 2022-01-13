@@ -11,6 +11,9 @@
                     </p>
                 </div>
             </div>
+            <div class="bsnintro_info_content">
+                <img src="../../assets/BSN/bsnintro_info.png" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -26,26 +29,23 @@ export default {
 .bsnintro_container {
     width: 100%;
     .bsnintro_content_container {
+        box-sizing: border-box;
         margin: 0 auto;
+        padding: 6.4rem 0 8rem;
         max-width: $contentWidth;
         .bsnintro_content {
             box-sizing: border-box;
-            padding: 6.4rem 0 8rem;
+            padding: 0 4.8rem;
             margin: 0 auto;
-            max-width: 91.4rem;
+            max-width: 98.8rem;
             display: flex;
-            // justify-content: space-between;
             align-items: center;
-            @media (max-width: 900px) {
-                padding-left: 4.8rem;
-                padding-right: 4.8rem;
-            }
             @media (max-width: 400px) {
                 padding-left: 1.6rem;
                 padding-right: 1.6rem;
             }
             .img_wrap {
-                width: 32.6rem;
+                width: 30.8rem;
                 @media (max-width: 900px) {
                     display: none;
                 }
@@ -77,6 +77,19 @@ export default {
                         line-height: 2.4rem;
                     }
                 }
+            }
+        }
+        .bsnintro_info_content {
+            box-sizing: border-box;
+            margin: 8rem auto 0;
+            padding: 0 4.8rem;
+            max-width: 95.5rem;
+            @media (max-width: 400px) {
+                padding: 0 1.6rem;
+            }
+            img {
+                width: 100%;
+                vertical-align: middle;
             }
         }
     }

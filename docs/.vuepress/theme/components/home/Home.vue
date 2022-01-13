@@ -1,18 +1,20 @@
 <template>
     <div class="bsn_container">
-        <BSNTitle :bsnTitleContent="bsnTitleContent"></BSNTitle>
+        <SwiperBanner :bsnTitleContent="bsnTitleContent"></SwiperBanner>
         <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice>
         <BSNIntro :chainIntro="chainIntro"></BSNIntro>
+        <CoreFunc :coreFuncContent="coreFuncContent"></CoreFunc>
         <BSNProcess></BSNProcess>
-        <BSNExample :exampleContent="exampleContent"></BSNExample>
+        <AboutBSN :aboutBSN="aboutBSN"></AboutBSN>
     </div>
 </template>
 
 <script>
-import BSNTitle from './BSNTitle';
+import SwiperBanner from './SwiperBanner';
 import BSNIntro from './BSNIntro';
+import CoreFunc from './CoreFunc';
 import BSNProcess from './BSNProcess';
-import BSNExample from './BSNExample';
+import AboutBSN from "./AboutBSN";
 import Notice from './Notice';
 export default {
     name: 'BSN',
@@ -26,16 +28,20 @@ export default {
         chainIntro() {
             return this.$frontmatter.chainIntro;
         },
-        exampleContent() {
-            return this.$frontmatter.exampleContent;
+        coreFuncContent() {
+            return this.$frontmatter.coreFuncContent;
+        },
+        aboutBSN() {
+            return this.$frontmatter.aboutBSN;
         },
     },
     components: {
-        BSNTitle,
+        SwiperBanner,
         Notice,
         BSNIntro,
+        CoreFunc,
         BSNProcess,
-        BSNExample
+        AboutBSN,
     }
 }
 </script>

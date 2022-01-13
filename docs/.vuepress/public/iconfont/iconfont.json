@@ -6,6 +6,20 @@
   "description": "IRITA 官网项目",
   "glyphs": [
     {
+      "icon_id": "27109453",
+      "name": "Time",
+      "font_class": "xingzhuangjiehe",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "27058436",
+      "name": "链上信息",
+      "font_class": "lianshangxinxi",
+      "unicode": "e75e",
+      "unicode_decimal": 59230
+    },
+    {
       "icon_id": "25627878",
       "name": "close2",
       "font_class": "close2",
