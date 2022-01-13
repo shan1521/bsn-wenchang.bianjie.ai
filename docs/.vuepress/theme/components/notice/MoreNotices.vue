@@ -180,6 +180,9 @@ export default {
                     }
                     .el-pager {
                         .number {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             margin-left: 1rem;
                             min-width: 3rem;
                             height: 3rem;

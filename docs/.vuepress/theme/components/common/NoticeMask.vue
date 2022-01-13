@@ -56,6 +56,20 @@ export default {
         }
         .mask_content {
             font-size: $fontSize16;
+            line-height: 3.2rem;
+            h1 {
+                font-size: $fontSize20;
+                font-weight: 600;
+                text-align: center;
+            }
+            ul {
+                list-style-position: inside;
+                li {
+                    a {
+                        color: $highlightDetailColor;
+                    }
+                }
+            }
         }
         .close_btn {
             position: absolute;
