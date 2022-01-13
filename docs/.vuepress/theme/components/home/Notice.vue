@@ -58,12 +58,12 @@ export default {
 <style lang="stylus" scoped>
 .notice_container {
     width: 100%;
-    height: 4.8rem;
+    height: 48px;
     background: #FAFBFF;
     .notice_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
-        height: 100%;
+        height: 48px;
         cursor: pointer;
         @media(max-width: 1200px) {
             box-sizing: border-box;
@@ -75,7 +75,7 @@ export default {
         .notice_content {
             display: flex;
             align-items: center;
-            height: 100%;
+            height: 48px;
             .notice_img {
                 display: flex;
                 align-items: center;
@@ -89,16 +89,16 @@ export default {
             }
             .notice_description {
                 flex: 1 0;
-                height: 100%;
+                height: 48px;
                 font-size: $fontSize14;
                 font-weight: $fontWeight400;
                 line-height: 1.6rem;
                 overflow: hidden;
                 .notice_list {
-                    height: 100%;
+                    height: 48px;
                     .notice_item {
-                        height: 4.8rem;
-                        line-height: 4.8rem;
+                        height: 48px;
+                        line-height: 48px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
