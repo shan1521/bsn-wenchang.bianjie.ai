@@ -95,7 +95,7 @@ export default {
                             .item_intro {
                                 font-size: $fontSize14;
                                 font-weight: 400;
-                                color: #000000;
+                                color: rgba(0, 0, 0, 0.65);
                                 line-height: 2.4rem;
                             }
                         }

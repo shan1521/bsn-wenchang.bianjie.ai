@@ -264,7 +264,7 @@ export default {
                         color: rgba(0, 0, 0, .75);
 
                         &:hover {
-                            color: #000;
+                            color: $highlightDetailColor;
                             cursor: pointer;
                         }
                     }
@@ -277,7 +277,7 @@ export default {
                         color: rgba(0, 0, 0, .75);
 
                         &:hover {
-                            color: #000;
+                            color: $highlightDetailColor;
                         }
                     }
                 }

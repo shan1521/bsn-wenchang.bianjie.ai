@@ -1,18 +1,20 @@
 <template>
     <div class="notice_container">
         <div class="notice_content_container">
-            <div class="notice_content" @click="updateShowMask($event)">
+            <div class="notice_content">
                 <div class="notice_img">
                     <img src="../../assets/notice.png" alt="">
                 </div>
-                <vue-seamless-scroll class="notice_description" :data="noticeContent.noticeList" :class-option="classOption">
-                    <ul class="notice_list">
-                        <li class="notice_item" v-for="(item,index) in noticeContent.noticeList" :key="index" :id="index+1" :data-notice="JSON.stringify(item)">
-                            {{item.title}}
-                            {{item.info}}
-                        </li>
-                    </ul>
-                </vue-seamless-scroll>
+                <div class="notice_center" @click="updateShowMask($event)">
+                    <vue-seamless-scroll class="notice_description" :data="noticeContent.noticeList" :class-option="classOption">
+                        <ul class="notice_list">
+                            <li class="notice_item" v-for="(item,index) in noticeContent.noticeList" :key="index" :id="index+1" :data-notice="JSON.stringify(item)">
+                                {{item.title}}
+                                {{item.info}}
+                            </li>
+                        </ul>
+                    </vue-seamless-scroll>
+                </div>
                 <router-link class="go_chain" to="/notices">
                     <span class="text">{{noticeContent.moreText}}</span>
                     <i class="iconfont icon-turnto"></i>
@@ -34,7 +36,7 @@ export default {
             classOption: {
                 direction: 1,
                 singleHeight: 48,
-                limitMoveNum: 3,
+                limitMoveNum:2,
                 waitTime: 3000,
                 switchDelay: 3000,
                 hoverStop: false,
@@ -58,12 +60,10 @@ export default {
 <style lang="stylus" scoped>
 .notice_container {
     width: 100%;
-    height: 48px;
     background: #FAFBFF;
     .notice_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
-        height: 48px;
         cursor: pointer;
         @media(max-width: 1200px) {
             box-sizing: border-box;
@@ -75,7 +75,6 @@ export default {
         .notice_content {
             display: flex;
             align-items: center;
-            height: 48px;
             .notice_img {
                 display: flex;
                 align-items: center;
@@ -87,21 +86,24 @@ export default {
                     vertical-align: middle;
                 }
             }
-            .notice_description {
+            .notice_center {
                 flex: 1 0;
                 height: 48px;
-                font-size: $fontSize14;
-                font-weight: $fontWeight400;
-                line-height: 1.6rem;
-                overflow: hidden;
-                .notice_list {
+                .notice_description {
                     height: 48px;
-                    .notice_item {
-                        height: 48px;
-                        line-height: 48px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
+                    font-size: $fontSize14;
+                    font-weight: $fontWeight400;
+                    line-height: 1.6rem;
+                    overflow: hidden;
+                    .notice_list {
+                        // height: 48px;
+                        .notice_item {
+                            height: 48px;
+                            line-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
                     }
                 }
             }
