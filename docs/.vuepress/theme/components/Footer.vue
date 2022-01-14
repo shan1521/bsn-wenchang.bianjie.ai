@@ -5,19 +5,21 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <a class="bsn_logo" href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer">
+                            <a class="logo bsn_logo" href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="../assets/bsn_logo.png"
                                     alt=""
                                 />
                             </a>
-                            <a class="irita_logo" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
+                            <span class="line"></span>
+                            <a class="logo irita_logo" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="../assets/irita_logo.png"
                                     alt=""
                                 />
                             </a>
-                            <a class="bianjie_logo" href="https://www.bianjie.ai/" target="_blank" rel="noopener noreferrer">
+                            <span class="line"></span>
+                            <a class="logo bianjie_logo" href="https://www.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="../assets/bianjie_logo.png"
                                     alt=""
@@ -114,123 +116,93 @@ export default {
     }
 
     .top_content {
+        box-sizing: border-box;
         margin: 0 auto;
-        padding: 6rem 2.4rem;
+        padding: 6rem 4.8rem;
         max-width: $footerTopContentWidth;
-        height: 19.4rem;
-
         @media (max-width: 1030px) {
-            padding: 3.6rem 0;
-            height: auto;
+            padding: 6rem 1.6rem;
         }
-        @media (max-width: 580px) {
-            padding: 3.6rem 1.6rem;
-        }
-
         .content {
             display: flex;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             -webkit-justify-content: space-between;
             justify-content: space-between;
-            margin: 0 auto;
-            width: 100%;
-            height: 100%;
-
             @media (max-width: 1030px) {
                 flex-direction: column;
                 align-items: center;
             }
-
             .content_left {
+                @media (max-width: 1030px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .left_img {
                     display: flex;
                     align-items: center;
-
-                    @media (max-width: 1030px) {
-                        display: flex;
-                        justify-content: center;
-                    }
+                    height: 4.8rem;
                     @media (max-width: 580px) {
                         flex-direction: column;
-                    }
-                    .bsn_logo {
-                        height: 4.8rem;
-                        img {
-                            height: 100%;
-                        }
-                    }
-                    .irita_logo {
-                        display: flex;
                         align-items: center;
+                        height: auto;
+                    }
+                    .logo {
+                        display: inline-block;
                         height: 4.8rem;
-                        &::before, &::after {
-                            content: '';
-                            display: block;
-                            margin-left: 2.4rem;
-                            margin-right: 2.4rem;
-                            width: 0.2rem;
-                            height: 80%;
-                            background: rgba(81, 80, 113, 0.15);
-                            @media (max-width: 580px) {
-                                display: none;
+                        @media (max-width: 580px) {
+                            margin-top: 1.6rem;
+                            &:first-child {
+                                margin-top: 0;
                             }
                         }
-                        @media (max-width: 580px) {
-                            margin-top: 1.6rem;
-                        }
                         img {
                             height: 100%;
+                            vertical-align: middle;
                         }
                     }
-                    .bianjie_logo {
-                        height: 4.8rem;
+                    .line {
+                        display: inline-block;
+                        margin: 0 1.6rem;
+                        width: 0.2rem;
+                        height: 80%;
+                        background: rgba(81, 80, 113, 0.15);
                         @media (max-width: 580px) {
-                            margin-top: 1.6rem;
-                        }
-                        img {
-                            height: 100%;
+                            display: none;
                         }
                     }
                 }
-
                 .img_desc {
                     margin-top: 2.4rem;
+                    max-width: 54.7rem;
                     line-height: 2.4rem;
                     font-size: $fontSize16;
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, .75);
-                    box-sizing: border-box;
-                    padding-right: 1.6rem;
-
-                    @media (max-width: 1030px) {
-                        margin: 1.6rem auto;
-                        padding-right: 0;
+                    @media (max-width: 580px) {
                         text-align: center;
                     }
                 }
             }
-
             .content_right {
                 display: flex;
                 -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
-
                 @media (max-width: 1030px) {
+                    margin-top: 3.6rem;
+                }
+                @media (max-width: 580px) {
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
-                    margin-top: 3.6rem;
-                    text-align: center;
                 }
 
                 .line {
                     width: 0.1rem;
                     height: 19.5rem;
                     background: rgba(81, 80, 113, 0.15);
-
                     @media (max-width: 1030px) {
                         display: none;
                     }
@@ -244,7 +216,11 @@ export default {
                     -webkit-flex-direction: column;
                     margin: 0 8rem;
                     @media (max-width: 1030px) {
-                        margin: 0 0;
+                        margin-left: 0;
+                        text-align: center;
+                    }
+                    @media (max-width: 580px) {
+                        margin-right: 0;
                     }
 
                     .contact_title {
@@ -285,13 +261,14 @@ export default {
                 .focus {
                     display: flex;
                     flex-direction: column;
-
                     @media (max-width: 1030px) {
-                        margin-top: 4.4rem;
+                        text-align: center;
+                    }
+                    @media (max-width: 580px) {
+                        margin-top: 2.4rem;
                     }
 
                     .focus_title {
-                        height: 2.4rem;
                         line-height: 2.4rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight600;
@@ -314,7 +291,6 @@ export default {
                     }
 
                     .desc {
-                        height: 2.4rem;
                         line-height: 2.4rem;
                         font-size: $fontSize12;
                         font-weight: $fontWeight400;
@@ -337,7 +313,6 @@ export default {
             padding-right: 4.8rem;
         }
     }
-
 
     .bottom_content {
         display: flex;
