@@ -28,7 +28,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.55);
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -53,6 +53,7 @@ export default {
         border-radius: 0.4rem;
         @media(max-width: 415px) {
             padding: 3.2rem 1.6rem;
+            height: 48rem;
         }
         .mask_content {
             font-size: $fontSize16;
