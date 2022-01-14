@@ -1,13 +1,19 @@
 <template>
-    <div class="bsntitle_container">
+    <div class="bsntitle_container" :style="differentBanner(content.img)">
         <div class="bsntitle_content_container">
             <div class="bsntitle_content">
-                <div class="title">{{bsnTitleContent.title}}</div>
-                <div class="sub_title">{{bsnTitleContent.subTitle}}</div>
-                <router-link class="doc_wrap" :to="bsnTitleContent.route">
-                    <i class="iconfont icon-doct"></i>
-					<span class="link_text">{{bsnTitleContent.linkText}}</span>
-                </router-link>
+                <div class="title">{{content.title}}</div>
+                <div class="sub_title">{{content.subTitle}}</div>
+                <div class="link_wrap">
+                    <router-link v-if="content.route" class="doc_wrap" :to="content.route">
+                        <i class="iconfont" :class="content.icon"></i>
+                        <span class="link_text">{{content.linkText}}</span>
+                    </router-link>
+                    <a v-if="content.link" class="doc_wrap" :href="content.link" target="_blank" rel="noopener noreferrer">
+                        <i class="iconfont" :class="content.icon"></i>
+                        <span class="link_text">{{content.linkText}}</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -16,31 +22,36 @@
 <script>
 export default {
     name: 'BSNTitle',
-    props: ['bsnTitleContent']
+    props: ["content"],
+    computed: {
+        differentBanner() {
+            return function(imgName) {
+                return `background: url(/home/${imgName}.png) no-repeat center / cover`;
+            }
+        }
+    },
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .bsntitle_container {
     width: 100%;
     height: 36rem;
-    background: url(../../assets/BSN/bsn_banner.png) no-repeat center / cover;
     @media (max-width: 768px) {
-        background: url(../../assets/BSN/bsn_banner_768.png) no-repeat center / cover;
-    }
-    @media (max-width: 375px) {
-        background: url(../../assets/BSN/bsn_banner_375.png) no-repeat center / cover;
+        background: url('../../assets/BSN/bsn_banner_768.png') no-repeat center / cover !important;
     }
     .bsntitle_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
         .bsntitle_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
             box-sizing: border-box;
             margin: 0 auto;
-            padding-top: 8.8rem;
             max-width: 105.6rem;
-            height: 100%;
             @media (max-width: 1200px) {
                 padding-left: 4.8rem;
                 padding-right: 4.8rem;
@@ -55,42 +66,61 @@ export default {
                 color: #000000;
                 line-height: 4.8rem;
                 letter-spacing: 0.4rem;
+                @media (max-width: 594px) {
+                    font-size: $fontSize40;
+                    text-align: center;
+                }
+                @media (max-width: 520px) {
+                    font-size: $fontSize24;
+                    font-weight: 600;
+                }
             }
             .sub_title {
                 margin-top: 3.2rem;
-                font-size: $fontSize24;
+                max-width: 56rem;
+                font-size: $fontSize20;
                 font-weight: $fontWeight400;
                 color: #000000;
-                line-height: 2.4rem;
+                line-height: 3.2rem;
                 letter-spacing: 0.1rem;
-            }
-            .doc_wrap {
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                margin-top: 4rem;
-                padding-left: 0.4rem;
-                padding-right: 0.4rem;
-                width: 11.2rem;
-                height: 3.2rem;
-                border: 0.1rem solid $highlightDetailColor;
-                border-radius: 1.6rem;
-                .iconfont {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 0.8rem;
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    color: #fff;
-                    background: $highlightDetailColor;
-                    border-radius: 50%;
-                }
-                .link_text {
+                @media (max-width: 594px) {
+                    margin-top: 2.4rem;
                     font-size: $fontSize16;
-                    font-weight: 500;
-                    color: #000000;
-                    line-height: 2.2rem;
+                    text-align: center;
+                }
+            }
+            .link_wrap {
+                margin-top: 4rem;
+                @media (max-width: 594px) {
+                    margin: 2.4rem auto 0;
+                }
+                .doc_wrap {
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0.4rem;
+                    padding-right: 0.4rem;
+                    width: 11.2rem;
+                    height: 3.2rem;
+                    border: 0.1rem solid $highlightDetailColor;
+                    border-radius: 1.6rem;
+                    .iconfont {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0.8rem;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        color: #fff;
+                        background: $highlightDetailColor;
+                        border-radius: 50%;
+                    }
+                    .link_text {
+                        font-size: $fontSize16;
+                        font-weight: 500;
+                        color: #000000;
+                        line-height: 2.2rem;
+                    }
                 }
             }
         }

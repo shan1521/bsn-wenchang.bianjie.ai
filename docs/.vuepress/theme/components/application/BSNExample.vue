@@ -8,7 +8,7 @@
                         <div class="example_item_wrap">
                             <div class="example_item">
                                 <div class="example_item_img">
-                                    <img :src="differentImgName(example.imgName)" alt="">
+                                    <img :src="example.imgLink" alt="">
                                 </div>
                                 <div class="example_item_content">
                                     <div class="example_name">{{example.exampleName}}</div>
@@ -75,7 +75,7 @@ export default {
             }
             .title {
                 font-size: $fontSize24;
-                font-weight: $fontWeight500;
+                font-weight: $fontWeight600;
                 color: #000000;
                 line-height: 2.4rem;
                 text-align: center;
@@ -184,9 +184,9 @@ export default {
                                 }
                                 .example_name {
                                     font-size: $fontSize20;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #000000;
-                                    line-height: 2rem;
+                                    line-height: 3.2rem;
                                     @media (max-width: 768px) {
                                         margin-top: 1.6rem;
                                         text-align: center;
