@@ -52,7 +52,7 @@ export default {
         background: #fff;
         border-radius: 0.4rem;
         @media(max-width: 415px) {
-            padding: 3.2rem 1.6rem;
+            padding: 4.8rem 1.6rem;
             height: 48rem;
         }
         .mask_content {
