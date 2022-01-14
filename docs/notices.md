@@ -16,7 +16,7 @@
                 title: 【文昌链升级完成公告】,
                 date: "2021-11-18",
                 info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。,
-                maskContent: <h1>【文昌链升级公告】</h1><p>尊敬的用户，您好！</p><ul style="text-indent:2em;"><li>BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，本次升级实现了对 TIBC 精简跨链通信协议功能模块的适配集成，增强了跨链能力的可扩展性和交互能力，进一步支持 BSN 生态应用实现价值互联，为实体经济提供价值赋能。</li><li>感谢您对 BSN「文昌链 IRITA OPB」的支持！</li><li>如您有任何问题，可通过邮箱与我们联系：contact@bianjie.ai。</li></ul><p style="text-indent:2em;">欢迎开发者们扫码加入技术交流社区：</p><p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p style="text-align:right;">2021 年 11 月 18 日</p>,
+                maskContent: <h1>【文昌链升级完成公告】</h1><p>尊敬的用户，您好！</p><ul style="text-indent:2em;"><li>BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，本次升级实现了对 TIBC 精简跨链通信协议功能模块的适配集成，增强了跨链能力的可扩展性和交互能力，进一步支持 BSN 生态应用实现价值互联，为实体经济提供价值赋能。</li><li>感谢您对 BSN「文昌链 IRITA OPB」的支持！</li><li>如您有任何问题，可通过邮箱与我们联系：contact@bianjie.ai。</li></ul><p style="text-indent:2em;">欢迎开发者们扫码加入技术交流社区：</p><p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p style="text-align:right;">2021 年 11 月 18 日</p>,
             },
             {
                 title: 【国家发展改革委报道 BSN 文昌链上线】,
