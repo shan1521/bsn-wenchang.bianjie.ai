@@ -89,14 +89,13 @@ export default {
             .notice_center {
                 flex: 1 0;
                 height: 48px;
+                overflow: hidden;
                 .notice_description {
                     height: 48px;
                     font-size: $fontSize14;
                     font-weight: $fontWeight400;
                     line-height: 1.6rem;
-                    overflow: hidden;
                     .notice_list {
-                        // height: 48px;
                         .notice_item {
                             height: 48px;
                             line-height: 48px;
