@@ -186,7 +186,7 @@ export default {
                                     font-size: $fontSize20;
                                     font-weight: $fontWeight600;
                                     color: #000000;
-                                    line-height: 2rem;
+                                    line-height: 3.2rem;
                                     @media (max-width: 768px) {
                                         margin-top: 1.6rem;
                                         text-align: center;

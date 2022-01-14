@@ -50,7 +50,7 @@ export default {
                     font-size: $fontSize16;
                     font-weight: 400;
                     line-height: 2.8rem;
-                    color: #000000;
+                    color: rgba(0, 0, 0, 0.65);
                     &:first-child {
                         margin-top: 0;
                     }
