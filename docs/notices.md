@@ -7,6 +7,21 @@
         title: 通知公告,
         noticeList: [
             {
+                title: 【文昌链升级完成公告】,
+                date: "2022-01-26",
+                info: BSN「文昌链 IRITA OPB」于 2022 年 01 月 23 日已完成服务升级，本次升级实现了智能合约虚拟机 EVM 的集成，扩展了多引擎智能合约能力。,
+                maskContent: <h1>【文昌链升级完成公告】</h1>
+                <p>尊敬的用户，您好！</p>
+                <ul style="text-indent:2em;">
+    <li>BSN 文昌链于 2022 年 01 月 23 日已完成服务升级，本次升级实现了智能合约虚拟机 EVM 的集成，拓展了多引擎智能合约能力，完整兼容主流智能合约，可以为开发者提供低门槛的开发环境，允许分布式商业应用 DBApp 开发者快速开发业务合约以及平滑移植现有业务。</li>
+    <li>此外，BSN 文昌链为开发者提供了基于数字化建模技术研发 DBApp 的多样化选择，可根据自身商业需求选用最佳方式实现创新应用落地。作为 BSN-DDC 基础网络于 1 月 25 日首批上线提供服务的开放联盟链，升级后的 BSN 文昌链可更好地支持基于 DDC/NFT 技术的合规应用落地；同时，开发者也可选择基于文昌链原生集成的 NFT 技术模块，快速便捷地打造满足业务需求的定制化创新应用。</li>
+    <li>感谢您对 BSN「文昌链 IRITA OPB」的支持！</li>
+    <li>如您有任何问题，可通过下方邮箱或添加技术小助手微信与我们联系。</li>
+   <li style="text-align:center;text-indent:0;">邮箱：contact@bianjie.ai</li>
+</ul>
+    <p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p style="text-align:right;">2022 年 01 月 26 日</p>,
+            },
+           {
                 title: 【文昌链支持的一体化数字艺术品获得「新华网」报道】,
                 date: "2021-11-18",
                 info: 「新华网」于 2021 年 11 月 18 日报道了文昌链支持的一体化数字艺术品通过「跨链」走向全球市场。,
