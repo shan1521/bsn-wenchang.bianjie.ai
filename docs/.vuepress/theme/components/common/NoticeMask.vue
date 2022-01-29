@@ -72,6 +72,10 @@ export default {
                 margin-top: 2.4rem;
                 height: 49.6rem;
                 overflow: auto;
+                scrollbar-width: none;
+                @media(max-width: 768px) {
+                    height: 27.6rem;
+                }
                 ul {
                     list-style-position: inside;
                     li {

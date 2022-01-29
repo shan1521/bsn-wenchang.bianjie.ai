@@ -214,7 +214,7 @@ export default {
                                 .intro_list {
                                     margin-top: 1.6rem;
                                     @media (max-width: 768px) {
-                                        text-align: center;
+                                        display: none;
                                     }
                                     .intro_item {
                                         font-size: $fontSize14;
