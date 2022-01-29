@@ -1,4 +1,4 @@
 {
-    "umengId": "1278598794",
-    "umengWebId": "1278598794"
+    "umengId": "${umengId}",
+    "umengWebId": "${umengWebId}"
 }

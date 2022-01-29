@@ -1,7 +1,10 @@
 <template>
     <div class="mask_container">
         <div class="mask_content_container">
-            <div class="mask_content" v-html="notice"></div>
+            <div class="mask_content">
+                <div class="title" v-html="notice.title"></div>
+                <div class="content" v-html="notice.content"></div>
+            </div>
             <div class="close_btn" @click="updateShowMask">
                 <i class="iconfont icon-close2"></i>
             </div>
@@ -17,11 +20,14 @@ export default {
         updateShowMask(){
             this.$emit('update:showMask', false);
         }
+    },
+    mounted() {
+        console.log(this.notice,'notice');
     }
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .mask_container {
     position: fixed;
     top: 0;
@@ -42,32 +48,40 @@ export default {
     }
     .mask_content_container {
         position: relative;
-        box-sizing: border-box;
-        padding: 4.8rem 4.8rem;
-        display: flex;
-        flex-direction: column;
         max-width: 64rem;
-        height: 64rem;
-        overflow: auto;
         background: #fff;
         border-radius: 0.4rem;
-        @media(max-width: 415px) {
-            padding: 4.8rem 1.6rem;
-            height: 48rem;
-        }
+        
         .mask_content {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 4.8rem;
             font-size: $fontSize16;
             line-height: 3.2rem;
-            h1 {
-                font-size: $fontSize20;
-                font-weight: 600;
-                text-align: center;
+            @media(max-width: 415px) {
+                padding: 4rem 1.6rem;
             }
-            ul {
-                list-style-position: inside;
-                li {
-                    a {
-                        color: $highlightDetailColor;
+            .title {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 600;
+                color: #000;
+            }
+            .content {
+                margin-top: 2.4rem;
+                height: 49.6rem;
+                overflow: auto;
+                scrollbar-width: none;
+                @media(max-width: 768px) {
+                    height: 27.6rem;
+                }
+                ul {
+                    list-style-position: inside;
+                    li {
+                        a {
+                            color: $highlightDetailColor;
+                        }
                     }
                 }
             }
