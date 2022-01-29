@@ -36,7 +36,7 @@ export default {
             classOption: {
                 direction: 1,
                 singleHeight: 48,
-                limitMoveNum:2,
+                limitMoveNum: 2,
                 waitTime: 3000,
                 switchDelay: 3000,
                 hoverStop: false,
@@ -110,6 +110,7 @@ export default {
                 display: flex;
                 align-items: center;
                 margin-left: 1.6rem;
+                font-size: 16px;
                 color: $highlightDetailColor;
                 .iconfont {
                     margin-left: 0.8rem;

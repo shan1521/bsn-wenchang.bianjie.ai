@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "build": "npx cross-env NODE_ENV=production && vuepress build docs"
+    "build": "npx cross-env NODE_ENV=production && vuepress build docs",
+    "build-params": "node ./script.js -p",
+    "tag:revert": "git checkout HEAD src/config.json"
   },
   "repository": {
     "type": "git",
