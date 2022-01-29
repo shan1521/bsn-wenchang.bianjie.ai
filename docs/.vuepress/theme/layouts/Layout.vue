@@ -134,16 +134,6 @@ export default {
         script.language = "JavaScript";
         document.body.appendChild(script);
     },
-    watch: {
-        $route() {
-            if (window._czc) {
-                let location = window.location;
-                let contentUrl = location.pathname + location.hash;
-                let refererUrl = "/";
-                window._czc.push(["_trackPageview", contentUrl, refererUrl]);
-            }
-        }
-    },
 };
 </script>
 <style lang="stylus">
@@ -175,17 +165,16 @@ export default {
                     padding-right: 1.6px;
                 }
 
-                h1 {
-                    line-height: 26px;
-                    font-size: 24px;
-                    font-weight: 600;
-                    color: #000000;
-                }
                 h1,h2,h3,h4,h5,h6 {
                     font-weight: 600;
                     a {
                         display: none;
                     }
+                }
+                h1 {
+                    font-size: 20px;
+                    color: #000000;
+                    line-height: 26px;
                 }
 
                 ul {
