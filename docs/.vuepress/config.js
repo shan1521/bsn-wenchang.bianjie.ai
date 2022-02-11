@@ -24,4 +24,7 @@ module.exports = {
             {text:'更多公告',link:'/notices', target: '_self'}
         ]
     },
+    plugins: ['@vuepress/pwa', {
+        serviceWorker: false
+    }]
 }
