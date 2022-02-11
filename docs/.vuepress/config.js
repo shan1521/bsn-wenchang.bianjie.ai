@@ -11,6 +11,10 @@ module.exports = {
         [ 'meta', { name: 'baidu-site-verification', content: 'code-15TAd5g0es' }],
         [ 'meta', { name: '360-site-verification', content: '2b7620fde40334818af18b339f863ca2' }],
         [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
+        [ 'meta', {'http-equiv':'Pragma',content: 'no-cache'}],
+        [ 'meta', {'http-equiv':'Cache-control',content: 'no-cache'}],
+        [ 'meta', {'http-equiv':'Expires',content: '0'}],
+        [ 'meta', {'http-equiv':'Cache',content: 'no-cache'}]
     ],
     themeConfig: {
         search: false,
