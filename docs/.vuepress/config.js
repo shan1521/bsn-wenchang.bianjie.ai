@@ -10,7 +10,7 @@ module.exports = {
         [ 'meta', {property:'og:description',content:'「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。'}],
         [ 'meta', { name: 'baidu-site-verification', content: 'code-15TAd5g0es' }],
         [ 'meta', { name: '360-site-verification', content: '2b7620fde40334818af18b339f863ca2' }],
-        [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}],
+        [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
         [ 'meta', {'http-equiv':'Pragma',content: 'no-cache'}],
         [ 'meta', {'http-equiv':'Cache-control',content: 'no-cache'}],
         [ 'meta', {'http-equiv':'Expires',content: '0'}],
