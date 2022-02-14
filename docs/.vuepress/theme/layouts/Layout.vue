@@ -1,10 +1,5 @@
 <template>
-    <div
-        class="theme-container"
-        :class="pageClasses"
-        @touchstart="onTouchStart"
-        @touchend="onTouchEnd"
-    >
+    <div class="theme-container" >
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
@@ -32,7 +27,6 @@ import Home from "@theme/components/home/Home.vue";
 import EcoloApp from "@theme/components/application/EcoloApp.vue";
 import MoreNotices from "@theme/components/notice/MoreNotices.vue";
 import Footer from "@theme/components/Footer.vue";
-import { resolveSidebarItems } from "../util";
 import cfg from "../../config.json";
 
 export default {
@@ -45,86 +39,9 @@ export default {
         Footer
     },
 
-    data() {
-        return {
-            isSidebarOpen: false,
-        };
-    },
-
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
-        },
-        shouldShowNavbar() {
-            const { themeConfig } = this.$site;
-            const { frontmatter } = this.$page;
-            if (frontmatter.navbar === false || themeConfig.navbar === false) {
-                return false;
-            }
-            return (
-                this.$title ||
-                themeConfig.logo ||
-                themeConfig.repo ||
-                themeConfig.nav ||
-                this.$themeLocaleConfig.nav
-            );
-        },
-
-        shouldShowSidebar() {
-            const { frontmatter } = this.$page;
-            return (
-                !frontmatter.home &&
-                frontmatter.sidebar !== false &&
-                this.sidebarItems.length
-            );
-        },
-
-        sidebarItems() {
-            return resolveSidebarItems(
-                this.$page,
-                this.$page.regularPath,
-                this.$site,
-                this.$localePath
-            );
-        },
-
-        pageClasses() {
-            const userPageClass = this.$page.frontmatter.pageClass;
-            return [
-                {
-                    "no-navbar": !this.shouldShowNavbar,
-                    "sidebar-open": this.isSidebarOpen,
-                    "no-sidebar": !this.shouldShowSidebar,
-                },
-                userPageClass,
-            ];
-        },
-    },
-    methods: {
-        toggleSidebar(to) {
-            this.isSidebarOpen =
-                typeof to === "boolean" ? to : !this.isSidebarOpen;
-            this.$emit("toggle-sidebar", this.isSidebarOpen);
-        },
-
-        // side swipe
-        onTouchStart(e) {
-            this.touchStart = {
-                x: e.changedTouches[0].clientX,
-                y: e.changedTouches[0].clientY,
-            };
-        },
-
-        onTouchEnd(e) {
-            const dx = e.changedTouches[0].clientX - this.touchStart.x;
-            const dy = e.changedTouches[0].clientY - this.touchStart.y;
-            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-                if (dx > 0 && this.touchStart.x <= 80) {
-                    this.toggleSidebar(true);
-                } else {
-                    this.toggleSidebar(false);
-                }
-            }
         },
     },
     mounted() {
