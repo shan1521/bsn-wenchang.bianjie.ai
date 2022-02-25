@@ -39,6 +39,7 @@
     <br><a href="https://www.bsnbase.com/static/tmpFile/bzsc/Account/13-1.html" target="_blank" rel="noopener noreferrer">https://www.bsnbase.com/static/tmpFile/bzsc/Account/13-1.html</a></li>
     <li>（2）再由批量充值接口，将能量值充至指定链账户，具体流程请参阅以下 BSN 批量充值能量值接口文档：
     <br><a href="https://shimo.im/docs/Ee32M5ZXd0H44pA2" target="_blank" rel="noopener noreferrer">https://shimo.im/docs/Ee32M5ZXd0H44pA2</a></li>
+
     <li>   * 接口将于 2 月 28 日与升级同步上线，届时文档将更新在《BSN 用户手册》中。</li>
     <li>请注意：</li>
     <li>  a. 批量充值接口，单次最大支持 500 个账户；</li>
@@ -51,7 +52,9 @@
    <li style="text-align:center;text-indent:0;">邮箱：contact@bianjie.ai</li>
 </ul>
     <p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p style="text-align:right;">2022 年 02 月 25 日</p>
+
     }
+
             },
            {
                 title: 【文昌链支持的一体化数字艺术品获得「新华网」报道】,
