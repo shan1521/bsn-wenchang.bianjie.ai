@@ -51,6 +51,7 @@
    <li style="text-align:center;text-indent:0;">邮箱：contact@bianjie.ai</li>
 </ul>
     <p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p style="text-align:right;">2022 年 02 月 25 日</p>
+    }
             },
            {
                 title: 【文昌链支持的一体化数字艺术品获得「新华网」报道】,
