@@ -53,7 +53,7 @@ DCI：Digital Copyright Identifier，数字版权唯一标识符。是中国版�
 
 ## 四、演示DEMO
 
-### 4.1 创建测试使用的 dci denom 和 nft
+## 4.1 创建测试使用的 dci denom 和 nft
 
 
 java 代码如下（以下代码省略了client创建等，token配置等信息，如有需要可参考 [opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
