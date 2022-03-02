@@ -105,6 +105,10 @@ seed = sha256(
 rand = seed mod 10^20 / 10^20
 ```
 
+### 应用案例
+
+- [NFT 调用 DCI Service](https://github.com/bianjieai/bsn-wenchang.bianjie.ai/blob/master/docs/doc-application-case/nft-x-dciservice.md)
+
 #### 访问链接：
 
 [https://irita.bianjie.ai/docs/core_modules/random.html](https://irita.bianjie.ai/docs/core_modules/random.html)
