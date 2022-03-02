@@ -26,12 +26,6 @@ export default {
     position: relative;
     width: 100%;
     height: 36rem;
-    // @media (max-width: 968px) {
-    //     height: 42rem;
-    // }
-    // @media (max-width: 400px) {
-    //     height: 28rem;
-    // }
     ::v-deep.ant-carousel {
         .slick-slider {
             .slick-dots-bottom {
@@ -40,6 +34,7 @@ export default {
         }
         .slick-dots {
             li {
+                background: #fff;
                 button {
                     width: 1.6rem;
                     height: 0.4rem;
@@ -47,6 +42,7 @@ export default {
                 &.slick-active {
                     button {
                         width: 3.2rem;
+                        background: #7065FF;
                     }
                 }
             }
