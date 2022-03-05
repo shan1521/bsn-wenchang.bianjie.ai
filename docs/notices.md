@@ -7,11 +7,11 @@
         title: 通知公告,
         noticeList: [
              {
-                title: 【边界智能正式上线多链分布式商业应用 API 服务平台「Avata」！】,
+                title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                 date: "2022-03-05",
                 info: 边界智能于 3 月 5 日正式发布多链分布式商业应用 API 服务平台「Avata」，并首发支持 BSN 文昌链（IRITA OPB）。,
                 maskContent: {
-                    title: 【边界智能正式上线多链分布式商业应用 API 服务平台「Avata」！】,
+                    title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                     content: <p style="text-indent:2em;">
     <li>边界智能于 3 月 5 日正式上线多链分布式商业应用 API 服务平台「Avata」。「Avata」可支持多元资产数字化、链上链下可信交互，为复杂异构系统跨链协作提供一键式对接，助力企业简便快捷地构建应用，将更多精力专注于业务创新与推广。</li>
     <li>同时，「Avata」成功发布并上线对接 BSN-文昌链，通过 API 服务封装复杂的区块链底层交互逻辑，为应用开发者开放了首批支持 NFT/元宇宙应用场景的核心服务接口。</li>
