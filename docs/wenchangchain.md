@@ -1,5 +1,8 @@
 # <font size="6">文昌链开发者文档</font>
 
+</br>
+</br>
+
 ## 文昌链 API 文档
 
 #### 一、文昌链 API 服务开发者文档链接：[http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
@@ -9,7 +12,6 @@
 第一步：联系边界智能商务人员（联系邮箱：dude@bianjie.ai），获取您的接口服务调用参数 （Project ID、API Key、API Secret）
 
 - 1.1 通过邮箱获取并提交 KYC 认证资料
-
 - 1.2 审核通过后进行授权并发放接口服务调用参数至您的邮箱地址
 
 第二步：获取 API Key 和 API Secret 后，参照接口文档说明，在进行相关接口服务调用时，使用 API Key 和 API Secret 作为与接口服务网关进行通信的凭证
@@ -23,12 +25,9 @@
 #### 三、文昌链 API 服务调用说明
 
 - 请求路径：
-
-    文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：http://apis.avata.bianjie.ai/
-
-- HTTP 请求说明：
-
-    HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
+  文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：http://apis.avata.bianjie.ai/
+- HTTP 请求说明：  
+  HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
 
     </br>
 
