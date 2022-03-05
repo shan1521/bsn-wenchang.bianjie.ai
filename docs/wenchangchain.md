@@ -25,9 +25,9 @@
 #### 三、文昌链 API 服务调用说明
 
 - 请求路径：  
-&ensp;&ensp;文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：http://apis.avata.bianjie.ai/
+文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：http://apis.avata.bianjie.ai/
 - HTTP 请求说明：  
-&ensp;&ensp;HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
+HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
 
     </br>
 
