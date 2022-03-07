@@ -79,24 +79,15 @@ gRPCAddr: opbningxia.bsngate.com:18603
 ## NFT 技术文档
 <br>
 
-- NFT 技术模块简介：
-
+- NFT 技术模块简介：    
 [https://irita.bianjie.ai/docs/core_modules/nft.html](https://irita.bianjie.ai/docs/core_modules/nft.html)
-
-- NFT 技术开发步骤：
-
+- NFT 技术开发步骤：    
 [https://irita.bianjie.ai/docs/quick_start/nft.html](https://irita.bianjie.ai/docs/quick_start/nft.html)
-
-- 链上资产（NFT）管理示例：
-
+- 链上资产（NFT）管理示例：     
 [https://irita.bianjie.ai/docs/console/modules/nft.html](https://irita.bianjie.ai/docs/console/modules/nft.html)
-
-- NFT 技术 demo（Java版本）：
-
+- NFT 技术 demo（Java版本）：   
 [https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java)
-
-- 通过 NFT 技术批量发行链上资产：
-
+- 通过 NFT 技术批量发行链上资产：   
 [https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java)
 
 <br>
