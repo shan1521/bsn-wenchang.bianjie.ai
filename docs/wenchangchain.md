@@ -5,7 +5,8 @@
 ## 文昌链 API 文档
 <br>
 
-#### 一、文昌链 API 服务开发者文档链接：[http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
+#### 一、文昌链 API 服务开发者文档链接：  
+[http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
 
 #### 二、文昌链 API 服务对接流程
 
