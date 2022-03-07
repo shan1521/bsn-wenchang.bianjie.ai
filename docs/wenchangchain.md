@@ -1,9 +1,9 @@
 # <font size="6">文昌链开发者文档</font>
 
-</br>
+<br>
 
 ## 文昌链 API 文档
-</br>
+<br>
 
 #### 一、文昌链 API 服务开发者文档链接：[http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
 
@@ -25,15 +25,15 @@
 #### 三、文昌链 API 服务调用说明
 
 - 请求路径：  
-文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：http://apis.avata.bianjie.ai/
+文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
 - HTTP 请求说明：  
 HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
 
-    </br>
+<br>
 
 
 ## 文昌链 SDK 文档
-</br>
+<br>
 
 #### 一、文昌链 SDK 文档链接：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
@@ -77,32 +77,23 @@ gRPCAddr: opbningxia.bsngate.com:18603
 <br>
 
 ## NFT 技术文档
-</br>
+<br>
 
-- NFT 技术模块简介：
-
+- NFT 技术模块简介：    
 [https://irita.bianjie.ai/docs/core_modules/nft.html](https://irita.bianjie.ai/docs/core_modules/nft.html)
-
-- NFT 技术开发步骤：
-
+- NFT 技术开发步骤：    
 [https://irita.bianjie.ai/docs/quick_start/nft.html](https://irita.bianjie.ai/docs/quick_start/nft.html)
-
-- 链上资产（NFT）管理示例：
-
+- 链上资产（NFT）管理示例：     
 [https://irita.bianjie.ai/docs/console/modules/nft.html](https://irita.bianjie.ai/docs/console/modules/nft.html)
-
-- NFT 技术 demo（Java版本）：
-
-[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemo.java)
-
-- 通过 NFT 技术批量发行链上资产：
-
-[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemo.java)
+- NFT 技术 demo（Java版本）：   
+[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java)
+- 通过 NFT 技术批量发行链上资产：   
+[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java)
 
 <br>
 
 ## 文昌链浏览器
-</br>
+<br>
 
 文昌链区块链浏览器已正式开放，链信息、区块信息和交易信息查询可访问以下链接：
 
@@ -111,7 +102,7 @@ gRPCAddr: opbningxia.bsngate.com:18603
 <br>
 
 ## 链上随机数模块
-</br>
+<br>
 
 ### PRNG
 
@@ -143,10 +134,10 @@ rand = seed mod 10^20 / 10^20
 
 [https://irita.bianjie.ai/docs/console/modules/random.html](https://irita.bianjie.ai/docs/console/modules/random.html)
 
-</br>
+<br>
 
 ## iService 模块应用案例
-</br>
+<br>
 
 [NFT 调用 DCI Service](https://github.com/bianjieai/bsn-wenchang.bianjie.ai/blob/master/docs/doc-application-case/nft-x-dciservice.md)
 
