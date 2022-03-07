@@ -93,11 +93,11 @@ gRPCAddr: opbningxia.bsngate.com:18603
 
 - NFT 技术 demo（Java版本）：
 
-[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemo.java)
+[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/NftDemoTest.java)
 
 - 通过 NFT 技术批量发行链上资产：
 
-[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemo.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemo.java)
+[https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java](https://github.com/bianjieai/opb-sdk-java/blob/master/src/test/java/irita/sdk/MsgsDemoTest.java)
 
 <br>
 
