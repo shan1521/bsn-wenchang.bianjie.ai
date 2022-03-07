@@ -2,13 +2,13 @@
 
 <br>
 
-## 文昌链 API 文档
+## Avata-文昌链 API 文档
 <br>
 
-#### 一、文昌链 API 服务开发者文档链接：  
+#### 一、Avata-文昌链 API 服务开发者文档链接：  
 [http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
 
-#### 二、文昌链 API 服务对接流程
+#### 二、Avata-文昌链 API 服务对接流程
 
 第一步：联系边界智能商务人员（联系邮箱：dude@bianjie.ai），获取您的接口服务调用参数 （Project ID、API Key、API Secret）
 
@@ -23,7 +23,7 @@
 
 第五步：根据您的业务需求，查看并调用对应的接口与区块链进行交互
     
-#### 三、文昌链 API 服务调用说明
+#### 三、Avata-文昌链 API 服务调用说明
 
 - 请求路径：  
 文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
