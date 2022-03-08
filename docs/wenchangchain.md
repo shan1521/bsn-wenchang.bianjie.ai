@@ -27,16 +27,13 @@
 #### 三、Avata-文昌链 API 服务调用说明  
 
 - 接入文昌链测试环境
-
-1. 请求时请加上文昌链测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>
-
-2. 在获取测试环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://stage.apis.avata.bianjie.ai/v1beta1/accounts)的接口生成测试环境的链账户地址，该链账户地址中拥有足额的能量值，可满足您在文昌链测试环境中进行应用的对接和相关业务接口的调试
+（1）请求时请加上文昌链测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>2
+（2）在获取测试环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://stage.apis.avata.bianjie.ai/v1beta1/accounts)的接口生成测试环境的链账户地址，该链账户地址中拥有足额的能量值，可满足您在文昌链测试环境中进行应用的对接和相关业务接口的调试
 
 - 接入文昌链线上生产环境
+（1）请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
+（2）在获取生产环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts)的接口生成生产环境的链账户地址，该链账户地址中暂时没有能量值供您的业务使用，需要进行充值。具体的充值方式见上述<font color="#7065FF">对接流程第四步</font>
 
-1. 请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
-
-2. 在获取生产环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts)的接口生成生产环境的链账户地址，该链账户地址中暂时没有能量值供您的业务使用，需要进行充值。具体的充值方式见上述<font color="#7065FF">对接流程第四步</font>
 
 <br>
 
