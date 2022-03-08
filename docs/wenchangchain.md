@@ -10,10 +10,11 @@
 
 #### 二、Avata-文昌链 API 服务对接流程
 
-第一步：联系边界智能商务人员（联系邮箱：dude@bianjie.ai），获取您的接口服务调用参数 （Project ID、API Key、API Secret）
+第一步：联系边界智能商务人员获取您的 Avata API 服务调用参数 （Project ID、API Key、API Secret）
 
-- 1.1 通过邮箱获取并提交 KYC 认证资料
-- 1.2 审核通过后进行授权并发放接口服务调用参数至您的邮箱地址
+- 1.1 下载您的 KYC 认证资料（下载链接：[https://www.bianjie.ai/resources/Avata](https://www.bianjie.ai/resources/Avata)）
+- 1.2 填写您的 KYC 认证资料并通过邮箱提交给边界智能商务人员（联系邮箱：dude@bianjie.ai）
+- 1.3 审核通过后进行授权并发放 Avata API 服务调用参数至您的邮箱地址
 
 第二步：获取 API Key 和 API Secret 后，参照接口文档说明，在进行相关接口服务调用时，使用 API Key 和 API Secret 作为与接口服务网关进行通信的凭证
 
@@ -21,14 +22,21 @@
     
 第四步：链账户创建成功后，联系边界智能的商务人员（联系邮箱：dude@bianjie.ai）,充值链上通信所需的能量值
 
-第五步：根据您的业务需求，查看并调用对应的接口与区块链进行交互
-    
-#### 三、Avata-文昌链 API 服务调用说明
+第五步：根据您的业务需求，查看并调用对应的接口与区块链进行交互  
 
-- 请求路径：  
-文档中所有API 均只给出 Path Url 部分，请求时请加上访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
-- HTTP 请求说明：  
-HTTP 请求只有获得 API Key 和 API Secret 的用户才可以调用。API Key 用于网关鉴权，API Secret 用于接口服务调用签名。
+#### 三、Avata-文昌链 API 服务调用说明  
+
+- 接入文昌链测试环境
+
+1. 请求时请加上文昌链测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>
+
+2. 在获取测试环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://stage.apis.avata.bianjie.ai/v1beta1/accounts)的接口生成测试环境的链账户地址，该链账户地址中拥有足额的能量值，可满足您在文昌链测试环境中进行应用的对接和相关业务接口的调试
+
+- 接入文昌链线上生产环境
+
+1. 请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
+
+2. 在获取生产环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts)的接口生成生产环境的链账户地址，该链账户地址中暂时没有能量值供您的业务使用，需要进行充值。具体的充值方式见上述<font color="#7065FF">对接流程第四步</font>
 
 <br>
 
