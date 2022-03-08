@@ -12,7 +12,7 @@
 
 第一步：联系边界智能商务人员获取您的 Avata API 服务调用参数 （Project ID、API Key、API Secret）
 
-- 1.1 下载您的 KYC 认证资料（下载链接：https://www.bianjie.ai/resources/Avata）
+- 1.1 下载您的 KYC 认证资料（下载链接：[https://www.bianjie.ai/resources/Avata](https://www.bianjie.ai/resources/Avata)）
 - 1.2 填写您的 KYC 认证资料并通过邮箱提交给边界智能商务人员（联系邮箱：dude@bianjie.ai）
 - 1.3 审核通过后进行授权并发放 Avata API 服务调用参数至您的邮箱地址
 
