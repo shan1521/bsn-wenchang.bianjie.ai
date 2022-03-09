@@ -8,35 +8,38 @@
 #### 一、Avata-文昌链 API 服务开发者文档链接：  
 [http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
 
-#### 二、Avata-文昌链 API 服务对接流程
+#### 二、Avata-文昌链 API 服务接入说明
 
-第一步：联系边界智能商务人员获取您的 Avata API 服务调用参数 （Project ID、API Key、API Secret）
+第一步：申请并获取您的 Avata API 服务接入参数
 
-- 1.1 下载您的 KYC 认证资料（下载链接：[https://www.bianjie.ai/resources/Avata](https://www.bianjie.ai/resources/Avata)）
-- 1.2 填写您的 KYC 认证资料并通过邮箱提交给边界智能商务人员（联系邮箱：dude@bianjie.ai）
-- 1.3 审核通过后进行授权并发放 Avata API 服务调用参数至您的邮箱地址
+- 1.1 下载[ Avata-文昌链 API 服务接入申请表](https://www.bianjie.ai/resources/Avata)
 
-第二步：获取 API Key 和 API Secret 后，参照接口文档说明，在进行相关接口服务调用时，使用 API Key 和 API Secret 作为与接口服务网关进行通信的凭证
+- 1.2 填写您的 KYC 认证资料并提交申请表（联系邮箱：<font color="#7065FF">avata@bianjie.ai</font>）
 
-第三步：调用创建链账户接口，创建您的专属链账户地址。
+- 1.3 查收邮件并等待审核结果（1-3个工作日），审核通过后将发放您专属的 Avata API 服务接入参数（包含：Project Key、Project Secret）
     
-第四步：链账户创建成功后，联系边界智能的商务人员（联系邮箱：dude@bianjie.ai）,充值链上通信所需的能量值
+注：服务接入参数是您对接并使用 Avata API 服务的唯一凭证，请仔细保管，谨防丢失。
 
-第五步：根据您的业务需求，查看并调用对应的接口与区块链进行交互  
+第二步：创建链账户地址
 
-#### 三、Avata-文昌链 API 服务调用说明
+- 2.1 文昌链测试环境
 
-- 接入文昌链测试环境
+（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址。注意，请求时需加上测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>  
 
-（1）请求时请加上文昌链测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>  
+（2）测试环境生成的链账户地址中拥有足够的测试能量值，可满足应用对接测试和业务接口调试
 
-（2）在获取测试环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://stage.apis.avata.bianjie.ai/v1beta1/accounts)的接口生成测试环境的链账户地址，该链账户地址中拥有足额的能量值，可满足您在文昌链测试环境中进行应用的对接和相关业务接口的调试
+- 2.2 文昌链线上生产环境
 
-- 接入文昌链线上生产环境
+（1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成生产环境的链账户地址。请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
 
-（1）请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
+（2）正式环境生成的链账户地址将用于应用对接上线和接口服务调用，需要您充值能量值以满足业务需要。
 
-（2）在获取生产环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts)的接口生成生产环境的链账户地址，该链账户地址中暂时没有能量值供您的业务使用，需要进行充值。具体的充值方式见上述<font color="#7065FF">对接流程第四步</font>
+第三步：充值能量值
+
+请联系Avata 运营人员进行充值，联系邮箱：<font color="#7065FF">avata@bianjie.ai</font>
+
+第四步：根据您的业务需求，调用对应的接口与区块链进行交互。具体方法可查看 [Avata API 服务接口文档](http://apis.avata.bianjie.ai) 
+
 
 <br>
 
