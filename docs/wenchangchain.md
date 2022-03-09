@@ -14,7 +14,7 @@
 
 - 1.1 下载[ Avata-文昌链 API 服务接入申请表](https://www.bianjie.ai/resources/Avata)
 
-- 1.2 填写您的 KYC 认证资料并提交申请表（联系邮箱：<font color="#7065FF">avata@bianjie.ai</font>）
+- 1.2 填写您的 KYC 认证资料及申请信息，并提交申请表至邮箱：<font color="#7065FF">avata@bianjie.ai</font>）
 
 - 1.3 查收邮件并等待审核结果（1-3个工作日），审核通过后将发放您专属的 Avata API 服务接入参数（包含：Project Key、Project Secret）
     
@@ -24,15 +24,15 @@
 
 - 2.1 文昌链测试环境
 
-（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址。注意，请求时需加上测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>  
+（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址。请求时需加上测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>  
 
 （2）测试环境生成的链账户地址中拥有足够的测试能量值，可满足应用对接测试和业务接口调试
 
 - 2.2 文昌链线上生产环境
 
-（1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成生产环境的链账户地址。请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
+（1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成生产环境的链账户地址。请求时需加上生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
 
-（2）正式环境生成的链账户地址将用于应用对接上线和接口服务调用，需要您充值能量值以满足业务需要。
+（2）正式环境生成的链账户地址将用于应用对接上线，需要您充值能量值以满足业务需要
 
 第三步：充值能量值
 
@@ -49,7 +49,7 @@
 
 #### 一、文昌链 SDK 文档链接：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
-- SDK-Go 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)   （[说明文档](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html) ）
+- SDK-Go 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)（[说明文档](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html) ）
 
 #### 二、文昌链 SDK 服务对接流程
 第一步：注册账号
