@@ -13,7 +13,7 @@
 第一步：申请并获取您的 Avata API 服务接入参数
 - 1.1 下载[ Avata-文昌链 API 服务接入申请表](https://www.bianjie.ai/resources/Avata)
 - 1.2 填写您的 KYC 认证资料及申请信息，并提交申请表至邮箱：<font color="#7065FF">avata@bianjie.ai</font>）
-- 1.3 查收邮件并等待审核结果（1-3个工作日），审核通过后将发放您专属的 Avata API 服务接入参数（包含：Project Key、Project Secret）      
+- 1.3 等待审核（1-3个工作日），通过后将发放您专属的 Avata API 服务接入参数（包含：Project Key、Project Secret）      
 注：服务接入参数是您对接并使用 Avata API 服务的唯一凭证，请仔细保管，谨防丢失。
 
 第二步：创建链账户地址
