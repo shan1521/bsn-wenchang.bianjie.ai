@@ -8,35 +8,29 @@
 #### 一、Avata-文昌链 API 服务开发者文档链接：  
 [http://apis.avata.bianjie.ai](http://apis.avata.bianjie.ai)
 
-#### 二、Avata-文昌链 API 服务对接流程
+#### 二、Avata-文昌链 API 服务接入说明
 
-第一步：联系边界智能商务人员获取您的 Avata API 服务调用参数 （Project ID、API Key、API Secret）
+第一步：申请并获取您的 Avata API 服务接入参数
+- 1.1 下载[ Avata-文昌链 API 服务接入申请表](https://www.bianjie.ai/resources/Avata)
+- 1.2 填写您的 KYC 认证资料及申请信息，并提交申请表至邮箱：<font color="#7065FF">avata@bianjie.ai</font>）
+- 1.3 等待审核结果（1-3个工作日），审核通过后以邮箱方式发放您专属的 Avata API 服务接入参数（请仔细保管，谨防丢失）
 
-- 1.1 下载您的 KYC 认证资料（下载链接：[https://www.bianjie.ai/resources/Avata](https://www.bianjie.ai/resources/Avata)）
-- 1.2 填写您的 KYC 认证资料并通过邮箱提交给边界智能商务人员（联系邮箱：dude@bianjie.ai）
-- 1.3 审核通过后进行授权并发放 Avata API 服务调用参数至您的邮箱地址
+第二步：创建链账户地址
+- 2.1 文昌链测试环境（请求接口需先指定域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>）   
+（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址  
+（2）测试环境生成的链账户地址中拥有足够的测试能量值，可满足应用对接测试和业务接口调试
+- 2.2 文昌链正式环境（请求接口需先指定域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>）  
+（1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成正式环境的链账户地址  
+（2）正式环境生成的链账户地址将用于应用对接上线，需要您进行资金账户充值以满足业务需要
 
-第二步：获取 API Key 和 API Secret 后，参照接口文档说明，在进行相关接口服务调用时，使用 API Key 和 API Secret 作为与接口服务网关进行通信的凭证
+第三步：资金账户充值
+- 3.1 充值说明：    
+Avata 平台针对每个用户都提供专属的资金账户。服务调用、上链操作所产生的业务费和能量值消耗，都将从您的专属资金账户中支出。您只须保证资金账户中的余额充足，而不用过多关注于具体需要充值多少能量值和分配多少业务费。
+- 3.2 充值方式：    
+请联系 Avata 运营人员进行充值，联系邮箱：<font color="#7065FF">avata@bianjie.ai</font>
 
-第三步：调用创建链账户接口，创建您的专属链账户地址。
-    
-第四步：链账户创建成功后，联系边界智能的商务人员（联系邮箱：dude@bianjie.ai）,充值链上通信所需的能量值
+第四步：请求服务接口与区块链进行交互，实现业务对接。具体方法可查看 [Avata API 服务接口文档](http://apis.avata.bianjie.ai) 
 
-第五步：根据您的业务需求，查看并调用对应的接口与区块链进行交互  
-
-#### 三、Avata-文昌链 API 服务调用说明
-
-- 接入文昌链测试环境
-
-（1）请求时请加上文昌链测试环境的访问域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>  
-
-（2）在获取测试环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://stage.apis.avata.bianjie.ai/v1beta1/accounts)的接口生成测试环境的链账户地址，该链账户地址中拥有足额的能量值，可满足您在文昌链测试环境中进行应用的对接和相关业务接口的调试
-
-- 接入文昌链线上生产环境
-
-（1）请求时请加上文昌链生产环境的访问域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>
-
-（2）在获取生产环境的 Avata API 调用参数 （Project ID、API Key、API Secret）后，可使用该参数通过调用[创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts)的接口生成生产环境的链账户地址，该链账户地址中暂时没有能量值供您的业务使用，需要进行充值。具体的充值方式见上述<font color="#7065FF">对接流程第四步</font>
 
 <br>
 
@@ -46,7 +40,7 @@
 
 #### 一、文昌链 SDK 文档链接：
 - SDK-Java 地址：[https://github.com/bianjieai/opb-sdk-java](https://github.com/bianjieai/opb-sdk-java)
-- SDK-Go 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)   （[说明文档](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html) ）
+- SDK-Go 地址：[https://github.com/bianjieai/opb-sdk-go](https://github.com/bianjieai/opb-sdk-go)（[说明文档](https://irita.bianjie.ai/docs/SDK/Go_SDK/overview.html) ）
 
 #### 二、文昌链 SDK 服务对接流程
 第一步：注册账号
