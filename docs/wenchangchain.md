@@ -16,12 +16,11 @@
 - 1.3 等待审核结果（1-3个工作日），审核通过后以邮箱方式发放您专属的 Avata API 服务接入参数（请仔细保管，谨防丢失）
 
 第二步：创建链账户地址
-- 2.1 文昌链测试环境（请求接口需先指定域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>） 
-（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址    
+- 2.1 文昌链测试环境（请求接口需先指定域名：<font color="#7065FF">http://stage.apis.avata.bianjie.ai/</font>）   
+（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址  
 （2）测试环境生成的链账户地址中拥有足够的测试能量值，可满足应用对接测试和业务接口调试
 - 2.2 文昌链正式环境（请求接口需先指定域名：<font color="#7065FF">http://apis.avata.bianjie.ai/</font>）  
 （1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成正式环境的链账户地址  
-
 （2）正式环境生成的链账户地址将用于应用对接上线，需要您进行资金账户充值以满足业务需要
 
 第三步：资金账户充值
