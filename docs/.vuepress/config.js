@@ -24,7 +24,13 @@ module.exports = {
             {text:'更多公告',link:'/notices', target: '_self'}
         ]
     },
-    plugins: ['@vuepress/pwa', {
-        serviceWorker: false
-    }]
+    plugins:{
+        '@vuepress/pwa': {
+            generateSWConfig : {               
+                globPatterns: [
+                    '**/*.{js,css,png,jpg,jpeg,gif,svg,woff,woff2,eot,ttf,otf}'
+                ],
+            }
+        }
+    }
 }
