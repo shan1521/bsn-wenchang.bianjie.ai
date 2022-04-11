@@ -8,39 +8,47 @@
                         <div class="step_img">
                             <img src="../../assets/BSN/bsn_step_first.png" alt="" />
                         </div>
-                        <div class="step_process">注册账号，开通体验</div>
-                        <div class="step_desc">注册账号，登入 <a style="color: #7065FF;" href="https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-1.html" target="_blank" rel="noopener noreferrer">BSN</a> 门户网站，注册并创建链账户，正式体验并使用开放联盟链</div>
+                        <p class="step_process">注册账号，完成认证</p>
+                        <p class="step_desc">登录<a style="color: #7065FF;" href="https://console.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">Avata 服务平台</a></p>
+                        <p class="step_desc_second">注册账号，并进行 KYC 认证</p>
                     </div>
                     <div class="step_jiantou">
-                        <img
-                            src="../../assets/BSN/jiantou_icon.png"
-                            alt=""
-                        />
+                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
                     </div>
                     <div class="process_step">
                         <div class="step_img">
                             <img src="../../assets/BSN/bsn_step_second.png" alt="" />
                         </div>
-                        <div class="step_process">配置开发环境</div>
-                        <div class="step_desc">根据文昌链<router-link style="color: #7065FF;" to="/wenchangchain">开发配置文档</router-link>的介绍，配置对应的开发环境及测试网环境</div>
+                        <p class="step_process">获取项目参数</p>
+                        <p class="step_desc">创建或提交项目资料</p>
+                        <p class="step_desc_second">获取 Avata API 服务的项目参数</p>
                     </div>
                     <div class="step_jiantou">
-                        <img
-                            src="../../assets/BSN/jiantou_icon.png"
-                            alt=""
-                        />
+                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
                     </div>
                     <div class="process_step">
                         <div class="step_img">
                             <img src="../../assets/BSN/bsn_step_third.png" alt="" />
                         </div>
-                        <div class="step_process">使用链上服务，接入应用</div>
-                        <div class="step_desc">使用集成 <router-link style="color: #7065FF;" to="/wenchangchain">SDK</router-link>，连接业务端系统和文昌链平台，创建服务、发布 NFT 及其他应用</div>
+                        <p class="step_process">服务接口调用</p>
+                        <p class="step_desc"><a style="color: #7065FF;" href="https://apis.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">Avata API 服务接口</a>对接</p>
+                        <p class="step_desc_second">链接分布式业务系统，进行上链</p>
+                    </div>
+                    <div class="step_jiantou">
+                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
+                    </div>
+                    <div class="process_step">
+                        <div class="step_img">
+                            <img src="../../assets/BSN/bsn_step_forth.png" alt="" />
+                        </div>
+                        <p class="step_process">上链记录查询</p>
+                        <p class="step_desc">上链记录查询</p>
+                        <p class="step_desc_second">通过<a style="color: #7065FF;" href="https://explorer.wenchang.bianjie.ai/#/home" target="_blank" rel="noopener noreferrer">文昌链浏览器</a>，查看上链信息</p>
                     </div>
                 </div>
-                <div class="control" @click="tipFn">
-                    <span class="control_text">前往控制台</span>
-                    <i class="iconfont icon-turnto"></i>
+                <p class="tip">如果您想通过 SDK 的方式，来接入并使用文昌链，请参考 <router-link style="color: #7065FF;" to="/wenchangchain">技术文档</router-link> 中文昌链 SDK 服务对接流程</p>
+                <div class="control">
+                    <a class="control_text" href="https://console.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">前往控制台 <i class="iconfont icon-turnto"></i></a>
                 </div>
             </div>
         </div>
@@ -49,15 +57,7 @@
 
 <script>
 export default {
-    name: 'BSNProcess',
-    methods: {
-        tipFn(){
-            this.$message({
-                message: '暂未开放！',
-                // type: 'warning'
-            })
-        }
-    }
+    name: 'BSNProcess'
 }
 </script>
 
@@ -71,7 +71,7 @@ export default {
             box-sizing: border-box;
             margin: 0 auto;
             padding: 8rem 0;
-            max-width: 96rem;
+            max-width: 107rem;
             .title {
                 font-size: $fontSize24;
                 font-weight: $fontWeight600;
@@ -83,11 +83,15 @@ export default {
                 display: flex;
                 justify-content: center;
                 margin-top: 4rem;
-                @media (max-width: 970px) {
+                @media (max-width: 1080px) {
                     padding-left: 3.2rem;
                     padding-right: 3.2rem;
                 }
-                @media (max-width: 716px) {
+                @media (max-width: 994px) {
+                    padding-left: 0.8rem;
+                    padding-right: 0.8rem;
+                }
+                @media (max-width: 947px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -96,7 +100,7 @@ export default {
                     flex-direction: column;
                     align-items: center;
                     max-width: 24rem;
-                    @media (max-width: 716px) {
+                    @media (max-width: 947px) {
                         margin-top: 10rem;
                         &:first-child {
                             margin-top: 0;
@@ -115,7 +119,7 @@ export default {
                         }
                     }
                     .step_process {
-                        margin-top: 2.4rem;
+                        margin-top: 1.6rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight600;
                         color: #000000;
@@ -130,13 +134,20 @@ export default {
                         line-height: 2.4rem;
                         text-align: center;
                     }
+                    .step_desc_second {
+                        font-size: $fontSize14;
+                        font-weight: $fontWeight400;
+                        color: rgba(0, 0, 0, 0.75);
+                        line-height: 2.4rem;
+                        text-align: center;
+                    }
                 }
                 .step_jiantou {
                     position: relative;
                     top: 5rem;
                     max-width: 9.6rem;
                     color: $highlightDetailColor;
-                    @media (max-width: 716px) {
+                    @media (max-width: 947px) {
                         transform: rotate(90deg);
                     }
                     img {
@@ -144,18 +155,35 @@ export default {
                     }
                 }
             }
+            .tip {
+                margin-top: 6rem;
+                font-size: $fontSize14;
+                font-weight: $fontWeight400;
+                color: rgba(0, 0, 0, 0.75);
+                line-height: 24px;
+                text-align: center;
+                @media (max-width: 768px) {
+                    box-sizing: border-box;
+                    padding: 0 4.8rem;
+                }
+                @media (max-width: 400px) {
+                    padding: 0 1.6rem;
+                }
+            }
             .control {
                 margin-top: 4.8rem;
                 font-size: $fontSize16;
                 font-weight: $fontWeight400;
-                color: $highlightDetailColor;
                 line-height: 1.6rem;
                 text-align: center;
-                cursor: pointer;
-                .iconfont {
-                    display: inline-block;
-                    margin-left: 0.8rem;
-                    font-size: $fontSize16;
+                .control_text {
+                    color: $highlightDetailColor;
+                    .iconfont {
+                        display: inline-block;
+                        margin-left: 0.8rem;
+                        font-size: $fontSize16;
+                        color: $highlightDetailColor;
+                    }
                 }
             }
         }
