@@ -8,17 +8,35 @@
             img: bsn_banner_first,
             title: 文昌链,
             subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
-            icon: icon-doct,
-            linkText: 技术文档,
-            route: /wenchangchain
         },
         {
             img: bsn_banner_second,
+            title: Avata,
+            subTitle: 多链 NFT / 元宇宙应用 API 服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
+            linkList: [
+                {
+                    icon: icon-kongzhitai,
+                    linkText: 前往控制台,
+                    link: https://console.avata.bianjie.ai/
+                },
+                {
+                    icon: icon-doct,
+                    linkText: 开发者文档,
+                    link: https://apis.avata.bianjie.ai/
+                },
+            ]
+        },
+        {
+            img: bsn_banner_third,
             title: 文昌链浏览器,
             subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯。,
-            icon: icon-lianshangxinxi,
-            linkText: 链上信息,
-            link: https://explorer.wenchang.bianjie.ai
+            linkList: [
+                {
+                    icon: icon-lianshangxinxi,
+                    linkText: 链上信息,
+                    link: https://explorer.wenchang.bianjie.ai
+                },
+            ]
         },
     ],
     noticeContent: {
@@ -84,7 +102,7 @@
     chainIntro: {
         chainIntroList: [
             {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。},
-            {paragraph: 文昌链（基于 IRITA）以区块链跨链、隐私计算及大数据分析技术为核心，安全可控、符合国密标准，支持下一代分布式商业系统。目前已有识蛛可信身份服务、魔卡 NFT 管理平台、电子证照系统、一体化数字艺术品登记服务平台、建党百年送祝福微信小程序等多种行业应用在文昌链上线运营。},
+            {paragraph: 文昌链（基于 IRITA）以区块链跨链、NFT 技术及大数据隐私保护技术为核心，安全可控、符合国密标准，支持下一代分布式商业系统。目前已有识蛛可信身份服务、魔卡 NFT 管理平台、电子证照系统、一体化数字艺术品登记服务平台、建党百年送祝福微信小程序等多种行业应用在文昌链上线运营。},
             {paragraph: IRITA 拥有完善的 SDK （包括 NFT、大数据隐私保护、跨链服务调用等模块）及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求，为实体经济提供基于区块链信任机器的价值赋能。},
         ]
     },
