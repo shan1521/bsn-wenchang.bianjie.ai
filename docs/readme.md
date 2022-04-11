@@ -8,17 +8,35 @@
             img: bsn_banner_first,
             title: 文昌链,
             subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
-            icon: icon-doct,
-            linkText: 技术文档,
-            route: /wenchangchain
         },
         {
             img: bsn_banner_second,
+            title: Avata,
+            subTitle: 多链 NFT / 元宇宙应用 API 服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
+            linkList: [
+                {
+                    icon: icon-kongzhitai,
+                    linkText: 前往控制台,
+                    link: https://console.avata.bianjie.ai/
+                },
+                {
+                    icon: icon-doct,
+                    linkText: 开发者文档,
+                    link: https://apis.avata.bianjie.ai/
+                },
+            ]
+        },
+        {
+            img: bsn_banner_third,
             title: 文昌链浏览器,
             subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯。,
-            icon: icon-lianshangxinxi,
-            linkText: 链上信息,
-            link: https://explorer.wenchang.bianjie.ai
+            linkList: [
+                {
+                    icon: icon-lianshangxinxi,
+                    linkText: 链上信息,
+                    link: https://explorer.wenchang.bianjie.ai
+                },
+            ]
         },
     ],
     noticeContent: {

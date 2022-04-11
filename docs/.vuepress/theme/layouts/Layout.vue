@@ -8,6 +8,7 @@
                 <Home v-if="$page.frontmatter.isHome" />
                 <EcoloApp v-if="$page.frontmatter.isEcoloApp" />
                 <MoreNotices v-if="$page.frontmatter.isMoreNotices" />
+                <Contact></Contact>
                 <div class="md_container" v-if="showMd">
                     <div class="md_wrap">
                         <Content></Content>
@@ -27,6 +28,7 @@ import Home from "@theme/components/home/Home.vue";
 import EcoloApp from "@theme/components/application/EcoloApp.vue";
 import MoreNotices from "@theme/components/notice/MoreNotices.vue";
 import Footer from "@theme/components/Footer.vue";
+import Contact from "@theme/components/common/Contact.vue";
 import cfg from "../../config.json";
 
 export default {
@@ -36,6 +38,7 @@ export default {
         Home,
         EcoloApp,
         MoreNotices,
+        Contact,
         Footer
     },
 

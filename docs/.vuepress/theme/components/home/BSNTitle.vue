@@ -3,17 +3,19 @@
         <div class="bsntitle_content_container">
             <div class="bsntitle_content">
                 <div class="title">{{content.title}}</div>
-                <div class="sub_title">{{content.subTitle}}</div>
-                <div class="link_wrap">
-                    <router-link v-if="content.route" class="doc_wrap" :to="content.route">
-                        <i class="iconfont" :class="content.icon"></i>
-                        <span class="link_text">{{content.linkText}}</span>
-                    </router-link>
-                    <a v-if="content.link" class="doc_wrap" :href="content.link" target="_blank" rel="noopener noreferrer">
-                        <i class="iconfont" :class="content.icon"></i>
-                        <span class="link_text">{{content.linkText}}</span>
-                    </a>
-                </div>
+                <div class="sub_title" v-html="content.subTitle"></div>
+                <ul class="link_list" v-if="content.linkList">
+                    <li class="link_wrap" v-for="(item, index) in content.linkList" :key="index">
+                        <router-link v-if="item.route" class="doc_wrap" :to="item.route">
+                            <i class="iconfont" :class="item.icon"></i>
+                            <span class="link_text">{{item.linkText}}</span>
+                        </router-link>
+                        <a v-if="item.link" class="doc_wrap" :href="item.link" target="_blank" rel="noopener noreferrer">
+                            <i class="iconfont" :class="item.icon"></i>
+                            <span class="link_text">{{item.linkText}}</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -89,37 +91,44 @@ export default {
                     text-align: center;
                 }
             }
-            .link_wrap {
+            .link_list {
+                display: flex;
                 margin-top: 4rem;
                 @media (max-width: 594px) {
                     margin: 2.4rem auto 0;
                 }
-                .doc_wrap {
-                    box-sizing: border-box;
-                    display: flex;
-                    align-items: center;
-                    padding-left: 0.4rem;
-                    padding-right: 0.4rem;
-                    width: 11.2rem;
-                    height: 3.2rem;
-                    border: 0.1rem solid $highlightDetailColor;
-                    border-radius: 1.6rem;
-                    .iconfont {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-right: 0.8rem;
-                        width: 2.4rem;
-                        height: 2.4rem;
-                        color: #fff;
-                        background: $highlightDetailColor;
-                        border-radius: 50%;
+                .link_wrap {
+                    margin-left: 3.6rem;
+                    &:first-child {
+                        margin-left: 0;
                     }
-                    .link_text {
-                        font-size: $fontSize16;
-                        font-weight: 500;
-                        color: #000000;
-                        line-height: 2.2rem;
+                    .doc_wrap {
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 0.4rem;
+                        padding-right: 0.4rem;
+                        width: 12.8rem;
+                        height: 3.2rem;
+                        border: 0.1rem solid $highlightDetailColor;
+                        border-radius: 1.6rem;
+                        .iconfont {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 0.8rem;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            color: #fff;
+                            background: $highlightDetailColor;
+                            border-radius: 50%;
+                        }
+                        .link_text {
+                            font-size: $fontSize16;
+                            font-weight: 500;
+                            color: #000000;
+                            line-height: 2.2rem;
+                        }
                     }
                 }
             }
