@@ -78,6 +78,15 @@ RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_id]/rpc
 wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_id]/ws
 gRPCAddr: opbningxia.bsngate.com:18603 
 ```
+（3）申请「创建 NFT 类别」权限  
+
+&ensp;&ensp;&ensp;&ensp;3.1）下载 [服务接入申请表](https://www.bianjie.ai/resources/issuedenom/) ；  
+
+&ensp;&ensp;&ensp;&ensp;3.2）填写您的 KYC 认证资料及申请信息；提交申请表至邮箱：<font color="#7065FF">contact@bianjie.ai</font> ；  
+
+&ensp;&ensp;&ensp;&ensp;3.3）等待审核结果（1-3个工作日），审核通过后以邮箱方式发放您专属的 Avata API 服务接入参数（请仔细保管，谨防丢失）。  
+
+注：您有任何涉及文昌链生产环境权限开放的问题，请联系文昌链微信小助手。
 <br>
 
 ## NFT 技术文档
