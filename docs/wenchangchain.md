@@ -84,7 +84,7 @@ gRPCAddr: opbningxia.bsngate.com:18603
 
 &ensp;&ensp;&ensp;&ensp;3.2）填写您的 KYC 认证资料及申请信息；提交申请表至邮箱：<font color="#7065FF">contact@bianjie.ai</font> ；  
 
-&ensp;&ensp;&ensp;&ensp;3.3）等待审核结果（1-3个工作日），审核通过后以邮箱方式发放您专属的 Avata API 服务接入参数（请仔细保管，谨防丢失）。  
+&ensp;&ensp;&ensp;&ensp;3.3）等待审核结果（1-3个工作日），审核通过后以邮箱方式通知到您，请您随时关注邮箱信息。  
 
 注：您有任何涉及文昌链生产环境权限开放的问题，请联系文昌链微信小助手。
 <br>
