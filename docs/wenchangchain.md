@@ -13,25 +13,27 @@
 第一步：申请并获取您的 Avata API 服务接入参数
 - 1.1 注册并登录[ Avata 服务平台](https://console.avata.bianjie.ai)
 - 1.2 进行您的 KYC 认证，包括实名认证和企业认证
-- 1.3 等待认证审核结果（1-3个工作日），审核通过后以邮箱方式发放您专属的 Avata OPEN API 服务接入参数（请仔细保管，谨防丢失）
+- 1.3 等待认证审核结果（1-3个工作日），审核通过后可进行项目创建
 
-第二步：创建链账户地址
-- 2.1 文昌链测试环境（请求接口需先指定域名：<font color="#7065FF">https://stage.apis.avata.bianjie.ai/</font>）   
-（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址  
-（2）测试环境生成的链账户地址中拥有足够的测试能量值，可满足应用对接测试和业务接口调试
-- 2.2 文昌链正式环境（请求接口需先指定域名：<font color="#7065FF">https://apis.avata.bianjie.ai/</font>）  
-（1）请求 [创建链账户](https://apis.avata.bianjie.ai/v1beta1/accounts) 接口生成正式环境的链账户地址  
-（2）正式环境生成的链账户地址将用于应用对接上线，需要您进行资金账户充值以满足业务需要。  
-请注意：当前 Avata 版本链账户生成即上链，会在底层链上产生一笔能量值费用（以文昌链为例，该费用约¥0.05）。建议应用方按照活跃会参与链交互的用户数进行链账户创建，避免提前花费没有必要的能量值费用。Avata 团队专注于为应用提供安全低成本高效的API服务，下一个版本将会推出链账户Lazy loading 版本，支持应用先链外生成链账户，当相关链账户发生第一笔链交易时才会在链上真正被激活并记录。
+第二步：创建项目并下载 API 服务参数
+- 2.1 在[ Avata 服务平台](https://console.avata.bianjie.ai)进行您的项目创建
+- 2.2 项目创建完成后，系统会自动生成项目对应的 API 服务参数与，您需下载保存（请仔细保管，谨防丢失）
+- 2.3 获取项目参数后，可按照 [Avata API 服务接口文档](http://apis.avata.bianjie.ai)  提供的「API 服务网关鉴权签名示例」生成签名参数
 
 第三步：资金账户充值
 - 3.1 充值说明：    
-Avata 平台针对每个用户都提供专属的资金账户。链账户创建、服务调用、上链交易所产生的业务费和能量值消耗，都将从您的专属资金账户中支出。
+Avata 平台针对每个用户都提供专属的资金账户。文昌链原生模块上链交易所产生的能量值消耗，都将从您的专属资金账户中支出。您也可以针对不同底层链服务，自主使用您的“资金账户”余额购买平台提供的具体服务，包括但不限于服务包、能量值、业务费等服务
 - 3.2 充值方式：    
-请联系 Avata 运营人员进行充值，联系邮箱：<font color="#7065FF">avata@bianjie.ai</font>
+您可登录[ Avata 服务平台](https://console.avata.bianjie.ai)，在我的账户-充值界面进行资金账户充值，Avata 平台目前支持微信支付和支付宝支付方式
 
-第四步：请求服务接口与区块链进行交互，实现业务对接。具体方法可查看 [Avata API 服务接口文档](http://apis.avata.bianjie.ai) 
-
+第四步：创建链账户，请求服务接口与区块链进行交互，实现业务对接
+- 4.1 文昌链测试环境（请求接口需先指定域名：<font color="#7065FF">https://stage.apis.avata.bianjie.ai/</font>）   
+（1）请求 <font color="#7065FF">创建链账户</font> 接口生成测试环境的链账户地址  
+（2）测试环境生成的链账户地址中拥有足额的测试能量值，可满足应用对接测试和业务接口调试
+- 4.2 文昌链正式环境（请求接口需先指定域名：<font color="#7065FF">https://apis.avata.bianjie.ai/</font>）  
+（1）请求 [创建链账户](https://apis.avata.bianjie.ai/#tag/Accounts) 接口生成正式环境的链账户地址  
+（2）正式环境生成的链账户地址用于应用对接上线，需要您保证 Avata 平台资金账户余额充足以满足业务需要。  
+请注意：目前通过 Avata 平台创建的文昌链原生链账户地址生成即上链，会产生一笔上链交易所需的能量值消耗（该费用为 0.05元/个）。建议应用方按照实际会与底层链交互的活跃用户数进行链账户创建，避免提前创建而花费没有必要的能量值费用。
 
 <br>
 
@@ -78,6 +80,15 @@ RPCAddr: https://opbningxia.bsngate.com:18602/api/[project_id]/rpc
 wsAddr: wss://opbningxia.bsngate.com:18602/api/[project_id]/ws
 gRPCAddr: opbningxia.bsngate.com:18603 
 ```
+（3）申请「创建 NFT 类别」权限  
+
+&ensp;&ensp;&ensp;&ensp;3.1）下载 [服务接入申请表](https://www.bianjie.ai/resources/issuedenom/) ；  
+
+&ensp;&ensp;&ensp;&ensp;3.2）填写您的 KYC 认证资料及申请信息；提交申请表至邮箱：<font color="#7065FF">contact@bianjie.ai</font> ；  
+
+&ensp;&ensp;&ensp;&ensp;3.3）等待审核结果（1-3个工作日），审核通过后以邮箱方式通知到您，请您随时关注邮箱信息。  
+
+注：您有任何涉及文昌链生产环境权限开放的问题，请联系文昌链微信小助手。
 <br>
 
 ## NFT 技术文档
