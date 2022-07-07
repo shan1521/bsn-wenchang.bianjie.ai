@@ -64,7 +64,7 @@
    <li style="text-align:center;text-indent:0;">邮箱：contact@bianjie.ai</li>
 </ul>
     <p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p>
-    <p style="text-align:right;">文昌链技术服务团队边界智能</p>
+    <p style="text-align:right;">边界智能文昌链技术服务团队</p>
     <p style="text-align:right;">2022 年 07 月 07 日</p>
              }   
             },
