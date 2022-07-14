@@ -6,6 +6,32 @@
     noticeContent: {
         title: 通知公告,
         noticeList: [
+              {
+                title: 【关于“谨防诈骗”的公告】,
+                date: "2022-07-07",
+                info: 特别提醒：关于警惕不法分子假冒文昌链官方客服，进行非法诈骗的重要公告。,
+                maskContent: {
+                  title: 【关于“谨防诈骗”的公告】,
+                  content: <p>尊敬的文昌链用户，您好！</p>
+                <ul style="text-indent:2em;">
+    <li>近期，有不法分子使用名为“文昌链助手”的微信号冒充文昌链官方，以预缴保证金等理由诱骗客户向个人账户充值。</li>
+  
+    <li style="color:red;font-weight:600;">在此特别提醒：</li>
+    <li> 1、我司全称为【上海边界智能科技有限公司】，公司业务往来统一使用对公账户，不使用任何私人账户。
+    <li> 2、通过Avata接入文昌链或购买增值服务，均不涉及保证金支付，请通过文昌链官网公开文档 <a href="https://wenchang.bianjie.ai/wenchangchain.html" target="_blank" rel="noopener noreferrer">https://wenchang.bianjie.ai/wenchangchain.html</a> 获取相关介绍，充值转账时以“Avata服务平台”展示的对公收款账户信息为准。
+</li>
+    <li> 3、已在“Avata服务平台”注册/充值的用户，请妥善保管登录账号及密码，切勿轻易泄露给他人。</li>
+    <br>
+    <li style="font-weight:600;">请大家注意谨防网络诈骗，保护自身财产的安全。对于假冒本公司、本公司工作人员进行诈骗或其他非法活动的单位或个人，本公司将依法追究其法律责任。</li>
+   
+    <li>如您有任何问题，可通过下方邮箱或添加技术小助手微信与我们联系。</li>
+   <li style="text-align:center;text-indent:0;">邮箱：contact@bianjie.ai</li>
+</ul>
+    <p style="display:flex;justify-content:center;align-items:center;"><img style="display:inline-block; max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p>
+    <p style="text-align:right;">边界智能文昌链技术服务团队</p>
+    <p style="text-align:right;">2022 年 07 月 07 日</p>
+             }   
+            },
              {
                 title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                 date: "2022-03-07",
