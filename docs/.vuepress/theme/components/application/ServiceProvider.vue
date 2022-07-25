@@ -2,8 +2,8 @@
     <div class="container">
         <div class="title">{{providers.title}}</div>
         <div class="content">
-            <div v-for="(item,index) in providers.providerList" :key="index" class="content-item">
-                <img :src="item.imgLink" class="content-item-provider"></img>
+            <div v-for="(item,index) in providers.providerList" :key="index" class="content_item">
+                <img :src="item.imgLink" class="content_item_provider"></img>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ export default {
         grid-row-gap: 1rem;
         max-width: 108rem;
         margin-bottom: 8rem;
-        &-item {
+        &_item {
             display: flex;
             width: 25.5rem;
             height: 8.8rem;
@@ -43,7 +43,7 @@ export default {
             align-items: center;
             border: 0.1rem solid #E8EBF5;
             border-radius: 0.4rem;
-            &-provider {
+            &_provider {
                 height: 55%;
             }
         }

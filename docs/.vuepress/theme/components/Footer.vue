@@ -32,7 +32,7 @@
                     </div>
                     <div class="content_right">
                         <div class="line"></div>
-                        <div class="official-accounts">
+                        <div class="official_accounts">
                             <div class="focus">
                                 <span class="focus_title">联系我们</span>
                                 <span class="qr_code">
@@ -63,17 +63,20 @@
         </div>
         <div class="footer_content_bottom">
             <div class="bottom_content">
-                <span class="copyright_content">{{
-                    `©${new Date().getFullYear()} wenchangchain&nbsp;&nbsp;&nbsp;&nbsp;Bianjie.AI&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved`
-                }}</span>
-                <div class="bottom-line"></div>
+                <div class="copyright_content">
+                    <span class="copyright_content_margin">{{ `©${new Date().getFullYear()} wenchangchain` }}</span>
+                    <span class="copyright_content_margin">Bianjie.AI</span>
+                    <span>All Rights Reserved</span>
+                </div>
+                
+                <div class="bottom_line"></div>
                 <a
                     href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
                     target="_blank"
                     rel="noreferrer noopener"
                     >沪ICP备17020986号</a
                 >
-                <div class="bottom-line"></div>
+                <div class="bottom_line"></div>
                 <span class="police_content">
                     <a
                         href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
@@ -82,7 +85,7 @@
                         >沪公网安备31011502009028号</a
                     >
                 </span>
-                <div class="bottom-line"></div>
+                <div class="bottom_line"></div>
                 <span class="police_content">
                     <a
                         href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
@@ -222,7 +225,7 @@ export default {
                         display: none;
                     }
                 }
-                .official-accounts {
+                .official_accounts {
                     display: flex;
                     justify-content: space-between;
                     margin-left: 8rem;
@@ -313,7 +316,7 @@ export default {
         @media (max-width: 420px) {
             text-align: center;
         }
-        .bottom-line {
+        .bottom_line {
             width:0.1px;
             height: 2rem;
             border: 0.1rem solid rgba(255, 255, 255, 0.25);
@@ -323,6 +326,9 @@ export default {
         }
         .copyright_content {
             color: $whiteColorOpacity;
+            &_margin {
+                margin-right: 16px;
+            }
         }
 
         a {
