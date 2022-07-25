@@ -44,7 +44,7 @@ export default {
             border: 0.1rem solid #E8EBF5;
             border-radius: 0.4rem;
             &_provider {
-                height: 55%;
+                height: 100%;
             }
         }
         
