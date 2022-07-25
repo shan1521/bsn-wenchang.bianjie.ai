@@ -205,7 +205,7 @@ export default {
                 -ms-flex-pack: justify;
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
-                max-width:410px;
+                max-width:41rem;
                 @media (max-width: 1030px) {
                     margin-top: 3.6rem;
                 }
@@ -225,8 +225,8 @@ export default {
                 .official-accounts {
                     display: flex;
                     justify-content: space-between;
-                    margin-left: 80px;
-                    width: 330px;
+                    margin-left: 8rem;
+                    width: 33rem;
                     @media (max-width: 1030px) {
                         margin-left: unset;
                     }
@@ -245,7 +245,7 @@ export default {
                             font-size: $fontSize16;
                             font-weight: $fontWeight600;
                             color: #000;
-                            padding-left: 10px;
+                            padding-left: 1rem;
                         }
 
                         .qr_code {
@@ -289,7 +289,7 @@ export default {
             padding-right: 4.8rem;
         }
         @media (max-width: 1030px) {
-            height: 120px;
+            height: 12rem;
             display: flex;
             align-items: center;
         }
@@ -314,9 +314,9 @@ export default {
             text-align: center;
         }
         .bottom-line {
-            width:1px;
-            height: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            width:0.1px;
+            height: 2rem;
+            border: 0.1rem solid rgba(255, 255, 255, 0.25);
             @media (max-width: 1030px) {
                 display: none;
             }

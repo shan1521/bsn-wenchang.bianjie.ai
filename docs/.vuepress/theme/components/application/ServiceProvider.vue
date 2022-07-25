@@ -25,35 +25,35 @@ export default {
         color: #000000;
         line-height: 2.4rem;
         text-align: center;
-        margin-bottom: 44px;
+        margin-bottom: 4.4rem;
     }
     .content {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
-        max-width: 1080px;
-        margin-bottom: 80px;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        max-width: 108rem;
+        margin-bottom: 8rem;
         &-item {
             display: flex;
-            width: 255px;
-            height: 88px;
+            width: 25.5rem;
+            height: 8.8rem;
             justify-content: center;
             align-items: center;
-            border: 1px solid #E8EBF5;
-            border-radius: 4px;
+            border: 0.1rem solid #E8EBF5;
+            border-radius: 0.4rem;
             &-provider {
                 height: 55%;
             }
         }
         
         @media(max-width: 1030px) {
-            max-width: 805px;
+            max-width: 80.5rem;
             grid-template-columns: repeat(3, 1fr);
         }
         @media(max-width: 768px) {
-            max-width: 530px;
+            max-width: 53rem;
             grid-template-columns: repeat(2, 1fr)
         }
     }
