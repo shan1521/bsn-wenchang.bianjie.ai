@@ -85,6 +85,41 @@
             },
         ]
     },
+    providers: {
+        title: 文昌链精英服务商,
+        providerList: [
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/xdkj.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/yzt.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/sykj.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/bjzn.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/sdszyq.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/xdkj.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/yzt.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/sykj.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/bjzn.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/sdszyq.png
+            }
+        ]
+    },
     partners: {
         title: 文昌链生态伙伴,
         partnersList: [
