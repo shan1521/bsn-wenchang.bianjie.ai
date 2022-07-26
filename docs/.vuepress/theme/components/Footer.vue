@@ -33,16 +33,16 @@
                     <div class="content_right">
                         <div class="line"></div>
                         <div class="official_accounts">
-                            <div class="focus">
-                                <span class="focus_title">联系我们</span>
-                                <span class="qr_code">
-                                    <img
-                                        src="../assets/operation_qrcode.png"
-                                        alt=""
-                                        class="qr_code_img"
-                                    />
-                                </span>
-                                <span class="desc">文昌链运营</span>
+                            <div class="contact">
+                                <span class="contact_title">联系我们</span>
+                                <span class="email">contact@bianjie.ai</span>
+                                <a
+                                    class="official"
+                                    href="https://www.bianjie.ai"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >www.bianjie.ai</a
+                                >
                             </div>
                             <div class="focus">
                                 <span class="focus_title">关注我们</span>
@@ -208,7 +208,6 @@ export default {
                 -ms-flex-pack: justify;
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
-                max-width:41rem;
                 @media (max-width: 1030px) {
                     margin-top: 3.6rem;
                 }
@@ -229,18 +228,59 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     margin-left: 8rem;
-                    width: 33rem;
                     @media (max-width: 1030px) {
                         margin-left: unset;
                     }
+                    .contact {
+                        display: flex;
+                        flex-direction: column;
+                        -webkit-box-orient: vertical;
+                        -ms-flex-direction: column;
+                        -webkit-flex-direction: column;
+                        margin: 0 8rem;
+                        @media (max-width: 1030px) {
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                        @media (max-width: 580px) {
+                            margin-right: 40px;
+                        }
+                        .contact_title {
+                            height: 2.4rem;
+                            line-height: 2.4rem;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight600;
+                            color: #000;
+                        }
+                        .email {
+                            margin: 2.4rem 0;
+                            height: 2.4rem;
+                            line-height: 2.4rem;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight400;
+                            color: rgba(0, 0, 0, .75);
+                            &:hover {
+                                color: $highlightDetailColor;
+                                cursor: pointer;
+                            }
+                        }
+                        .official {
+                            height: 2.4rem;
+                            line-height: 2.4rem;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight400;
+                            color: rgba(0, 0, 0, .75);
+                            &:hover {
+                                color: $highlightDetailColor;
+                            }
+                        }
+                    }
+                    
                     .focus {
                         display: flex;
                         flex-direction: column;
                         @media (max-width: 1030px) {
                             text-align: center;
-                        }
-                        @media (max-width: 580px) {
-                            margin-top: 2.4rem;
                         }
 
                         .focus_title {
@@ -326,6 +366,9 @@ export default {
         }
         .copyright_content {
             color: $whiteColorOpacity;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             &_margin {
                 margin-right: 16px;
             }
