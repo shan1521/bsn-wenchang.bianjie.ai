@@ -71,7 +71,7 @@
                 
                 <div class="bottom_line"></div>
                 <a
-                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
+                    href="https://beian.miit.gov.cn/#/Integrated/index"
                     target="_blank"
                     rel="noreferrer noopener"
                     >沪ICP备17020986号</a
@@ -88,7 +88,7 @@
                 <div class="bottom_line"></div>
                 <span class="police_content">
                     <a
-                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
+                        href="https://bcbeian.ifcert.cn/index"
                         target="_blank"
                         rel="noreferrer noopener"
                         >沪网信备3101152134315303</a
