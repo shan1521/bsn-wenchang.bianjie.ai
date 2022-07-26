@@ -2,6 +2,7 @@
     <div class="ecoloapp_container">
         <EcoloBanner :appBannerContent="appBannerContent"></EcoloBanner>
         <BSNExample :exampleContent="exampleContent"></BSNExample>
+        <ServiceProviders :providers="providers"></ServiceProviders>
         <Partners :partners="partners"></Partners>
     </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import EcoloBanner from "./EcoloBanner.vue";
 import BSNExample from "./BSNExample.vue";
+import ServiceProviders from "./ServiceProvider"
 import Partners from "./Partners.vue";
 export default {
     name: "EcoloApp",
@@ -19,6 +21,9 @@ export default {
         exampleContent() {
             return this.$frontmatter.exampleContent;
         },
+        providers() {
+            return this.$frontmatter.providers;
+        },
         partners() {
             return this.$frontmatter.partners;
         },
@@ -26,6 +31,7 @@ export default {
     components: {
         EcoloBanner,
         BSNExample,
+        ServiceProviders,
         Partners
     }
 }
