@@ -7,7 +7,7 @@
             <div class="qrcode">
                 <img src="../../assets/contact_qrcode.png" alt=""/>
             </div>
-            <p class="qrcode_text">·文昌链技术小助手·</p>
+            <p class="qrcode_text">·文昌链小助手·</p>
             <div class="email_container">
                 <i class="iconfont icon-email"></i>
                 <span>avata@bianjie.ai</span>
