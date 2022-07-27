@@ -85,6 +85,35 @@
             },
         ]
     },
+    providers: {
+        title: 文昌链精英服务商,
+        providerList: [
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/anlian.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/enfute.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/gwcs.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/shanzai.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/szyq.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/thoughtworl.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/wangjiang.png
+            },
+            {
+                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/ytx_logo.png
+            }
+        ]
+    },
     partners: {
         title: 文昌链生态伙伴,
         partnersList: [
@@ -106,9 +135,7 @@
             {
                 imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/bjzn.png
             },
-            {
-                imgLink: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Partner-logo/sdszyq.png
-            },
+           
         ]
     }
 }
