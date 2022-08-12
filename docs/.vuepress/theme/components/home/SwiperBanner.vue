@@ -26,7 +26,7 @@ export default {
     position: relative;
     width: 100%;
     height: 36rem;
-    ::v-deep.ant-carousel {
+    .ant-carousel {
         .slick-slider {
             .slick-dots-bottom {
                 bottom: 2.4rem;
