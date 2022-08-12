@@ -39,12 +39,6 @@ table {
 	border-spacing: 0;
 }
 
-/* custom */
-a {
-	text-decoration: none;
-	-webkit-backface-visibility: hidden;
-}
-
 ul {
 	list-style: none;
 }
@@ -97,6 +91,15 @@ html {
         .el-message {
             top: 10rem !important;
         }
+	}
+	/* custom */
+	a {
+		color: $highlightDetailColor;
+		text-decoration: none;
+		-webkit-backface-visibility: hidden;
+		&:hover {
+			color: $highlightDetailColor;
+		}
 	}
 }
 
