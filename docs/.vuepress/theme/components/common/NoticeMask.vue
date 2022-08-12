@@ -78,11 +78,6 @@ export default {
                 }
                 ul {
                     list-style-position: inside;
-                    li {
-                        a {
-                            color: $highlightDetailColor;
-                        }
-                    }
                 }
             }
         }

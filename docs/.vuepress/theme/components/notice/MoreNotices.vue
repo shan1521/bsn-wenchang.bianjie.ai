@@ -161,7 +161,7 @@ export default {
                 justify-content: flex-end;
                 align-items: center;
                 margin-top: 1.9rem;
-                ::v-deep.el-pagination {
+                .el-pagination {
                     .btn-prev, .btn-next {
                         padding: 0;
                         min-width: 6.2rem;
