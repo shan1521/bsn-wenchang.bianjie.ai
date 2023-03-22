@@ -88,10 +88,10 @@
                 <div class="bottom_line"></div>
                 <span class="police_content">
                     <a
-                        href="https://bcbeian.ifcert.cn/index"
+                        href="https://bcbeian.ifcert.cn"
                         target="_blank"
                         rel="noreferrer noopener"
-                        >沪网信备3101152134315303</a
+                        >沪网信备31011521343153030049号</a
                     >
                 </span>
             </div>
@@ -331,7 +331,7 @@ export default {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
         }
-        @media (max-width: 1030px) {
+        @media (max-width: 1100px) {
             height: 12rem;
             display: flex;
             align-items: center;
@@ -348,7 +348,7 @@ export default {
         margin: 0 auto;
         max-width: 119.6rem;
         height: 100%;
-        @media (max-width: 1030px) {
+        @media (max-width: 1100px) {
             flex-direction: column;
             justify-content: unset;
             height: unset;
@@ -360,7 +360,7 @@ export default {
             width:0.1px;
             height: 2rem;
             border: 0.1rem solid rgba(255, 255, 255, 0.25);
-            @media (max-width: 1030px) {
+            @media (max-width: 1100px) {
                 display: none;
             }
         }
@@ -377,19 +377,6 @@ export default {
         a {
             color: $whiteColorOpacity;
             cursor: pointer;
-        }
-    }
-}
-
-@media (max-width: 730px) {
-    .footer_content_wrapper {
-        .footer_content_bottom {
-            // height: auto;
-            // line-height: 3rem;
-
-            .bottom_content {
-                // flex-direction: column;
-            }
         }
     }
 }
