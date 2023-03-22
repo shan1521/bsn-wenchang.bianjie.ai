@@ -54,13 +54,13 @@ Avata 平台针对每个用户都提供专属的资金账户。文昌链原生�
 - 创建项目：[https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html](https://www.bsnbase.com/static/tmpFile/bzsc/openper/7-2-2.html)
 
 第三步：配置测试及开发环境  
-- 接入IRITA测试网
+- 接入 IRITA 测试网
 
 初始化SDK配置：
 ```javascript
 Chain-ID：testing
-RPC：47.100.192.234:26657
-gRPC：47.100.192.234:9090
+RPC：testnet.bianjie.ai:26657
+gRPC：testnet.bianjie.ai:9090
 ```
 注：测试网没有网关接入要求，开发者可以根据业务需要先在测试网中进行相关应用接口的调试
 
