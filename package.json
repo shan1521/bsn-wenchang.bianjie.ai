@@ -4,9 +4,8 @@
   "description": "文昌链门户网站",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs --temp .temp",
-    "build": "npx cross-env NODE_ENV=production && vuepress build docs",
+    "build": "vuepress build docs && node ./readWriteSW.js",
     "build-params": "node ./script.js -p",
     "tag:revert": "git checkout HEAD src/config.json"
   },
