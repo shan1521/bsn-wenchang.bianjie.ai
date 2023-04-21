@@ -16,7 +16,7 @@ module.exports = {
         search: false,
         navbar: false,
         nav: [
-            {text:'文昌链', link: '/', target: '_self'},
+            {text:'关于文昌链', link: '/', target: '_self'},
             {text:'生态应用', link: '/ecological-application', target: '_self'},
             {text:'技术文档', link: '/wenchangchain', target: '_self'},
             {text:'关于 IRITA', link: 'https://irita.bianjie.ai/', target:'_blank'},
