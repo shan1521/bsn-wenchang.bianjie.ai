@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isHome: true,
-    title: BSN 文昌链,
+    title: 关于文昌链,
     bsnTitleContent: [
         {
             img: bsn_banner_first,
