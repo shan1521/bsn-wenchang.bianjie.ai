@@ -27,7 +27,7 @@
                             </a>
                         </div>
                         <p class="img_desc">
-                            BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链
+                            文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链
                         </p>
                     </div>
                     <div class="content_right">
