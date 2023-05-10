@@ -3,7 +3,7 @@
         <div class="navigation_content">
             <div class="navigation_content_left">
                 <div class="navigation_img_content" @click="toHome">
-                    <img class="logo" src="https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Horizontal-Black.svg" alt="" />
+                    <img class="logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
             </div>
             <ul class="navigation_content_right">
@@ -41,7 +41,7 @@
         <div class="mobile_navigation_container">
             <div class="mobile_navigation_content">
                 <div class="mobile_navigation_logo" @click="toHome">
-                    <img class="bsn_logo" src="https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Horizontal-Black.svg" alt="" />
+                    <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
