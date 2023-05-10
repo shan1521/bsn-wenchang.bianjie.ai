@@ -32,5 +32,16 @@ module.exports = {
                 ],
             }
         }
-    }
+    },
+    chainWebpack: config => {
+		const imagesRule = config.module.rule('images');
+			imagesRule.uses.clear()
+			imagesRule
+			.test(/\.(jpg|gif|png|svg)$/)
+			.exclude
+			.end()
+			.use('url-loader')
+				.loader('url-loader')
+				.options({name:"img/[name].[hash:8].[ext]",limit: 3})
+	}
 }

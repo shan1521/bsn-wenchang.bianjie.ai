@@ -1,5 +1,8 @@
 <template>
     <div class="theme-container" >
+        <!-- 百度站长 logo -->
+        <img class="logo web_logo" src="../assets/link_logo.jpg" alt="文昌链logo">
+        <img class="logo web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="文昌链mobile_logo">
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
@@ -60,6 +63,12 @@ export default {
 .theme-container {
     width: 100%;
     height: 100%;
+    .web_logo {
+        display: none;
+    }
+    .web_logo_mobile {
+        display: none;
+    }
     .main_content_wrapper {
         margin-top: 6rem;
         .md_container {
