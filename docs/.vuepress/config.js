@@ -3,7 +3,6 @@ module.exports = {
     base:'/',
     head: [
         [ 'link', {rel:'icon',href:'/favicon.ico'}],
-        [ 'link', {rel:'canonical',href:'https://wenchang.bianjie.ai/'}],
         [ 'meta', { name: 'keywords', content: '文昌链、文昌链BSN、BSN文昌链、文昌链官网、BSN开放联盟链、BSN开放联盟链框架、开放联盟链 、IRITAOPB、iritaopb' }],
         [ 'meta', { name: 'description', content: '「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。' }],
         [ 'meta', {property:'og:image',content:'https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Vertical-Black.png'}],
@@ -33,5 +32,16 @@ module.exports = {
                 ],
             }
         }
-    }
+    },
+    chainWebpack: config => {
+		const imagesRule = config.module.rule('images');
+			imagesRule.uses.clear()
+			imagesRule
+			.test(/\.(jpg|gif|png|svg)$/)
+			.exclude
+			.end()
+			.use('url-loader')
+				.loader('url-loader')
+				.options({name:"img/[name].[hash:8].[ext]",limit: 3})
+	}
 }
