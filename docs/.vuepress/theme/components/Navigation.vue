@@ -3,7 +3,7 @@
         <div class="navigation_content">
             <div class="navigation_content_left">
                 <div class="navigation_img_content" @click="toHome">
-                    <img class="logo" src="https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Horizontal-Black.svg" alt="" />
+                    <img class="logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
             </div>
             <ul class="navigation_content_right">
@@ -41,7 +41,7 @@
         <div class="mobile_navigation_container">
             <div class="mobile_navigation_content">
                 <div class="mobile_navigation_logo" @click="toHome">
-                    <img class="bsn_logo" src="https://www.bianjie.ai/resources/WenChangChain/Bianjie-Logo-WenChangChain-Horizontal-Black.svg" alt="" />
+                    <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
@@ -278,8 +278,6 @@ export default {
             }
 
             .mobile_menu_icon {
-                width: 2.8rem;
-                height: auto;
                 cursor: pointer;
                 @media (max-width: 880px) {
                     padding-right: 4.8rem;
@@ -288,8 +286,6 @@ export default {
                     padding-right: 1.6rem;
                 }
                 .iconfont {
-                    width: 2.8rem;
-                    height: 2.4rem;
                     font-size: 24px;
                     color: $highlightDetailColor;
                 }
