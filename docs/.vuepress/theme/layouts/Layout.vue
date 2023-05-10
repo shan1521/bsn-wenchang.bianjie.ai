@@ -1,8 +1,8 @@
 <template>
     <div class="theme-container" >
         <!-- 百度站长 logo -->
-        <img class="web_logo" src="../assets/link_logo.jpg" alt="文昌链">
-        <img class="web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="文昌链">
+        <img class="logo web_logo" src="../assets/link_logo.jpg" alt="文昌链logo">
+        <img class="logo web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="文昌链mobile_logo">
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
