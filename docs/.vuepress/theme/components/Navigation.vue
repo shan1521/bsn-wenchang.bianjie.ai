@@ -278,8 +278,6 @@ export default {
             }
 
             .mobile_menu_icon {
-                width: 2.8rem;
-                height: auto;
                 cursor: pointer;
                 @media (max-width: 880px) {
                     padding-right: 4.8rem;
@@ -288,8 +286,6 @@ export default {
                     padding-right: 1.6rem;
                 }
                 .iconfont {
-                    width: 2.8rem;
-                    height: 2.4rem;
                     font-size: 24px;
                     color: $highlightDetailColor;
                 }
