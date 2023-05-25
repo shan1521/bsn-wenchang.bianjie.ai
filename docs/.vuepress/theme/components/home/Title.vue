@@ -13,7 +13,6 @@
                         <a v-if="item.link" class="doc_wrap" :href="item.link" target="_blank" rel="noopener noreferrer">
                             <i v-if="item.icon" class="iconfont" :class="item.icon"></i>
                             <span v-if="item.img" class="img_wrap">
-                                <!-- todo 图片待替换 -->
                                 <img src="../../assets/banner_sign.png" alt="">
                                 <img class="item_img_logo" :src="$withBase(differentImgName(item.img))" alt="">
                             </span>
