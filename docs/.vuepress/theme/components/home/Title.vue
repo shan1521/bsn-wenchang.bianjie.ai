@@ -1,7 +1,7 @@
 <template>
-    <div class="bsntitle_container" :style="differentBanner(content.img)">
-        <div class="bsntitle_content_container">
-            <div class="bsntitle_content">
+    <div class="title_container" :style="differentBanner(content.img)">
+        <div class="title_content_container">
+            <div class="title_content">
                 <div class="title">{{content.title}}</div>
                 <div class="sub_title" v-html="content.subTitle"></div>
                 <ul class="link_list" v-if="content.linkList">
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: 'BSNTitle',
+    name: 'Title',
     props: ["content"],
     computed: {
         differentBanner() {
@@ -36,17 +36,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.bsntitle_container {
+.title_container {
     width: 100%;
     height: 36rem;
     @media (max-width: 768px) {
-        background: url('../../assets/BSN/bsn_banner_768.png') no-repeat center / cover !important;
+        background: url('../../assets/home/banner_768.png') no-repeat center / cover !important;
     }
-    .bsntitle_content_container {
+    .title_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
-        .bsntitle_content {
+        .title_content {
             display: flex;
             flex-direction: column;
             justify-content: center;

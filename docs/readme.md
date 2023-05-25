@@ -3,16 +3,16 @@
     layout: Layout,
     isHome: true,
     title: 关于文昌链,
-    bsnTitleContent: [
+    titleContent: [
         {
-            img: bsn_banner_first,
+            img: banner_first,
             title: 文昌链,
-            subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
+            subTitle: 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
         },
         {
-            img: bsn_banner_second,
+            img: banner_second,
             title: Avata,
-            subTitle: 多链 NFT / 元宇宙应用 API 服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
+            subTitle: 多链跨链分布式应用服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
             linkList: [
                 {
                     icon: icon-kongzhitai,
@@ -27,9 +27,9 @@
             ]
         },
         {
-            img: bsn_banner_third,
+            img: banner_third,
             title: 文昌链浏览器,
-            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯。,
+            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯,
             linkList: [
                 {
                     icon: icon-lianshangxinxi,
@@ -117,7 +117,7 @@
     },
     chainIntro: {
         chainIntroList: [
-            {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。},
+            {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，具备全生态商业服务能力的开放联盟链。},
             {paragraph: 文昌链（基于 IRITA）以区块链跨链、NFT 技术及大数据隐私保护技术为核心，安全可控、符合国密标准，支持下一代分布式商业系统。目前已有识蛛可信身份服务、魔卡 NFT 管理平台、电子证照系统、一体化数字艺术品登记服务平台、建党百年送祝福微信小程序等多种行业应用在文昌链上线运营。},
             {paragraph: IRITA 拥有完善的 SDK （包括 NFT、大数据隐私保护、跨链服务调用等模块）及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求，为实体经济提供基于区块链信任机器的价值赋能。},
         ]
@@ -182,14 +182,6 @@
                 ],
             },
         ]
-    },
-    aboutBSN: {
-        title: 关于 BSN,
-        aboutList: [
-            {paragraph: 区块链服务网络（Blockchain-based Service Network）（简称 “BSN”）是一个跨云服务、跨门户、跨底层框架，用于部署和运行区块链应用的全球性公共基础设施网络，由国家信息中心、中国移动通信集团公司、中国银联股份有限公司、北京红枣科技有限公司共同发起。},
-            {paragraph: BSN 致力于改变目前区块链应用开发和部署的高成本问题，以互联网理念为开发者提供公共区块链资源环境，极大降低区块链应用的开发、部署、运维、互通和监管成本，从而使区块链技术得到快速普及和发展。},
-            {paragraph: BSN 由遍布全球的公共城市节点组成。在公共城市节点上，应用发布方和使用方可以使用统一身份证书发布、管理和加入不限数量的区块链应用，不再需要建设独立的区块链运行环境。},
-        ]
-    },
+    }
 }
 ---

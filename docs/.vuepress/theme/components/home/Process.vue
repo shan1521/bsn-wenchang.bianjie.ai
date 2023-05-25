@@ -1,45 +1,45 @@
 <template>
-    <div class="bsnprocess_container">
-        <div class="bsnprocess_content_container">
-            <div class="bsnprocess_content">
+    <div class="process_container">
+        <div class="process_content_container">
+            <div class="process_content">
                 <div class="title">文昌链接入流程</div>
                 <div class="process_list">
                     <div class="process_step">
                         <div class="step_img">
-                            <img src="../../assets/BSN/bsn_step_first.png" alt="" />
+                            <img src="../../assets/home/step_first.png" alt="" />
                         </div>
                         <p class="step_process">注册账号，完成认证</p>
                         <p class="step_desc">登录<a style="color: #7065FF;" href="https://console.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">Avata 服务平台</a></p>
                         <p class="step_desc_second">注册账号，并进行 KYC 认证</p>
                     </div>
                     <div class="step_jiantou">
-                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
+                        <img src="../../assets/home/jiantou_icon.png" alt="" />
                     </div>
                     <div class="process_step">
                         <div class="step_img">
-                            <img src="../../assets/BSN/bsn_step_second.png" alt="" />
+                            <img src="../../assets/home/step_second.png" alt="" />
                         </div>
                         <p class="step_process">获取项目参数</p>
                         <p class="step_desc">创建或提交项目资料</p>
                         <p class="step_desc_second">获取 Avata API 服务的项目参数</p>
                     </div>
                     <div class="step_jiantou">
-                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
+                        <img src="../../assets/home/jiantou_icon.png" alt="" />
                     </div>
                     <div class="process_step">
                         <div class="step_img">
-                            <img src="../../assets/BSN/bsn_step_third.png" alt="" />
+                            <img src="../../assets/home/step_third.png" alt="" />
                         </div>
                         <p class="step_process">服务接口调用</p>
                         <p class="step_desc"><a style="color: #7065FF;" href="https://apis.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">Avata API 服务接口</a>对接</p>
                         <p class="step_desc_second">链接分布式业务系统，进行上链</p>
                     </div>
                     <div class="step_jiantou">
-                        <img src="../../assets/BSN/jiantou_icon.png" alt="" />
+                        <img src="../../assets/home/jiantou_icon.png" alt="" />
                     </div>
                     <div class="process_step">
                         <div class="step_img">
-                            <img src="../../assets/BSN/bsn_step_forth.png" alt="" />
+                            <img src="../../assets/home/step_forth.png" alt="" />
                         </div>
                         <p class="step_process">上链记录查询</p>
                         <p class="step_desc">上链记录查询</p>
@@ -57,17 +57,17 @@
 
 <script>
 export default {
-    name: 'BSNProcess'
+    name: 'Process'
 }
 </script>
 
 <style lang="stylus">
-.bsnprocess_container {
+.process_container {
     width: 100%;
-    .bsnprocess_content_container {
+    .process_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
-        .bsnprocess_content {
+        .process_content {
             box-sizing: border-box;
             margin: 0 auto;
             padding: 8rem 0;
