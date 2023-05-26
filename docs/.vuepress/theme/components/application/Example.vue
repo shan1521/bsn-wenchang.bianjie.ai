@@ -1,7 +1,7 @@
 <template>
-    <div class="bsnexample_container">
-        <div class="bsnexample_content_container">
-            <div class="bsnexample_content">
+    <div class="example_container">
+        <div class="example_content_container">
+            <div class="example_content">
                 <div class="title">{{exampleContent.title}}</div>
                 <ul class="example_list">
                     <li class="example_item_container" v-for="(example,index) in exampleContent.exampleList" :key="index">
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-    name: 'BSNExample',
+    name: 'Example',
     props: ['exampleContent'],
     computed: {
         differentImgName(){
@@ -55,12 +55,12 @@ export default {
 </script>
 
 <style lang="stylus">
-.bsnexample_container {
+.example_container {
     width: 100%;
-    .bsnexample_content_container {
+    .example_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
-        .bsnexample_content {
+        .example_content {
             box-sizing: border-box;
             margin: 0 auto;
             padding: 8rem 0;
@@ -100,7 +100,7 @@ export default {
                             transition: transform .3s linear;
                             .example_item_wrap {
                                 padding: 2.4rem 4rem 3.6rem 4.4rem;
-                                background: url(../../assets/BSN/example_bg_color.png) no-repeat center / cover;
+                                background: url(../../assets/home/example_bg_color.png) no-repeat center / cover;
                                 .example_item {
                                     .example_item_content {
                                         .example_affiliation {
@@ -160,7 +160,7 @@ export default {
                         padding: 3.2rem 4rem 2.8rem 3.6rem;
                         width: 100%;
                         min-height: 24rem;
-                        background: url(../../assets/BSN/example_bg.png) no-repeat center / cover;
+                        background: url(../../assets/home/example_bg.png) no-repeat center / cover;
                         @media (max-width: 768px) {
                             padding: 1.6rem;
                         }

@@ -41,7 +41,7 @@
         <div class="mobile_navigation_container">
             <div class="mobile_navigation_content">
                 <div class="mobile_navigation_logo" @click="toHome">
-                    <img class="bsn_logo" src="../assets/wenchang_logo.png" alt="" />
+                    <img class="logo" src="../assets/wenchang_logo.png" alt="" />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
@@ -271,7 +271,7 @@ export default {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                .bsn_logo {
+                .logo {
                     height: 4.4rem;
                     vertical-align: middle;
                 }

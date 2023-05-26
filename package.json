@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shan1521/bsn-wenchang.bianjie.ai.git"
+    "url": "git+https://github.com/shan1521/wenchang.bianjie.ai.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shan1521/bsn-wenchang.bianjie.ai/issues"
+    "url": "https://github.com/shan1521/wenchang.bianjie.ai/issues"
   },
-  "homepage": "https://github.com/shan1521/bsn-wenchang.bianjie.ai#readme",
+  "homepage": "https://github.com/shan1521/wenchang.bianjie.ai#readme",
   "dependencies": {
     "ant-design-vue": "^1.7.8",
     "async-validator": "^1.11.5",

@@ -1,17 +1,21 @@
 <template>
-    <div class="bsntitle_container" :style="differentBanner(content.img)">
-        <div class="bsntitle_content_container">
-            <div class="bsntitle_content">
+    <div class="title_container" :style="differentBanner(content.img)">
+        <div class="title_content_container">
+            <div class="title_content">
                 <div class="title">{{content.title}}</div>
                 <div class="sub_title" v-html="content.subTitle"></div>
                 <ul class="link_list" v-if="content.linkList">
-                    <li class="link_wrap" v-for="(item, index) in content.linkList" :key="index">
+                    <li class="link_wrap" v-for="(item, index) in content.linkList" :class="{link_wrap_img: item.img}" :key="index">
                         <router-link v-if="item.route" class="doc_wrap" :to="item.route">
                             <i class="iconfont" :class="item.icon"></i>
                             <span class="link_text">{{item.linkText}}</span>
                         </router-link>
                         <a v-if="item.link" class="doc_wrap" :href="item.link" target="_blank" rel="noopener noreferrer">
-                            <i class="iconfont" :class="item.icon"></i>
+                            <i v-if="item.icon" class="iconfont" :class="item.icon"></i>
+                            <span v-if="item.img" class="img_wrap">
+                                <img src="../../assets/banner_sign.png" alt="">
+                                <img class="item_img_logo" :src="$withBase(differentImgName(item.img))" alt="">
+                            </span>
                             <span class="link_text">{{item.linkText}}</span>
                         </a>
                     </li>
@@ -23,9 +27,14 @@
 
 <script>
 export default {
-    name: 'BSNTitle',
+    name: 'Title',
     props: ["content"],
     computed: {
+        differentImgName() {
+            return function(imgName) {
+                return `/home/${imgName}`;
+            }
+        },
         differentBanner() {
             return function(imgName) {
                 return `background: url(/home/${imgName}.png) no-repeat center / cover`;
@@ -36,17 +45,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.bsntitle_container {
+.title_container {
     width: 100%;
     height: 36rem;
     @media (max-width: 768px) {
-        background: url('../../assets/BSN/bsn_banner_768.png') no-repeat center / cover !important;
+        background: url('../../assets/home/banner_768.png') no-repeat center / cover !important;
     }
-    .bsntitle_content_container {
+    .title_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
-        .bsntitle_content {
+        .title_content {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -103,13 +112,14 @@ export default {
                         margin-left: 0;
                     }
                     .doc_wrap {
+                        position: relative;
                         box-sizing: border-box;
                         display: flex;
                         align-items: center;
                         padding-left: 0.4rem;
                         padding-right: 0.4rem;
-                        width: 12.8rem;
-                        height: 3.2rem;
+                        min-width: 12.8rem;
+                        min-height: 3.2rem;
                         border: 0.1rem solid $highlightDetailColor;
                         border-radius: 1.6rem;
                         .iconfont {
@@ -123,11 +133,53 @@ export default {
                             background: $highlightDetailColor;
                             border-radius: 50%;
                         }
+                        .img_wrap {
+                            position: absolute;
+                            top: -0.45rem;
+                            left: -2.5rem;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            width: 4.8rem;
+                            height: 4.8rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .item_img_logo {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 2.2rem;
+                                height: 2rem;
+                                z-index: 1;
+                            }
+                        }
                         .link_text {
                             font-size: $fontSize16;
                             font-weight: 500;
                             color: #000000;
                             line-height: 2.2rem;
+                        }
+                    }
+                }
+                .link_wrap_img {
+                    margin-left: 5.6rem;
+                    &:first-child {
+                        margin-left: 2rem;
+                    }
+                    .doc_wrap {
+                        padding-left: 2.8rem;
+                        min-width: 15.6rem;
+                        min-height: 4rem;
+                        background: #DCE6FC;
+                        border: 0.1rem solid rgba(112,101,255,0.15);
+                        border-radius: 0 2.4rem 2.4rem 0;
+                        opacity: 0.8;
+                        .link_text {
+                            color: #7065FF;
                         }
                     }
                 }
