@@ -1,22 +1,22 @@
 <template>
     <div class="swiper_container" ref="mySwiper">
         <a-carousel dots-class="slick-dots" autoplay :autoplaySpeed="4000" :speed="2000">
-            <div v-for="(item,index) in bsnTitleContent" :key="index">
-                <BSNTitle :content="bsnTitleContent[index]"></BSNTitle>
-            </div>
+            <template v-for="(item,index) in titleContent">
+                <Title :key="index" :content="titleContent[index]" :class="{special_title: index === 0}"></Title>
+            </template>
         </a-carousel>
     </div>
 </template>
 
 <script>
 import {Carousel} from "ant-design-vue";
-import BSNTitle from "./BSNTitle.vue";
+import Title from "./Title.vue";
 export default {
     name: "SwiperBanner",
-    props: ["bsnTitleContent"],
+    props: ["titleContent"],
     components: {
         Carousel,
-        BSNTitle
+        Title
     }
 };
 </script>
@@ -49,6 +49,19 @@ export default {
         }
         .slick-dots-bottom {
             bottom: 2.4rem;
+        }
+    }
+    :deep(.special_title) {
+        .link_list {
+            @media (max-width: 470px) {
+                flex-direction: column;
+                .link_wrap {
+                    margin: 0 0 0 2rem !important;
+                    &:last-child {
+                        margin-top: 2rem !important;
+                    }
+                }
+            }
         }
     }
 }

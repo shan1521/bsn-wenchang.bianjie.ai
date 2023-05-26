@@ -3,16 +3,28 @@
     layout: Layout,
     isHome: true,
     title: 关于文昌链,
-    bsnTitleContent: [
+    titleContent: [
         {
-            img: bsn_banner_first,
+            img: banner_first,
             title: 文昌链,
-            subTitle: 基于 IRITA 打造，首批在 BSN 环境上线的开放联盟链,
+            subTitle: 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+            linkList: [
+                {
+                    img: avata_logo.png,
+                    linkText: AVATA 平台,
+                    link: https://console.avata.bianjie.ai/
+                },
+                {
+                    img: wenchangchain_logo.png,
+                    linkText: 多链生态浏览器,
+                    link: https://explorer.wenchang.bianjie.ai/home
+                }
+            ]
         },
         {
-            img: bsn_banner_second,
+            img: banner_second,
             title: Avata,
-            subTitle: 多链 NFT / 元宇宙应用 API 服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
+            subTitle: 多链跨链分布式应用服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
             linkList: [
                 {
                     icon: icon-kongzhitai,
@@ -27,9 +39,9 @@
             ]
         },
         {
-            img: bsn_banner_third,
+            img: banner_third,
             title: 文昌链浏览器,
-            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯。,
+            subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯,
             linkList: [
                 {
                     icon: icon-lianshangxinxi,
@@ -91,11 +103,11 @@
             {
                 title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                 date: "2022-03-07",
-                info: 边界智能于 3 月 7 日正式发布多链分布式商业应用 API 服务平台「Avata」，并首发支持 BSN 文昌链（IRITA OPB）。,
+                info: 边界智能于 3 月 7 日正式发布多链分布式商业应用 API 服务平台「Avata」，并首发支持文昌链（IRITA OPB）。,
                 maskContent: {
                     title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                     content: <p style="text-indent:2em">边界智能于 3 月 7 日正式上线多链分布式商业应用 API 服务平台「Avata」。「Avata」可支持多元资产数字化、链上链下可信交互，为复杂异构系统跨链协作提供一键式对接，助力企业简便快捷地构建应用，将更多精力专注于业务创新与推广。</p>
-                    &emsp;&emsp;同时，「Avata」成功发布并上线对接 BSN-文昌链，通过 API 服务封装复杂的区块链底层交互逻辑，为应用开发者开放了首批支持 NFT/元宇宙应用场景的核心服务接口。<br>
+                    &emsp;&emsp;同时，「Avata」成功发布并上线对接文昌链，通过 API 服务封装复杂的区块链底层交互逻辑，为应用开发者开放了首批支持 NFT/元宇宙应用场景的核心服务接口。<br>
                     &emsp;&emsp;Avata 定位于为企业及开发者持续提供安全、简单、高效、鲁棒的区块链 API 服务，将始终坚持自主可控、高效易用的产品理念，不断迭代推出多链和跨链支持能力，助力生态伙伴在分布式商业应用领域持续创造价值。<br>
                     &emsp;&emsp;开发者可通过「Avata」，更加自由且开放地与底层区块链系统进行交互，一键式对接，将更多精力用于关注自身业务需求的实现，而无需过多关注区块链底层系统的运行逻辑与交互规则。
                     &emsp;&emsp;<p style="text-indent:2em;">「Avata」开发者文档：<a target="_blank" rel="noopener noreferrer" href="http://apis.avata.bianjie.ai">http://apis.avata.bianjie.ai</a></p>
@@ -108,7 +120,7 @@
                 maskContent: {
                     title: 【文昌链支持的一体化数字艺术品获得「新华网」报道】,
                     content: <p style="text-indent:2em">11 月 18 日，新华社旗下综合信息服务网站「新华网」的报道「看见东方艺术，聆听中国声音 一体化数字艺术品链接全球市场」引起广泛关注，报道中的跨链技术由集成 TIBC 跨链协议后的文昌链所提供。</p>
-                    &emsp;&emsp;边界智能支撑由知名文化机构出品的中国优秀大师水墨画复制品 IDA 完成在 BSN 文昌链上的登记确权，并依靠 TIBC 跨链协议及跨链枢纽，从 BSN 文昌链经由跨链服务枢纽与全球市场链接，实现其在全球异构区块链网络间的可信「跨链」流转，从实物流通升级为「可信数字贸易」，以区块链技术的力量，推动中国传统文化的国际化传播和优质文化艺术品的全球可信贸易。
+                    &emsp;&emsp;边界智能支撑由知名文化机构出品的中国优秀大师水墨画复制品 IDA 完成在文昌链上的登记确权，并依靠 TIBC 跨链协议及跨链枢纽，从文昌链经由跨链服务枢纽与全球市场链接，实现其在全球异构区块链网络间的可信「跨链」流转，从实物流通升级为「可信数字贸易」，以区块链技术的力量，推动中国传统文化的国际化传播和优质文化艺术品的全球可信贸易。
                     <li style="text-indent:2em;"><a href="http://www.news.cn/culturepro/20211118/aee9804417884a6a9ab2354aac86d3f6/c.html" target="_blank" rel="noopener noreferrer">新华网报道</a></li>
                 }
             },
@@ -117,7 +129,7 @@
     },
     chainIntro: {
         chainIntroList: [
-            {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，并成为首批在 BSN 环境上线，具备全生态商业服务能力的开放联盟链。},
+            {paragraph: 「文昌链」基于边界智能的企业级联盟链产品 IRITA 打造，具备全生态商业服务能力的开放联盟链。},
             {paragraph: 文昌链（基于 IRITA）以区块链跨链、NFT 技术及大数据隐私保护技术为核心，安全可控、符合国密标准，支持下一代分布式商业系统。目前已有识蛛可信身份服务、魔卡 NFT 管理平台、电子证照系统、一体化数字艺术品登记服务平台、建党百年送祝福微信小程序等多种行业应用在文昌链上线运营。},
             {paragraph: IRITA 拥有完善的 SDK （包括 NFT、大数据隐私保护、跨链服务调用等模块）及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求，为实体经济提供基于区块链信任机器的价值赋能。},
         ]
@@ -182,14 +194,6 @@
                 ],
             },
         ]
-    },
-    aboutBSN: {
-        title: 关于 BSN,
-        aboutList: [
-            {paragraph: 区块链服务网络（Blockchain-based Service Network）（简称 “BSN”）是一个跨云服务、跨门户、跨底层框架，用于部署和运行区块链应用的全球性公共基础设施网络，由国家信息中心、中国移动通信集团公司、中国银联股份有限公司、北京红枣科技有限公司共同发起。},
-            {paragraph: BSN 致力于改变目前区块链应用开发和部署的高成本问题，以互联网理念为开发者提供公共区块链资源环境，极大降低区块链应用的开发、部署、运维、互通和监管成本，从而使区块链技术得到快速普及和发展。},
-            {paragraph: BSN 由遍布全球的公共城市节点组成。在公共城市节点上，应用发布方和使用方可以使用统一身份证书发布、管理和加入不限数量的区块链应用，不再需要建设独立的区块链运行环境。},
-        ]
-    },
+    }
 }
 ---

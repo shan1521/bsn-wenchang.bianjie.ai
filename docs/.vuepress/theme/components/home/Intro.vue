@@ -1,9 +1,9 @@
 <template>
-    <div class="bsnintro_container">
-        <div class="bsnintro_content_container">
-            <div class="bsnintro_content">
+    <div class="intro_container">
+        <div class="intro_content_container">
+            <div class="intro_content_wrap">
                 <div class="img_wrap">
-                    <img src="../../assets/BSN/bsn_image.png" alt="">
+                    <img src="../../assets/home/wenchang_image.png" alt="">
                 </div>
                 <div class="intro_content">
                     <p class="intro_item" v-for="(item,index) in chainIntro.chainIntroList" :key="index">
@@ -11,8 +11,8 @@
                     </p>
                 </div>
             </div>
-            <div class="bsnintro_info_content">
-                <img src="../../assets/BSN/bsnintro_info.png" alt="">
+            <div class="intro_info_content">
+                <img src="../../assets/home/intro_info.png" alt="">
             </div>
         </div>
     </div>
@@ -20,20 +20,20 @@
 
 <script>
 export default {
-    name: 'BSNIntro',
+    name: 'Intro',
     props: ['chainIntro']
 }
 </script>
 
 <style lang="stylus">
-.bsnintro_container {
+.intro_container {
     width: 100%;
-    .bsnintro_content_container {
+    .intro_content_container {
         box-sizing: border-box;
         margin: 0 auto;
         padding: 6.4rem 0 8rem;
         max-width: $contentWidth;
-        .bsnintro_content {
+        .intro_content_wrap {
             box-sizing: border-box;
             padding: 0 4.8rem;
             margin: 0 auto;
@@ -79,7 +79,7 @@ export default {
                 }
             }
         }
-        .bsnintro_info_content {
+        .intro_info_content {
             box-sizing: border-box;
             margin: 8rem auto 0;
             padding: 0 4.8rem;

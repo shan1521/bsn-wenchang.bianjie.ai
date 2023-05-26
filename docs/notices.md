@@ -60,53 +60,10 @@
                 maskContent: {
                     title: 【「Avata」多链分布式商业应用 API 服务平台正式上线！】,
                     content: <p style="text-indent:2em">边界智能于 3 月 7 日正式上线多链分布式商业应用 API 服务平台「Avata」。「Avata」可支持多元资产数字化、链上链下可信交互，为复杂异构系统跨链协作提供一键式对接，助力企业简便快捷地构建应用，将更多精力专注于业务创新与推广。</p>
-                    &emsp;&emsp;同时，「Avata」成功发布并上线对接 BSN-文昌链，通过 API 服务封装复杂的区块链底层交互逻辑，为应用开发者开放了首批支持 NFT/元宇宙应用场景的核心服务接口。<br>
+                    &emsp;&emsp;同时，「Avata」成功发布并上线对接文昌链，通过 API 服务封装复杂的区块链底层交互逻辑，为应用开发者开放了首批支持 NFT/元宇宙应用场景的核心服务接口。<br>
                     &emsp;&emsp;Avata 定位于为企业及开发者持续提供安全、简单、高效、鲁棒的区块链 API 服务，将始终坚持自主可控、高效易用的产品理念，不断迭代推出多链和跨链支持能力，助力生态伙伴在分布式商业应用领域持续创造价值。<br>
                     &emsp;&emsp;开发者可通过「Avata」，更加自由且开放地与底层区块链系统进行交互，一键式对接，将更多精力用于关注自身业务需求的实现，而无需过多关注区块链底层系统的运行逻辑与交互规则。
                     &emsp;&emsp;<p style="text-indent:2em;">「Avata」开发者文档：<a target="_blank" rel="noopener noreferrer" href="http://apis.avata.bianjie.ai">http://apis.avata.bianjie.ai</a></p>
-                }
-            },
-            {
-                title: 【文昌链升级计划公告】,
-                date: "2022-02-25",
-                info:文昌链（基于 IRITA v3.1.0）将于北京时间 2022 年 2 月 28 日 18:00 - 21:00 进行服务升级，升级期间将暂停服务使用。,
-                maskContent: {
-                    title: 【文昌链升级计划公告】,
-                    content: 尊敬的用户，您好！<br>
-                    &emsp;&emsp;文昌链（基于 IRITA v3.1.0）将于北京时间 2022 年 2 月 28 日 18:00 - 21:00 进行服务升级，升级期间将暂停服务使用。<br>
-                    &emsp;&emsp;1. 本次升级将启用新的链上能量值计量单位，届时免费赠送的剩余能量值将被清除，而充值的剩余能量值可等额转移后继续使用；免费领取能量值入口、新注册链账户的初始能量值也将取消。<br>
-                    &emsp;&emsp;升级后：<br>
-                    &emsp;&emsp;（1）用户须通过充值，确保账户中有充足的人民币余额，具体流程请参阅以下文档：<br>
-                    &emsp;&emsp;<a target="_blank" rel="noopener noreferrer" href="https://www.bsnbase.com/static/tmpFile/bzsc/Account/13-1.html">https://www.bsnbase.com/static/tmpFile/bzsc/Account/13-1.html</a><br>
-                    &emsp;&emsp;（2）再由批量充值接口，将能量值充至指定链账户，具体流程请参阅以下 BSN 批量充值能量值接口文档：<br>
-                    &emsp;&emsp;<a target="_blank" rel="noopener noreferrer" href="https://shimo.im/docs/Ee32M5ZXd0H44pA2">https://shimo.im/docs/Ee32M5ZXd0H44pA2</a><br>
-                    &emsp;&emsp;* 接口将于 2 月 28 日与升级同步上线，届时文档将更新在《BSN 用户手册》中。<br>
-                    &emsp;&emsp;请注意：<br>
-                    &emsp;&emsp;&emsp;&emsp;a. 批量充值接口，单次最大支持 500 个账户；<br>
-                    &emsp;&emsp;&emsp;&emsp;b. 充值能量值个数须为 400 万的整数倍。<br>
-                    &emsp;&emsp;2. 本次升级将新增 NFT 1155 模块，支持符合 ERC-1155 规范的原生 NFT。<br>
-                    &emsp;&emsp;关于能量值：<br>
-                    &emsp;&emsp;（1）能量值消耗费由 BSN 联盟和链技术方共同定义，单位为「能量值」。根据交易处理过程中消耗的算力和存储资源，将从发起交易的链账户内扣除相应的能量值；<br>
-                    &emsp;&emsp;（2）文昌链能量值目前定价为 1 元折合 400 万能量值，根据现有常用交易类型，如铸造 NFT 交易单笔消耗约 20 万能量值，折合人民币约为 0.05 元，实际金额将随交易消耗的链上算力和资源量浮动。<br>
-                    &emsp;&emsp;如您有任何问题，可通过下方邮箱或添加技术小助手微信与我们联系。<br>
-                    <center>邮箱：contact@bianjie.ai</center>
-                    <p style="text-align:center;"><img style="max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p><p align="right">2022 年 02 月 25 日</p>
-                }
-            },
-            {
-                title: 【文昌链升级完成公告】,
-                date: "2022-01-26",
-                info: BSN「文昌链 IRITA OPB」于 2022 年 01 月 23 日已完成服务升级，本次升级实现了智能合约虚拟机 EVM 的集成，扩展了多引擎智能合约能力。,
-                maskContent: {
-                    title: 【文昌链升级完成公告】,
-                    content: 尊敬的用户，您好！<br>
-                    &emsp;&emsp;文昌链于 2022 年 01 月 23 日已完成服务升级，本次升级实现了智能合约虚拟机 EVM 的集成，拓展了多引擎智能合约能力，完整兼容主流智能合约，可以为开发者提供低门槛的开发环境，允许分布式商业应用 DBApp 开发者快速开发业务合约以及平滑移植现有业务。<br>
-                    &emsp;&emsp;此外，文昌链为开发者提供了基于数字化建模技术研发 DBApp 的多样化选择，可根据自身商业需求选用最佳方式实现创新应用落地。作为 BSN-DDC 基础网络于 1 月 25 日首批上线提供服务的开放联盟链，升级后的文昌链可更好地支持基于 DDC/NFT 技术的合规应用落地；同时，开发者也可选择基于文昌链原生集成的 NFT 技术模块，快速便捷地打造满足业务需求的定制化创新应用。<br>
-                    &emsp;&emsp;感谢您对 BSN「文昌链 IRITA OPB」的支持！<br>
-                    &emsp;&emsp;如您有任何问题，可通过下方邮箱或添加技术小助手微信与我们联系。<br>
-                    <center>邮箱：contact@bianjie.ai</center>
-                    <p style="text-align:center;"><img style="max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p>
-                    <p align="right">2022 年 01 月 26 日</p>
                 }
             },
             {
@@ -118,21 +75,6 @@
                     content: <p style="text-indent:2em">11 月 18 日，新华社旗下综合信息服务网站「新华网」的报道「看见东方艺术，聆听中国声音 一体化数字艺术品链接全球市场」引起广泛关注，报道中的跨链技术由集成 TIBC 跨链协议后的文昌链所提供。</p>
                     &emsp;&emsp;边界智能支撑由知名文化机构出品的中国优秀大师水墨画复制品 IDA 完成在文昌链上的登记确权，并依靠 TIBC 跨链协议及跨链枢纽，从文昌链经由跨链服务枢纽与全球市场链接，实现其在全球异构区块链网络间的可信「跨链」流转，从实物流通升级为「可信数字贸易」，以区块链技术的力量，推动中国传统文化的国际化传播和优质文化艺术品的全球可信贸易。
                     <li style="text-indent:2em;"><a href="http://www.news.cn/culturepro/20211118/aee9804417884a6a9ab2354aac86d3f6/c.html" target="_blank" rel="noopener noreferrer">新华网报道</a></li>
-                }
-            },
-            {
-                title: 【文昌链升级完成公告】,
-                date: "2021-11-18",
-                info: BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，集成适配了 TIBC 精简跨链通信协议功能模块。,
-                maskContent: {
-                    title: 【文昌链升级完成公告】,
-                    content: 尊敬的用户，您好！<br>
-                    &emsp;&emsp;BSN「文昌链 IRITA OPB」于 2021 年 11 月 16 日已完成服务升级，本次升级实现了对 TIBC 精简跨链通信协议功能模块的适配集成，增强了跨链能力的可扩展性和交互能力，进一步支持 BSN 生态应用实现价值互联，为实体经济提供价值赋能。<br>
-                    &emsp;&emsp;感谢您对 BSN「文昌链 IRITA OPB」的支持！<br>
-                    &emsp;&emsp;如您有任何问题，可通过邮箱与我们联系：contact@bianjie.ai。<br>
-                    &emsp;&emsp;欢迎开发者们扫码加入技术交流社区：
-                    <p style="text-align:center;"><img style="max-width:140px;" alt="img" src="https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Notices/wccsupport.png"/></p>
-                    <p align="right">2021 年 11 月 18 日</p>
                 }
             },
             {

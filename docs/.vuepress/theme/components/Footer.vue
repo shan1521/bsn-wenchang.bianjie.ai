@@ -5,12 +5,12 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <a class="logo bsn_logo" href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer">
+                            <router-link class="logo" to="/" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="../assets/bsn_logo.png"
+                                    src="../assets/wenchang_logo.png"
                                     alt=""
                                 />
-                            </a>
+                            </router-link>
                             <span class="line"></span>
                             <a class="logo irita_logo" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                                 <img
@@ -103,9 +103,6 @@
 export default {
     name: "Footer",
     methods: {
-        toBSN() {
-            window.open('https://www.bsnbase.com/');
-        },
         toHome() {
             this.$router.push("/");
             this.$store.commit("currentIndex", 0);
@@ -228,7 +225,10 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     margin-left: 8rem;
-                    @media (max-width: 1030px) {
+                    @media (max-width: 1200px) {
+                        margin-left: 4rem;
+                    }
+                    @media (max-width: 1100px) {
                         margin-left: unset;
                     }
                     .contact {
