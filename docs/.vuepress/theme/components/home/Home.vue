@@ -1,26 +1,24 @@
 <template>
-    <div class="bsn_container">
-        <SwiperBanner :bsnTitleContent="bsnTitleContent"></SwiperBanner>
+    <div class="home_container">
+        <SwiperBanner :titleContent="titleContent"></SwiperBanner>
         <Notice v-if="noticeContent" :noticeContent="noticeContent"></Notice>
-        <BSNIntro :chainIntro="chainIntro"></BSNIntro>
+        <Intro :chainIntro="chainIntro"></Intro>
         <CoreFunc :coreFuncContent="coreFuncContent"></CoreFunc>
-        <BSNProcess></BSNProcess>
-        <AboutBSN :aboutBSN="aboutBSN"></AboutBSN>
+        <Process></Process>
     </div>
 </template>
 
 <script>
 import SwiperBanner from './SwiperBanner';
-import BSNIntro from './BSNIntro';
+import Intro from './Intro';
 import CoreFunc from './CoreFunc';
-import BSNProcess from './BSNProcess';
-import AboutBSN from "./AboutBSN";
+import Process from './Process';
 import Notice from './Notice';
 export default {
-    name: 'BSN',
+    name: 'Home',
     computed: {
-        bsnTitleContent() {
-            return this.$frontmatter.bsnTitleContent;
+        titleContent() {
+            return this.$frontmatter.titleContent;
         },
         noticeContent() {
             return this.$frontmatter.noticeContent;
@@ -30,24 +28,20 @@ export default {
         },
         coreFuncContent() {
             return this.$frontmatter.coreFuncContent;
-        },
-        aboutBSN() {
-            return this.$frontmatter.aboutBSN;
-        },
+        }
     },
     components: {
         SwiperBanner,
         Notice,
-        BSNIntro,
+        Intro,
         CoreFunc,
-        BSNProcess,
-        AboutBSN,
+        Process
     }
 }
 </script>
 
 <style lang="stylus">
-.bsn_container {
+.home_container {
     width: 100%;
     height: 100%;
 }

@@ -21,7 +21,7 @@ export default {
     width: 100%;
     background: url(../../assets/ecoloapp/ecoloapp_banner.png) no-repeat center / cover;
     @media (max-width: 768px) {
-        background: url(../../assets/BSN/bsn_banner_768.png) no-repeat center / cover !important;
+        background: url(../../assets/home/banner_768.png) no-repeat center / cover !important;
     }
     .ecolobanner_content_container {
         margin: 0 auto;
