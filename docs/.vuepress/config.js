@@ -18,7 +18,8 @@ module.exports = {
         nav: [
             {text:'关于文昌链', link: '/', target: '_self'},
             {text:'生态应用', link: '/ecological-application', target: '_self'},
-            {text:'技术文档', link: '/wenchangchain', target: '_self'},
+            {text:'技术文档', link: 'https://docs.avata.bianjie.ai', target: '_blank'},
+            {text:'浏览器', link: 'https://explorer.wenchang.bianjie.ai', target: '_blank'},
             {text:'关于 IRITA', link: 'https://irita.bianjie.ai/', target:'_blank'},
             {text:'关于边界',link:'https://www.bianjie.ai', target: '_blank'},
             {text:'更多公告',link:'/notices', target: '_self'}

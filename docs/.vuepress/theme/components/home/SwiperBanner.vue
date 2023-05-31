@@ -26,7 +26,7 @@ export default {
     position: relative;
     width: 100%;
     height: 36rem;
-    .ant-carousel {
+    :deep(.ant-carousel) {
         .slick-slider {
             .slick-dots-bottom {
                 bottom: 2.4rem;
@@ -34,15 +34,16 @@ export default {
         }
         .slick-dots {
             li {
-                background: #fff;
                 button {
                     width: 1.6rem;
                     height: 0.4rem;
+                    background: rgba(213, 226, 255, 1);
+                    opacity: 1;
                 }
                 &.slick-active {
                     button {
                         width: 3.2rem;
-                        background: #7065FF;
+                        background: rgba(112, 101, 255, 0.6);
                     }
                 }
             }
