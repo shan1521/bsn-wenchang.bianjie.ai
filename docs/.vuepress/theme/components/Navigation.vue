@@ -8,7 +8,7 @@
             </div>
             <ul class="navigation_content_right">
                 <li
-                    v-if="index !== 5"
+                    v-if="index !== 6"
                     class="navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
@@ -18,7 +18,7 @@
                     <a
                         v-show="item.target === '_blank'"
                         class="navigation_item"
-                        :class="index === 4 ? 'router_link_item' : ''"
+                        :class="index === 5 ? 'router_link_item' : ''"
                         :href="item.link"
                         :target="item.target"
                         rel="noopener noreferrer"
@@ -52,7 +52,7 @@
                 v-show="flShowMobileMenu"
             >
                 <li
-                    v-if="index !== 5"
+                    v-if="index !== 6"
                     class="mobile_navigation_list_item"
                     v-for="(item, index) in navigationList"
                     :key="index"
@@ -64,7 +64,7 @@
                     <a
                         v-show="item.target === '_blank'"
                         class="mobile_navigation_item"
-                        :class="index === 4 ? 'mobile_router_link_item' : ''"
+                        :class="index === 5 ? 'mobile_router_link_item' : ''"
                         :href="item.link"
                         :target="item.target"
                         rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default {
             this.$store.commit("currentIndex", 0);
         },
         changeIndex(index) {
-            if (this.currentIndex !== index && index !== 2 && index !== 3) {
+            if (this.currentIndex !== index && index !== 2 && index !== 3 && index !== 4 && index !== 5) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }
@@ -189,7 +189,7 @@ export default {
             @media (max-width: 1200px) {
                 padding-right: 4.8rem;
             }
-            @media (max-width: 880px) {
+            @media (max-width: 960px) {
                 display: none;
             }
 
@@ -248,7 +248,7 @@ export default {
         background: $whiteColor;
         border-bottom: 0.1rem solid $borderLineColor;
         z-index: 10;
-        @media (max-width: 880px) {
+        @media (max-width: 960px) {
             display: block;
         }
 
@@ -260,7 +260,7 @@ export default {
             // margin: 0 auto;
             height: $navbarHeight;
 
-            @media (max-width: 880px) {
+            @media (max-width: 960px) {
                 padding-left: 4.8rem;
             }
             @media (max-width: 432px) {
@@ -279,7 +279,7 @@ export default {
 
             .mobile_menu_icon {
                 cursor: pointer;
-                @media (max-width: 880px) {
+                @media (max-width: 960px) {
                     padding-right: 4.8rem;
                 }
                 @media (max-width: 432px) {
