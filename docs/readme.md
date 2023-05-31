@@ -16,7 +16,7 @@
                 },
                 {
                     img: wenchangchain_logo.png,
-                    linkText: 多链生态浏览器,
+                    linkText: 文昌链网浏览器,
                     link: https://explorer.wenchang.bianjie.ai/home
                 }
             ]
@@ -40,7 +40,7 @@
         },
         {
             img: banner_third,
-            title: 文昌链浏览器,
+            title: 文昌链网浏览器,
             subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯,
             linkList: [
                 {
