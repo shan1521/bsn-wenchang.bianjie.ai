@@ -1,5 +1,4 @@
 module.exports = {
-    title: '文昌链',
     base:'/',
     head: [
         [ 'link', {rel:'icon',href:'/favicon.ico'}],
