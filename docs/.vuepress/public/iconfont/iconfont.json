@@ -6,6 +6,13 @@
   "description": "IRITA 官网项目",
   "glyphs": [
     {
+      "icon_id": "36719427",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e7eb",
+      "unicode_decimal": 59371
+    },
+    {
       "icon_id": "28882453",
       "name": "email",
       "font_class": "email",

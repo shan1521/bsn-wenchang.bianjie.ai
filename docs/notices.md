@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isMoreNotices: true,
-    title: 通知公告,
+    title: 通知公告 | 文昌链官网,
     noticeContent: {
         title: 通知公告,
         noticeList: [
