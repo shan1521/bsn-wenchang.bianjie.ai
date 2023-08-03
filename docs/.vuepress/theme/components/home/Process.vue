@@ -31,7 +31,7 @@
                             <img src="../../assets/home/step_third.png" alt="" />
                         </div>
                         <p class="step_process">服务接口调用</p>
-                        <p class="step_desc"><a style="color: #7065FF;" href="https://apis.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">Avata API 服务接口</a>对接</p>
+                        <p class="step_desc"><a style="color: #7065FF;" href="https://docs.avata.bianjie.ai/?nav=01H5AGKE8G618YTW6NMEND4NX5" target="_blank" rel="noopener noreferrer">Avata API 服务接口</a>对接</p>
                         <p class="step_desc_second">链接分布式业务系统，进行上链</p>
                     </div>
                     <div class="step_jiantou">
@@ -43,10 +43,10 @@
                         </div>
                         <p class="step_process">上链记录查询</p>
                         <p class="step_desc">上链记录查询</p>
-                        <p class="step_desc_second">通过<a style="color: #7065FF;" href="https://explorer.wenchang.bianjie.ai/#/home" target="_blank" rel="noopener noreferrer">文昌链浏览器</a>，查看上链信息</p>
+                        <p class="step_desc_second">通过<a style="color: #7065FF;" href="https://explorer.wenchang.bianjie.ai/" target="_blank" rel="noopener noreferrer">文昌链浏览器</a>，查看上链信息</p>
                     </div>
                 </div>
-                <p class="tip">如果您想通过 SDK 的方式，来接入并使用文昌链，请参考 <router-link style="color: #7065FF;" to="/wenchangchain">技术文档</router-link> 中文昌链 SDK 服务对接流程</p>
+                <p class="tip">如果您想通过 SDK 的方式，来接入并使用文昌链，请参考 <a style="color: #7065FF;" href="https://docs.avata.bianjie.ai/?nav=01H5AGMQES6HJ1TD50QMH8N4BJ" target="_blank" rel="noopener noreferrer">技术文档</a> 中文昌链 SDK 服务对接流程</p>
                 <div class="control">
                     <a class="control_text" href="https://console.avata.bianjie.ai/" target="_blank" rel="noopener noreferrer">前往控制台 <i class="iconfont icon-turnto"></i></a>
                 </div>

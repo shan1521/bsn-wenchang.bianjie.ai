@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isHome: true,
-    title: 关于文昌链,
+    title: 文昌链官网 | 边界智能,
     titleContent: [
         {
             img: banner_first,
@@ -23,7 +23,7 @@
         },
         {
             img: banner_second,
-            title: Avata,
+            title: AVATA,
             subTitle: 多链跨链分布式应用服务平台<br>助力开发者和企业打造开放多元的分布式商业形态,
             linkList: [
                 {
@@ -34,12 +34,24 @@
                 {
                     icon: icon-doct,
                     linkText: 开发者文档,
-                    link: https://apis.avata.bianjie.ai/
+                    link: https://docs.avata.bianjie.ai/?nav=01H5AGKE8G618YTW6NMEND4NX5
                 },
             ]
         },
         {
             img: banner_third,
+            title: 文昌链极速网,
+            subTitle: 成本更低 · 性能提升 · 安全可信<br>基于 <strong>IRITA Turbo</strong> 打造，兼顾性能与安全的极速上链体验,
+            linkList: [
+                {
+                    icon: icon-gengduo,
+                    linkText: 了解更多,
+                    link: https://docs.avata.bianjie.ai/doc-2788320/?nav=3
+                },
+            ]
+        },
+        {
+            img: banner_fourth,
             title: 文昌链网浏览器,
             subTitle: 文昌链提供安全可信的商业区块链浏览器查询平台，帮助您可视化监控链上数据流动及状态，交易记录可信追溯,
             linkList: [
