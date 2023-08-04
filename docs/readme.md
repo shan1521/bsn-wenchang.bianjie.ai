@@ -65,6 +65,23 @@
     ],
     noticeContent: {
         noticeList: [
+         {
+                title: 【文昌链极速网正式上线】,
+                date: "2023-07-31",
+                info: 基于 IRITA Turbo 侧链技术的文昌链极速网 7 月上线，文昌链在实现「永不卡链」和「显著降低用链成本」的目标上再次取得重大进展,
+                maskContent: {
+                    title: 【文昌链极速网正式上线】,
+                    content: <p style="text-indent:2em">边界智能于2023年7月正式正式发布基于 IRITA Turbo 的文昌链极速网，标志着文昌链在实现「永不卡链」和「显著降低用链成本」的目标上再次取得新的重大进展！区块链应用开发者可以通过多链/跨链分布式应用服务平台 AVATA 接入文昌链极速网，使用过程中除了将获得更快的上链体验，用链成本更可大幅降低 20%-90%。</p>
+                    &emsp;&emsp;<p style="text-indent:2em;">文昌链极速网浏览器链接：<a target="_blank" rel="noopener noreferrer" href="https://wenchang.turboscan.bianjie.ai">https://wenchang.turboscan.bianjie.ai</a></p>
+                    &emsp;&emsp;<p style="text-indent:2em;">测试网链接：<a target="_blank" rel="noopener noreferrer" href="https://testnet.turboscan.bianjie.ai">https://testnet.turboscan.bianjie.ai</a></p>
+                    &emsp;&emsp;<font color=black style="font-weight:600;">文昌链极速网接入方式：</font><br>
+                    &emsp;&emsp;用户在 AVATA 服务平台创建新项目时，底层区块链可选择「文昌链极速网」选项。<br>
+                    &emsp;&emsp;文昌链极速网由 AVATA V3 API 提供支持，与之前的 API 版本兼容，接入方式也一致。<br>
+                    &emsp;&emsp;针对并发量高、实时性强、上链数量巨大的应用推出专属极速网，上链费用根据所采购的套餐按月封顶，比常规上链费用可降低达90%。感兴趣的应用方请通过文昌链官网（https://wenchang.bianjie.ai/）联系我们咨询专属极速网方案。<br>
+                    &emsp;&emsp;更多详情，请仔细浏览「 AVATA 帮助文档 - 文昌链极速网服务」了解详细说明。
+                    &emsp;&emsp;<p style="text-indent:2em;">文档链接：<a target="_blank" rel="noopener noreferrer" href="https://docs.avata.bianjie.ai/doc-2788320/">https://docs.avata.bianjie.ai/doc-2788320/</a></p>
+                }
+            },
             {
                 title: 【文昌链关于“谨防诈骗”的重要公告】,
                 date: "2023-07-13",
