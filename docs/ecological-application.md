@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isEcoloApp: true,
-    title: 生态应用,
+    title: 生态应用 | 文昌链官网,
     appBannerContent: {
         title: 「文昌链 IRITA OPB」,
         subTitle: 拥有完善的链底层基础设施，具备全生态商业服务能力。可基于文昌链核心功能，构建链上生态应用，安全高效，经济易用
