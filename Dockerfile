@@ -3,8 +3,8 @@ WORKDIR /app
 COPY . .
 ARG UMENG_ID
 ARG UMENG_WEB_ID
-ARG APKPROXY=http://mirrors.ustc.edu.cn/alpine
-RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repositories && \
+ARG APKPROXY=mirrors.ustc.edu.cn
+RUN sed -i "s+dl-cdn.alpinelinux.org+${APKPROXY}+g" /etc/apk/repositories && \
     apk add git && \
     npm config set registry https://registry.npm.taobao.org  && \
     npm install && npm run build-params $UMENG_ID,$UMENG_WEB_ID && npm run build
